@@ -1,5 +1,6 @@
 import pandas as pd
 import random
+from deap import base, creator, tools
 
 class FleetDecarbonization:
     def __init__(self, carbon_emissions_file, cost_profiles_file, demand_file, fuels_file, vehicles_file, vehicles_fuels_file, hard_constraint_penalty=1000):
@@ -68,11 +69,13 @@ class FleetDecarbonization:
         return self.hard_constraint_penalty * hard_constraint_violations
 
     def mutate_individual(self, individual):
+        print("Before mutation:", individual)  # Debugging print
         for plan in individual:
             if random.random() < 0.1:
                 plan['Num_Vehicles'] = random.randint(1, 11)
                 max_distance = self.vehicles[self.vehicles['ID'] == plan['ID']]['Yearly range (km)'].values[0]
                 plan['Distance_per_vehicle'] = random.randint(1, max_distance + 1)
+        print("After mutation:", individual)  # Debugging print
         return individual,
 
     def custom_crossover(self, ind1, ind2):
