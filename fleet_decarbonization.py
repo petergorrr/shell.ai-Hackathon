@@ -180,14 +180,16 @@ class FleetDecarbonization:
 
         for plan in best:
             year = plan['Year']
-            size = plan['Size']
-            distance = plan['Distance']
             vehicle_id = plan['ID']
             num_vehicles = plan['Num_Vehicles']
-            distance_covered = plan['Distance_per_vehicle']
-
             fuel_type = self.vehicles_fuels[self.vehicles_fuels['ID']
                                             == vehicle_id]['Fuel'].values[0]
+
+            distance = plan['Distance']
+
+            distance_covered = plan['Distance_per_vehicle']
+            size = plan['Size']
+
             fuel_consumption = self.vehicles_fuels[self.vehicles_fuels['ID']
                                                    == vehicle_id]['Consumption (unit_fuel/km)'].values[0]
             fuel_emissions = self.fuels[(self.fuels['Fuel'] == fuel_type) & (
