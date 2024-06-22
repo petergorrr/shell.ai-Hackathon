@@ -2,7 +2,8 @@ import random
 from deap import base, creator, tools, algorithms
 import matplotlib.pyplot as plt
 import numpy as np
-from fleet_decarbonization import FleetDecarbonization  # Ensure the FleetDecarbonization class is in a file named fleet_decarbonization.py
+from fleet_decarbonization import FleetDecarbonization
+
 
 def main():
     fleet = FleetDecarbonization(
@@ -26,8 +27,10 @@ def main():
     toolbox.register('individual', fleet.create_individual)
     creator.create('fitnessMin', base.Fitness, weights=(-1.0,))
     creator.create('Individual', list, fitness=creator.fitnessMin)
-    toolbox.register('individual_creator', tools.initRepeat, creator.Individual, toolbox.individual, 1)
-    toolbox.register('population_creator', tools.initRepeat, list, toolbox.individual_creator)
+    toolbox.register('individual_creator', tools.initRepeat,
+                     creator.Individual, toolbox.individual, 1)
+    toolbox.register('population_creator', tools.initRepeat,
+                     list, toolbox.individual_creator)
 
     # Set up fitness function
     def fitness_function(individual):
@@ -68,6 +71,7 @@ def main():
 
     best = hof[0]
     print("Best individual:", best)
+
 
 if __name__ == "__main__":
     main()

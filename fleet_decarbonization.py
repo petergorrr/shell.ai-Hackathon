@@ -1,13 +1,14 @@
 import pandas as pd
 import random
-import matplotlib.pyplot as plt
 from deap import base, creator, tools, algorithms
 import numpy as np
+import matplotlib as plt
+
 
 class FleetDecarbonization:
     def __init__(self, carbon_emissions_file, cost_profiles_file, demand_file, fuels_file, vehicles_file, vehicles_fuels_file, hard_constraint_penalty=1000):
         self.hard_constraint_penalty = hard_constraint_penalty
-        
+
         # Load data
         self.carbon_emissions = pd.read_csv(carbon_emissions_file)
         self.cost_profiles = pd.read_csv(cost_profiles_file)
@@ -28,17 +29,21 @@ class FleetDecarbonization:
         for year in self.years:
             for size in self.size_buckets:
                 for distance in self.distance_buckets:
-                    vehicle_id = random.choice(self.vehicles[(self.vehicles['Size'] == size) & (self.vehicles['Distance'] == distance)]['ID'].values)
+                    vehicle_id = random.choice(self.vehicles[(self.vehicles['Size'] == size) & (
+                        self.vehicles['Distance'] == distance)]['ID'].values)
                     num_vehicles = random.randint(1, 11)
-                    max_distance = self.vehicles[self.vehicles['ID'] == vehicle_id]['Yearly range (km)'].values[0]
+                    max_distance = self.vehicles[self.vehicles['ID']
+                                                 == vehicle_id]['Yearly range (km)'].values[0]
                     distance_covered = random.randint(1, max_distance + 1)
-                    individual.append({'Year': year, 'Size': size, 'Distance': distance, 'ID': vehicle_id, 'Num_Vehicles': num_vehicles, 'Distance_per_vehicle': distance_covered})
+                    individual.append({'Year': year, 'Size': size, 'Distance': distance, 'ID': vehicle_id,
+                                      'Num_Vehicles': num_vehicles, 'Distance_per_vehicle': distance_covered})
         return individual
 
     def get_cost(self, schedule):
         total_cost = 0
         total_emissions = {year: 0 for year in self.years}
-        demand_fulfilled = {(year, size, distance): 0 for year in self.years for size in self.size_buckets for distance in self.distance_buckets}
+        demand_fulfilled = {
+            (year, size, distance): 0 for year in self.years for size in self.size_buckets for distance in self.distance_buckets}
 
         for plan in schedule:
             year = plan['Year']
@@ -49,46 +54,50 @@ class FleetDecarbonization:
             distance_covered = plan['Distance_per_vehicle']
 
             vehicle = self.vehicles[self.vehicles['ID'] == vehicle_id].iloc[0]
-            fuel_type = self.vehicles_fuels[self.vehicles_fuels['ID'] == vehicle_id]['Fuel'].values[0]
-            fuel_consumption = self.vehicles_fuels[self.vehicles_fuels['ID'] == vehicle_id]['Consumption (unit_fuel/km)'].values[0]
-            fuel_cost = self.fuels[(self.fuels['Fuel'] == fuel_type) & (self.fuels['Year'] == year)]['Cost ($/unit_fuel)'].values[0]
-            fuel_emissions = self.fuels[(self.fuels['Fuel'] == fuel_type) & (self.fuels['Year'] == year)]['Emissions (CO2/unit_fuel)'].values[0]
+            fuel_type = self.vehicles_fuels[self.vehicles_fuels['ID']
+                                            == vehicle_id]['Fuel'].values[0]
+            fuel_consumption = self.vehicles_fuels[self.vehicles_fuels['ID']
+                                                   == vehicle_id]['Consumption (unit_fuel/km)'].values[0]
+            fuel_cost = self.fuels[(self.fuels['Fuel'] == fuel_type) & (
+                self.fuels['Year'] == year)]['Cost ($/unit_fuel)'].values[0]
+            fuel_emissions = self.fuels[(self.fuels['Fuel'] == fuel_type) & (
+                self.fuels['Year'] == year)]['Emissions (CO2/unit_fuel)'].values[0]
 
             total_cost += vehicle['Cost ($)'] * num_vehicles
             total_cost += fuel_cost * fuel_consumption * distance_covered * num_vehicles
-            total_emissions[year] += fuel_emissions * fuel_consumption * distance_covered * num_vehicles
+            total_emissions[year] += fuel_emissions * \
+                fuel_consumption * distance_covered * num_vehicles
 
-            demand_fulfilled[(year, size, distance)] += distance_covered * num_vehicles
+            demand_fulfilled[(year, size, distance)
+                             ] += distance_covered * num_vehicles
 
         # Check constraints
         hard_constraint_violations = 0
-        soft_constraint_violations = 0
 
         for year in self.years:
             if total_emissions[year] > self.carbon_emissions[self.carbon_emissions['Year'] == year]['Carbon emission CO2/kg'].values[0]:
                 hard_constraint_violations += 1
             for size in self.size_buckets:
                 for distance in self.distance_buckets:
-                    demand_required = self.demand[(self.demand['Year'] == year) & (self.demand['Size'] == size) & (self.demand['Distance'] == distance)]['Demand (km)'].values[0]
+                    demand_required = self.demand[(self.demand['Year'] == year) & (self.demand['Size'] == size) & (
+                        self.demand['Distance'] == distance)]['Demand (km)'].values[0]
                     if demand_fulfilled[(year, size, distance)] < demand_required:
                         hard_constraint_violations += 1
 
-        return self.hard_constraint_penalty * hard_constraint_violations + soft_constraint_violations
+        return self.hard_constraint_penalty * hard_constraint_violations
 
     def mutate_individual(self, individual):
         for i, plan in enumerate(individual):
-            if isinstance(plan, dict):
-                if random.random() < 0.1:
-                    try:
-                        plan['Num_Vehicles'] = random.randint(1, 11)
-                        max_distance = self.vehicles[self.vehicles['ID'] == plan['ID']]['Yearly range (km)'].values[0]
-                        plan['Distance_per_vehicle'] = random.randint(1, max_distance + 1)
-                        individual[i] = plan
-                    except Exception as e:
-                        print(f"Error mutating plan: {plan}")
-                        print(e)
-            else:
-                print(f"Plan is not a dictionary: {plan}")
+            if random.random() < 0.1:
+                vehicle_id = random.choice(self.vehicles[(self.vehicles['Size'] == plan['Size']) & (
+                    self.vehicles['Distance'] == plan['Distance'])]['ID'].values)
+                plan['ID'] = vehicle_id
+                plan['Num_Vehicles'] = random.randint(1, 11)
+                max_distance = self.vehicles[self.vehicles['ID']
+                                             == vehicle_id]['Yearly range (km)'].values[0]
+                plan['Distance_per_vehicle'] = random.randint(
+                    1, max_distance + 1)
+                individual[i] = plan
         return individual,
 
     def custom_crossover(self, ind1, ind2):
@@ -104,8 +113,10 @@ class FleetDecarbonization:
         toolbox.register('individual', self.create_individual)
         creator.create('fitnessMin', base.Fitness, weights=(-1.0,))
         creator.create('Individual', list, fitness=creator.fitnessMin)
-        toolbox.register('individual_creator', tools.initRepeat, creator.Individual, toolbox.individual, 1)
-        toolbox.register('population_creator', tools.initRepeat, list, toolbox.individual_creator)
+        toolbox.register('individual_creator', tools.initRepeat,
+                         creator.Individual, toolbox.individual, 1)
+        toolbox.register('population_creator', tools.initRepeat,
+                         list, toolbox.individual_creator)
 
         # Set up fitness function
         def fitness_function(individual):
@@ -147,4 +158,3 @@ class FleetDecarbonization:
         best = hof[0]
         print("Best individual:", best)
         return best
-
