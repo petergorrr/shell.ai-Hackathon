@@ -41,13 +41,13 @@ class FleetDecarbonization:
                                       'Num_Vehicles': num_vehicles, 'Distance_per_vehicle': distance_covered})
         return individual
 
-    def get_cost(self, schedule):
+    def get_cost(self, individual):
         total_cost = 0
         total_emissions = {year: 0 for year in self.years}
         demand_fulfilled = {
             (year, size, distance): 0 for year in self.years for size in self.size_buckets for distance in self.distance_buckets}
 
-        for plan in schedule:
+        for plan in individual:
             year = plan['Year']
             size = plan['Size']
             distance = plan['Distance']
@@ -116,7 +116,7 @@ class FleetDecarbonization:
         print(f"Final Generation Avg Fitness: {avg_value[-1]}")
 
         # Calculate and print total cost of the best individual
-        total_cost = self.get_cost(best[0])
+        total_cost = self.get_cost(best)
         print(f"Total Cost of Best Individual: {total_cost}")
 
         # Calculate total emissions for each year

@@ -16,7 +16,7 @@ def run_optimization(fleet, population_size, generations, p_crossover, p_mutatio
 
     # Set up fitness function
     def fitness_function(individual):
-        return fleet.get_cost(individual[0]),
+        return fleet.get_cost(individual),
 
     # Set up the genetic operators
     toolbox.register('evaluate', fitness_function)
