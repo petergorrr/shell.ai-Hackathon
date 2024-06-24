@@ -58,6 +58,12 @@ class FleetDecarbonization:
 
         # Encode yearly demand for each size and distance bucket
         self.yearly_demand = self.calculate_yearly_demand()
+        
+        # Get vehicles that can contribute to each demand
+        self.distance_buckets_vehicles = self.get_distance_buckets_vehicles()
+        
+        # Get total distance covered for each criteria
+        self.total_distancce = self.calculate_total_distance
 
     def get_resale_value(self, purchase_cost, year):
         """
@@ -104,6 +110,7 @@ class FleetDecarbonization:
         """
         Get the yearly demand for a specific vehicle based on its ID.
         """
+        # Nani? This is not useful
         vehicle = self.vehicles[self.vehicles['ID'] == vehicle_id]
         if vehicle.empty:
             return f"Vehicle ID {vehicle_id} not found."
@@ -114,6 +121,29 @@ class FleetDecarbonization:
 
         demand = self.yearly_demand[year][size][distance]
         return demand
+    
+    def get_distance_buckets_vehicles(self):
+        """
+        Use dict to store
+        {year": {'D1': , 'D2', etc}}
+        """
+        distance_bucket_vehicles = {year: {size: {distance: [] for distance in self.distance_buckets} for size in self.size_buckets}for year in self.years}
+        
+        for year in self.years:
+            for size in self.size_buckets:
+                for i, distance in enumerate(self.distance_buckets):
+                    vehicle_id_list = []
+                    for subsequent_distance in self.distance_buckets[i:]:
+                        vehicle_ids = self.vehicles[
+                            (self.vehicles['Year'] == year) &
+                            (self.vehicles['Size'] == size) &
+                            (self.vehicles['Distance'] == subsequent_distance)
+                        ]['ID'].tolist()
+                        vehicle_id_list.extend(vehicle_ids)
+                    
+                    distance_bucket_vehicles[year][size][distance].extend(vehicle_id_list)
+          
+        return distance_bucket_vehicles
 
     def calculate_buy_cost(self, individual):
         """
@@ -268,7 +298,9 @@ class FleetDecarbonization:
         if total_used > total_vehicles:
             return True
         return False
-
+    
+    # Constraint 4
+    # Not useful because need to accumulate distance from all vehicles
     def verify_vehicle_yearly_demand(self, vehicle_id):
         """
         Verify if a vehicle can meet the yearly demand for its size and distance bucket.
@@ -288,3 +320,49 @@ class FleetDecarbonization:
             return f"Vehicle ID {vehicle_id} can meet the yearly demand of {demand} km."
         else:
             return f"Vehicle ID {vehicle_id} cannot meet the yearly demand of {demand} km."
+    
+    # Constraint 4 (Helper)
+    def calculate_total_distance(self, fleet):
+        total_distance = {year: {size: {distance: 0 for distance in self.distance_buckets}
+                        for size in self.size_buckets} for year in self.years}
+        for plan in fleet:
+            vehicle_id = plan['ID']
+            num_vehicles = plan['Num_Vehicles']
+            distance_covered = plan['Distance_per_vehicle']
+            
+            for year in self.years:
+                for size in self.size_buckets:
+                    for distance in self.distance_buckets:
+                        if vehicle_id in self.distance_buckets_vehicles[year][size][distance]:
+                            total_distance[year][size][distance] += distance_covered * num_vehicles
+                            
+        return total_distance
+    
+    # Constraint 4
+    def verify_distance_meets_demand(self):
+        for year in self.years:
+            for size in self.size_buckets:
+                for distance in self.distance_buckets:
+                    if self.total_distance[year][size][distance] < self.yearly_demand[year][size][distance]:
+                        return False
+    
+        return True
+    
+    
+def main():
+    fleet = FleetDecarbonization(
+    'dataset/carbon_emissions.csv',
+    'dataset/cost_profiles.csv',
+    'dataset/demand.csv',
+    'dataset/fuels.csv',
+    'dataset/vehicles.csv',
+    'dataset/vehicles_fuels.csv'
+    )
+    
+    distance_list = [('Diesel_S1_2023', 22), ('BEV_S1_2023', 33), ('Diesel_S2_2023', 11)]
+    for item in distance_list:
+        car, distance = item
+        print(fleet.calculate_total_distance(car, distance))   
+
+if __name__ == "__main__":
+    main()
