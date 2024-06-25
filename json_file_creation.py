@@ -31,7 +31,8 @@ class FleetDecarbonization:
 
     def get_vehicle_bucket_coverage(self):
         years = list(range(2023, 2039))
-        vehicle_bucket_coverage = {year: {size: {distance: [] for distance in self.distance_buckets} for size in self.size_buckets} for year in years}
+        vehicle_bucket_coverage = {year: {size: {distance: [
+        ] for distance in self.distance_buckets} for size in self.size_buckets} for year in years}
 
         for year in years:
             for size in self.size_buckets:
@@ -45,7 +46,8 @@ class FleetDecarbonization:
                         ]['ID'].tolist()
                         vehicle_id_list.extend(vehicle_ids)
 
-                    vehicle_bucket_coverage[year][size][distance].extend(vehicle_id_list)
+                    vehicle_bucket_coverage[year][size][distance].extend(
+                        vehicle_id_list)
 
         return vehicle_bucket_coverage
 
