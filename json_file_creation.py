@@ -1,65 +1,58 @@
 import pandas as pd
 import json
 
+# Load data
+demand_file = 'dataset/demand.csv'
+vehicles_file = 'dataset/vehicles.csv'
+demand = pd.read_csv(demand_file)
+vehicles = pd.read_csv(vehicles_file)
 
-class FleetDecarbonization:
+size_buckets = ['S1', 'S2', 'S3', 'S4']
+distance_buckets = ['D1', 'D2', 'D3', 'D4']
+years = list(range(2023, 2039))
 
-    def __init__(self, demand_file, vehicles_file):
-        # Load the demand and vehicles data
-        self.demand = pd.read_csv(demand_file)
-        self.vehicles = pd.read_csv(vehicles_file)
-        self.size_buckets = ['S1', 'S2', 'S3', 'S4']
-        self.distance_buckets = ['D1', 'D2', 'D3', 'D4']
+# Aggregate Yearly Demand
+def aggregate_yearly_demand(demand, size_buckets, distance_buckets, years):
+    yearly_demand = {year: {size: {distance: 0 for distance in distance_buckets}
+                            for size in size_buckets} for year in years}
 
-    def aggregate_yearly_demand(self):
-        """
-        Aggregate the total yearly demand traveled distance for the respective size and distance bucket vehicles.
-        """
-        years = list(range(2023, 2039))
-        yearly_demand = {year: {size: {distance: 0 for distance in self.distance_buckets}
-                                for size in self.size_buckets} for year in years}
+    for year in years:
+        for size in size_buckets:
+            for distance in distance_buckets:
+                total_distance = int(demand[(demand['Year'] == year) &
+                                            (demand['Size'] == size) &
+                                            (demand['Distance'] == distance)]['Demand (km)'].sum())
+                yearly_demand[year][size][distance] = total_distance
 
-        for year in years:
-            for size in self.size_buckets:
-                for distance in self.distance_buckets:
-                    total_distance = int(self.demand[(self.demand['Year'] == year) &
-                                                     (self.demand['Size'] == size) &
-                                                     (self.demand['Distance'] == distance)]['Demand (km)'].sum())
-                    yearly_demand[year][size][distance] = total_distance
+    return yearly_demand
 
-        return yearly_demand
+# Get Vehicle Bucket Coverage
+def get_vehicle_bucket_coverage(vehicles, size_buckets, distance_buckets, years):
+    vehicle_bucket_coverage = {year: {size: {distance: []
+                                             for distance in distance_buckets} for size in size_buckets} for year in years}
 
-    def get_vehicle_bucket_coverage(self):
-        years = list(range(2023, 2039))
-        vehicle_bucket_coverage = {year: {size: {distance: [
-        ] for distance in self.distance_buckets} for size in self.size_buckets} for year in years}
+    for year in years:
+        for size in size_buckets:
+            for i, distance in enumerate(distance_buckets):
+                vehicle_id_list = []
+                for subsequent_distance in distance_buckets[i:]:
+                    vehicle_ids = vehicles[
+                        (vehicles['Year'] == year) &
+                        (vehicles['Size'] == size) &
+                        (vehicles['Distance'] == subsequent_distance)
+                    ]['ID'].tolist()
+                    vehicle_id_list.extend(vehicle_ids)
 
-        for year in years:
-            for size in self.size_buckets:
-                for i, distance in enumerate(self.distance_buckets):
-                    vehicle_id_list = []
-                    for subsequent_distance in self.distance_buckets[i:]:
-                        vehicle_ids = self.vehicles[
-                            (self.vehicles['Year'] == year) &
-                            (self.vehicles['Size'] == size) &
-                            (self.vehicles['Distance'] == subsequent_distance)
-                        ]['ID'].tolist()
-                        vehicle_id_list.extend(vehicle_ids)
+                vehicle_bucket_coverage[year][size][distance].extend(
+                    vehicle_id_list)
 
-                    vehicle_bucket_coverage[year][size][distance].extend(
-                        vehicle_id_list)
-
-        return vehicle_bucket_coverage
-
-
-# Initialize the FleetDecarbonization class with the demand and vehicles files
-fleet = FleetDecarbonization('dataset/demand.csv', 'dataset/vehicles.csv')
+    return vehicle_bucket_coverage
 
 # Calculate the yearly demand
-yearly_demand = fleet.aggregate_yearly_demand()
+yearly_demand = aggregate_yearly_demand(demand, size_buckets, distance_buckets, years)
 
 # Get the vehicle bucket coverage data
-vehicle_bucket_coverage = fleet.get_vehicle_bucket_coverage()
+vehicle_bucket_coverage = get_vehicle_bucket_coverage(vehicles, size_buckets, distance_buckets, years)
 
 # Existing mapping data
 data = {
