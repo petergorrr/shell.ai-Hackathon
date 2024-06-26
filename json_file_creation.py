@@ -5,49 +5,88 @@ import json
 demand_file = 'dataset/demand.csv'
 vehicles_file = 'dataset/vehicles.csv'
 vehicles_fuels_file = 'dataset/vehicles_fuels.csv'
+fuels_file = 'dataset/fuels.csv'
 
 demand = pd.read_csv(demand_file)
 vehicles = pd.read_csv(vehicles_file)
 vehicles_fuels = pd.read_csv(vehicles_fuels_file)
+fuels = pd.read_csv(fuels_file)
 
 size_buckets = ['S1', 'S2', 'S3', 'S4']
 distance_buckets = ['D1', 'D2', 'D3', 'D4']
 years = list(range(2023, 2039))
 
 # Aggregate Yearly Demand
-yearly_demand = {year: {size: {distance: int(demand[(demand['Year'] == year) &
-                                                    (demand['Size'] == size) &
-                                                    (demand['Distance'] == distance)]['Demand (km)'].sum())
-                               for distance in distance_buckets}
-                        for size in size_buckets}
-                 for year in years}
+yearly_demand = {
+    year: {
+        size: {
+            distance: int(demand[(demand['Year'] == year) & (demand['Size'] == size) & (
+                demand['Distance'] == distance)]['Demand (km)'].sum())
+            for distance in distance_buckets
+        }
+        for size in size_buckets
+    }
+    for year in years
+}
 
-# Get Vehicle Bucket Coverage
-vehicle_bucket_coverage = {year: {size: {distance: [
-    id for past_year in range(max(year - 9, min(years)), year + 1)
-    for id in vehicles[(vehicles['Year'] == past_year) &
-                       (vehicles['Size'] == size) &
-                       (vehicles['Distance'].isin(distance_buckets[i:]))]['ID'].tolist()]
-    for i, distance in enumerate(distance_buckets)}
-    for size in size_buckets}
-    for year in years}
 
-# Get Fuel Type
-fuel_dict = vehicles_fuels.groupby('ID')['Fuel'].apply(list).to_dict()
+def extract_vehicles_for_demand(vehicles, size_buckets, years):
+    distance_levels = {'D1': 1, 'D2': 2, 'D3': 3, 'D4': 4}
+    inverse_distance_levels = {v: k for k, v in distance_levels.items()}
+
+    return {
+        year: {
+            size_bucket: {
+                inverse_distance_levels[distance_level]: vehicles[
+                    (vehicles['Year'] <= year) &
+                    (vehicles['Year'] >= year - 9) &
+                    (vehicles['Size'] == size_bucket) &
+                    (vehicles['Distance'].apply(
+                        lambda x: distance_levels[x] >= distance_level))
+                ]['ID'].tolist()
+                for distance_level in range(1, 5)
+            }
+            for size_bucket in size_buckets
+        }
+        for year in years
+    }
+
+
+# Get Fuel Type with Consumption
+fuel_consumption_dict = vehicles_fuels.groupby('ID').apply(
+    lambda x: x.set_index('Fuel')['Consumption (unit_fuel/km)'].to_dict()).to_dict()
+
+# Extract eligible vehicles for each year, size, and distance bucket
+eligible_vehicles = extract_vehicles_for_demand(vehicles, size_buckets, years)
+
+# Extract cost data for each vehicle
+vehicle_costs = vehicles.set_index('ID')['Cost ($)'].to_dict()
+
+# Extract fuels data
+fuels_data = fuels.to_dict(orient='records')
+
+# Reorganize fuels data to match the required format
+fuels_reorganized = {}
+for record in fuels_data:
+    fuel = record.pop("Fuel")
+    year = record.pop("Year")
+    if fuel not in fuels_reorganized:
+        fuels_reorganized[fuel] = {}
+    fuels_reorganized[fuel][year] = record
 
 # Existing mapping data
 data = {
-    "distance_mapping": {
-        'D1': 300,
-        'D2': 400,
-        'D3': 500,
-        'D4': 600
-    },
     "size_mapping": {
         'S1': 17,
         'S2': 44,
         'S3': 50,
         'S4': 64
+    },
+    "distance_mapping": {
+        'D1': 300,
+        'D2': 400,
+        'D3': 500,
+        'D4': 600
     },
     "distance_buckets_mapping": {
         'D4': ['D1', 'D2', 'D3', 'D4'],
@@ -84,17 +123,13 @@ data = {
         2036: 2968379,
         2037: 2671541,
         2038: 2404387
-    }
+    },
+    "yearly_demand": yearly_demand,
+    "vehicle_bucket_coverage": eligible_vehicles,
+    "vehicle_costs": vehicle_costs,
+    "vehicle_fuel_consumptions": fuel_consumption_dict,
+    "fuels_data": fuels_reorganized
 }
-
-# Add yearly demand data to the existing dictionary
-data["yearly_demand"] = yearly_demand
-
-# Add vehicle bucket coverage data to the existing dictionary
-data["vehicle_bucket_coverage"] = vehicle_bucket_coverage
-
-# Add vehicle fuel types to the existing dictionary
-data["vehicle_fuel_types"] = fuel_dict
 
 # Specify the file path
 file_path = 'dataset/mapping_and_cost_data.json'
