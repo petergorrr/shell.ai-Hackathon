@@ -26,7 +26,7 @@ class FleetDecarbonization:
             mapping_data = json.load(f)
         
         self.leftover_vehicles_file = leftover_vehicles_file
-        self.leftover_vehicles = self.load_from_json(self.leftover_vehicles_file)
+        self.all_previous_vehicles_leftover = self.load_from_json(self.leftover_vehicles_file)
         # Set attributes from JSON data
         self.distance_mapping = mapping_data['distance_mapping']
         self.size_mapping = mapping_data['size_mapping']
@@ -43,8 +43,6 @@ class FleetDecarbonization:
         self.years = list(range(2023, 2039))
         self.action = ['buy', 'sell', 'use']
         self.current_year = self.years[1] # 2023
-        self.all_previous_vehicles_leftover = {}
-        self.leftover_vehicles = self.get_previous_leftover_vehicles(self.current_year)
 
         # Get total distance covered for each criteria
         # self.total_distance = self.calculate_total_distance()
@@ -288,13 +286,14 @@ class FleetDecarbonization:
         """
         pass
     
-    # Use on hof. Only get leftover for the current year (did not care about vehicles sold from other year)
-    # Need to change it to care about that
-    def get_current_leftover_vehicles(self, current_individual, current_year):
-        if current_year not in self.all_previous_vehicles_leftover:
-            self.all_previous_vehicles_leftover[current_year] = {}
+    # Use on hof. It updates the sold vehicle for other years and create a new entry for the current year
+    def get_current_leftover_vehicles(self, current_individual):
         
         for vehicle in current_individual['buy']:
+            current_year = vehicle['Year']
+            if current_year not in self.all_previous_vehicles_leftover:
+                self.all_previous_vehicles_leftover[current_year] = {}
+                
             vehicle_id = vehicle['ID']
             fuel_type = vehicle['Fuel']
             distance_bucket = vehicle['Distance_bucket']
@@ -310,6 +309,7 @@ class FleetDecarbonization:
                 self.all_previous_vehicles_leftover[current_year][vehicle_id][fuel_type][distance_bucket] = num_vehicles_bought
                 
         for vehicle in current_individual['sell']:
+            current_year = vehicle['Year']
             vehicle_id = vehicle['ID']
             fuel_type = vehicle['Fuel']
             distance_bucket = vehicle['Distance_bucket']
@@ -319,13 +319,6 @@ class FleetDecarbonization:
         
         self.cleanup_all_vehicles_leftover()
         self.update_json_with_new_data(self.all_previous_vehicles_leftover, self.leftover_vehicles_file)
-    
-    
-    def update_leftover_vehicles(self, current_individual):
-        """
-        When current vehicle sell vehicle from other years, need to update the all_leftover_vehicle_data.json file
-        """
-        pass
     
     def cleanup_all_vehicles_leftover(self):
         # Iterate through all years in self.all_previous_vehicles_leftover
@@ -431,26 +424,30 @@ class FleetDecarbonization:
                                     if num_vehicles == 0:
                                         distance_covered = 0
                                     
-                                    individual[action].append({'ID': vehicle_id,'Num_Vehicles': num_vehicles, 'Distance_per_vehicle': distance_covered, 'Fuel': fuel, 'Distance_bucket': d_bucket})
+                                    individual[action].append({'ID': vehicle_id,'Num_Vehicles': num_vehicles, 'Distance_per_vehicle': distance_covered, 'Fuel': fuel, 'Distance_bucket': d_bucket, 'Year': self.current_year})
                                     
             # Populate leftover vehicles for use and sell
             if action == 'sell' or action == 'use':
-                for left_vehicle in self.leftover_vehicles:
-                    vehicle_id2 = left_vehicle['ID']
-                    fuel_type2 = left_vehicle['Fuel']
-                    distance_bucket2 = left_vehicle['Distance_bucket']
-                    num_vehicles_leftover = left_vehicle[num_vehicles]
-                    num_vehicles2 = random.randint(0, num_vehicles_leftover)
-                    
-                    if action == 'sell':
-                        distance_covered2 = 0
-                    elif action == 'use':
-                        max_distance = self.distance_mapping[distance]
-                        distance_covered2 = random.randint(1, max_distance + 1)
-                    else:
-                        print('Invalid action')
-                    
-                    individual[action].append({'ID': vehicle_id2,'Num_Vehicles': num_vehicles2, 'Distance_per_vehicle': distance_covered2, 'Fuel': fuel_type2, 'Distance_bucket': distance_bucket2})
+                for year, vehicle_data in self.all_previous_vehicles_leftover.items():
+                    for vehicle_id2, fuel_data in vehicle_data.items():
+                        for fuel2, distance_data in fuel_data.items():
+                            for d_bucket2, num_vehicles_left in distance_data.items():
+                                vehicle_id2 = vehicle_id2
+                                fuel_type2 = fuel2
+                                distance_bucket2 = d_bucket2
+                                num_vehicles_leftover = num_vehicles_left
+                                num_vehicles2 = random.randint(0, num_vehicles_leftover)
+                                
+                                if action == 'sell':
+                                    distance_covered2 = 0
+                                elif action == 'use':
+                                    max_distance = int(self.vehicles.loc[(self.vehicles['ID'] == vehicle_id) & (
+                                            self.vehicles['Year'] == self.current_year), ['Yearly range (km)']].values[0])
+                                    distance_covered2 = random.randint(1, max_distance + 1)
+                                else:
+                                    print('Invalid action')
+                                
+                                individual[action].append({'ID': vehicle_id2,'Num_Vehicles': num_vehicles2, 'Distance_per_vehicle': distance_covered2, 'Fuel': fuel_type2, 'Distance_bucket': distance_bucket2, 'Year': year})
         return individual
     
     # Function to load existing data from a JSON file
@@ -485,6 +482,5 @@ def main():
     'dataset/mapping_and_cost_data.json',
     'dataset/all_leftover_vehicles_data.json'
     )
-
 if __name__ == "__main__":
     main()
