@@ -4,55 +4,36 @@ import json
 # Load data
 demand_file = 'dataset/demand.csv'
 vehicles_file = 'dataset/vehicles.csv'
+vehicles_fuels_file = 'dataset/vehicles_fuels.csv'
+
 demand = pd.read_csv(demand_file)
 vehicles = pd.read_csv(vehicles_file)
+vehicles_fuels = pd.read_csv(vehicles_fuels_file)
 
 size_buckets = ['S1', 'S2', 'S3', 'S4']
 distance_buckets = ['D1', 'D2', 'D3', 'D4']
 years = list(range(2023, 2039))
 
 # Aggregate Yearly Demand
-def aggregate_yearly_demand(demand, size_buckets, distance_buckets, years):
-    yearly_demand = {year: {size: {distance: 0 for distance in distance_buckets}
-                            for size in size_buckets} for year in years}
-
-    for year in years:
-        for size in size_buckets:
-            for distance in distance_buckets:
-                total_distance = int(demand[(demand['Year'] == year) &
-                                            (demand['Size'] == size) &
-                                            (demand['Distance'] == distance)]['Demand (km)'].sum())
-                yearly_demand[year][size][distance] = total_distance
-
-    return yearly_demand
+yearly_demand = {year: {size: {distance: int(demand[(demand['Year'] == year) &
+                                                    (demand['Size'] == size) &
+                                                    (demand['Distance'] == distance)]['Demand (km)'].sum())
+                               for distance in distance_buckets}
+                        for size in size_buckets}
+                 for year in years}
 
 # Get Vehicle Bucket Coverage
-def get_vehicle_bucket_coverage(vehicles, size_buckets, distance_buckets, years):
-    vehicle_bucket_coverage = {year: {size: {distance: []
-                                             for distance in distance_buckets} for size in size_buckets} for year in years}
+vehicle_bucket_coverage = {year: {size: {distance: [
+    id for past_year in range(max(year - 9, min(years)), year + 1)
+    for id in vehicles[(vehicles['Year'] == past_year) &
+                       (vehicles['Size'] == size) &
+                       (vehicles['Distance'].isin(distance_buckets[i:]))]['ID'].tolist()]
+    for i, distance in enumerate(distance_buckets)}
+    for size in size_buckets}
+    for year in years}
 
-    for year in years:
-        for size in size_buckets:
-            for i, distance in enumerate(distance_buckets):
-                vehicle_id_list = []
-                for subsequent_distance in distance_buckets[i:]:
-                    vehicle_ids = vehicles[
-                        (vehicles['Year'] == year) &
-                        (vehicles['Size'] == size) &
-                        (vehicles['Distance'] == subsequent_distance)
-                    ]['ID'].tolist()
-                    vehicle_id_list.extend(vehicle_ids)
-
-                vehicle_bucket_coverage[year][size][distance].extend(
-                    vehicle_id_list)
-
-    return vehicle_bucket_coverage
-
-# Calculate the yearly demand
-yearly_demand = aggregate_yearly_demand(demand, size_buckets, distance_buckets, years)
-
-# Get the vehicle bucket coverage data
-vehicle_bucket_coverage = get_vehicle_bucket_coverage(vehicles, size_buckets, distance_buckets, years)
+# Get Fuel Type
+fuel_dict = vehicles_fuels.groupby('ID')['Fuel'].apply(list).to_dict()
 
 # Existing mapping data
 data = {
@@ -67,6 +48,12 @@ data = {
         'S2': 44,
         'S3': 50,
         'S4': 64
+    },
+    "distance_buckets_mapping": {
+        'D4': ['D1', 'D2', 'D3', 'D4'],
+        'D3': ['D1', 'D2', 'D3'],
+        'D2': ['D1', 'D2'],
+        'D1': ['D1']
     },
     "cost_percentages": {
         1: {'resale': 0.90, 'insurance': 0.05, 'maintenance': 0.01},
@@ -105,6 +92,9 @@ data["yearly_demand"] = yearly_demand
 
 # Add vehicle bucket coverage data to the existing dictionary
 data["vehicle_bucket_coverage"] = vehicle_bucket_coverage
+
+# Add vehicle fuel types to the existing dictionary
+data["vehicle_fuel_types"] = fuel_dict
 
 # Specify the file path
 file_path = 'dataset/mapping_and_cost_data.json'
