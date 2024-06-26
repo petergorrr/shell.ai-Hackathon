@@ -59,8 +59,23 @@ fuel_consumption_dict = vehicles_fuels.groupby('ID').apply(
 # Extract eligible vehicles for each year, size, and distance bucket
 eligible_vehicles = extract_vehicles_for_demand(vehicles, size_buckets, years)
 
-# Extract cost data for each vehicle
-vehicle_costs = vehicles.set_index('ID')['Cost ($)'].to_dict()
+# Extract cost and yearly range data for each vehicle
+vehicle_data = vehicles.set_index(
+    'ID')[['Cost ($)', 'Yearly range (km)']].to_dict('index')
+
+# Create vehicles_by_year structure
+vehicles_by_year = {
+    year: {
+        vehicle: {
+            "cost": vehicle_data[vehicle]['Cost ($)'],
+            "yearly range": vehicle_data[vehicle]['Yearly range (km)']
+        }
+        for size_dict in eligible_vehicles[year].values()
+        for vehicle_list in size_dict.values()
+        for vehicle in vehicle_list
+    }
+    for year in years
+}
 
 # Extract fuels data
 fuels_data = fuels.to_dict(orient='records')
@@ -126,7 +141,7 @@ data = {
     },
     "yearly_demand": yearly_demand,
     "vehicle_bucket_coverage": eligible_vehicles,
-    "vehicle_costs": vehicle_costs,
+    "vehicles_by_year": vehicles_by_year,
     "vehicle_fuel_consumptions": fuel_consumption_dict,
     "fuels_data": fuels_reorganized
 }
