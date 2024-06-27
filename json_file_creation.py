@@ -51,7 +51,6 @@ def extract_vehicles_for_demand(vehicles, size_buckets, years):
         for year in years
     }
 
-
 # Get Fuel Type with Consumption
 fuel_consumption_dict = vehicles_fuels.groupby('ID').apply(
     lambda x: x.set_index('Fuel')['Consumption (unit_fuel/km)'].to_dict()).to_dict()
@@ -63,19 +62,19 @@ eligible_vehicles = extract_vehicles_for_demand(vehicles, size_buckets, years)
 vehicle_data = vehicles.set_index(
     'ID')[['Cost ($)', 'Yearly range (km)']].to_dict('index')
 
-# Create vehicles_by_year structure
-vehicles_by_year = {
-    year: {
-        vehicle: {
-            "cost": vehicle_data[vehicle]['Cost ($)'],
-            "yearly range": vehicle_data[vehicle]['Yearly range (km)']
-        }
-        for size_dict in eligible_vehicles[year].values()
-        for vehicle_list in size_dict.values()
-        for vehicle in vehicle_list
-    }
-    for year in years
-}
+# Create vehicles_details structure
+vehicles_details = {}
+for year in years:
+    for size, size_dict in eligible_vehicles[year].items():
+        for distance, vehicle_list in size_dict.items():
+            for vehicle in vehicle_list:
+                if vehicle in vehicle_data:
+                    vehicles_details[vehicle] = {
+                        "cost": vehicle_data[vehicle]['Cost ($)'],
+                        "size": size,
+                        "distance": distance,
+                        "yearly range": vehicle_data[vehicle]['Yearly range (km)']
+                    }
 
 # Extract fuels data
 fuels_data = fuels.to_dict(orient='records')
@@ -121,7 +120,7 @@ data = {
         9: {'resale': 0.30, 'insurance': 0.13, 'maintenance': 0.17},
         10: {'resale': 0.30, 'insurance': 0.14, 'maintenance': 0.19}
     },
-    "carbon_emissions_dict": {
+    "carbon_emissions": {
         2023: 11677957,
         2024: 10510161,
         2025: 9459145,
@@ -141,7 +140,7 @@ data = {
     },
     "yearly_demand": yearly_demand,
     "vehicle_bucket_coverage": eligible_vehicles,
-    "vehicles_by_year": vehicles_by_year,
+    "vehicles_details": vehicles_details,
     "vehicle_fuel_consumptions": fuel_consumption_dict,
     "fuels_data": fuels_reorganized
 }

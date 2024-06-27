@@ -83,7 +83,7 @@
             "maintenance": 0.19
         }
     },
-    "carbon_emissions_dict": {
+    "carbon_emissions": {
         "2023": 11677957,
         "2024": 10510161,
         "2025": 9459145,
@@ -6005,5558 +6005,1158 @@
             }
         }
     },
-    "vehicles_by_year": {
-        "2023": {
-            "BEV_S1_2023": {
-                "cost": 187000,
-                "yearly range": 102000
-            },
-            "Diesel_S1_2023": {
-                "cost": 85000,
-                "yearly range": 102000
-            },
-            "LNG_S1_2023": {
-                "cost": 100000,
-                "yearly range": 102000
-            },
-            "BEV_S2_2023": {
-                "cost": 272000,
-                "yearly range": 106000
-            },
-            "Diesel_S2_2023": {
-                "cost": 104000,
-                "yearly range": 106000
-            },
-            "LNG_S2_2023": {
-                "cost": 133000,
-                "yearly range": 106000
-            },
-            "BEV_S3_2023": {
-                "cost": 309090,
-                "yearly range": 73000
-            },
-            "Diesel_S3_2023": {
-                "cost": 118181,
-                "yearly range": 73000
-            },
-            "LNG_S3_2023": {
-                "cost": 151136,
-                "yearly range": 73000
-            },
-            "BEV_S4_2023": {
-                "cost": 395636,
-                "yearly range": 118000
-            },
-            "Diesel_S4_2023": {
-                "cost": 151272,
-                "yearly range": 118000
-            },
-            "LNG_S4_2023": {
-                "cost": 193454,
-                "yearly range": 118000
-            }
+    "vehicles_details": {
+        "BEV_S1_2023": {
+            "cost": 187000,
+            "size": "S1",
+            "distance": "D1",
+            "yearly range": 102000
         },
-        "2024": {
-            "BEV_S1_2023": {
-                "cost": 187000,
-                "yearly range": 102000
-            },
-            "BEV_S1_2024": {
-                "cost": 177650,
-                "yearly range": 102000
-            },
-            "Diesel_S1_2023": {
-                "cost": 85000,
-                "yearly range": 102000
-            },
-            "Diesel_S1_2024": {
-                "cost": 87550,
-                "yearly range": 102000
-            },
-            "LNG_S1_2023": {
-                "cost": 100000,
-                "yearly range": 102000
-            },
-            "LNG_S1_2024": {
-                "cost": 103000,
-                "yearly range": 102000
-            },
-            "BEV_S2_2023": {
-                "cost": 272000,
-                "yearly range": 106000
-            },
-            "BEV_S2_2024": {
-                "cost": 258400,
-                "yearly range": 106000
-            },
-            "Diesel_S2_2023": {
-                "cost": 104000,
-                "yearly range": 106000
-            },
-            "Diesel_S2_2024": {
-                "cost": 107120,
-                "yearly range": 106000
-            },
-            "LNG_S2_2023": {
-                "cost": 133000,
-                "yearly range": 106000
-            },
-            "LNG_S2_2024": {
-                "cost": 136990,
-                "yearly range": 106000
-            },
-            "BEV_S3_2023": {
-                "cost": 309090,
-                "yearly range": 73000
-            },
-            "BEV_S3_2024": {
-                "cost": 293636,
-                "yearly range": 73000
-            },
-            "Diesel_S3_2023": {
-                "cost": 118181,
-                "yearly range": 73000
-            },
-            "Diesel_S3_2024": {
-                "cost": 121727,
-                "yearly range": 73000
-            },
-            "LNG_S3_2023": {
-                "cost": 151136,
-                "yearly range": 73000
-            },
-            "LNG_S3_2024": {
-                "cost": 155670,
-                "yearly range": 73000
-            },
-            "BEV_S4_2023": {
-                "cost": 395636,
-                "yearly range": 118000
-            },
-            "BEV_S4_2024": {
-                "cost": 375854,
-                "yearly range": 118000
-            },
-            "Diesel_S4_2023": {
-                "cost": 151272,
-                "yearly range": 118000
-            },
-            "Diesel_S4_2024": {
-                "cost": 155810,
-                "yearly range": 118000
-            },
-            "LNG_S4_2023": {
-                "cost": 193454,
-                "yearly range": 118000
-            },
-            "LNG_S4_2024": {
-                "cost": 199258,
-                "yearly range": 118000
-            }
+        "Diesel_S1_2023": {
+            "cost": 85000,
+            "size": "S1",
+            "distance": "D4",
+            "yearly range": 102000
         },
-        "2025": {
-            "BEV_S1_2023": {
-                "cost": 187000,
-                "yearly range": 102000
-            },
-            "BEV_S1_2024": {
-                "cost": 177650,
-                "yearly range": 102000
-            },
-            "BEV_S1_2025": {
-                "cost": 168767,
-                "yearly range": 102000
-            },
-            "Diesel_S1_2023": {
-                "cost": 85000,
-                "yearly range": 102000
-            },
-            "Diesel_S1_2024": {
-                "cost": 87550,
-                "yearly range": 102000
-            },
-            "Diesel_S1_2025": {
-                "cost": 90176,
-                "yearly range": 102000
-            },
-            "LNG_S1_2023": {
-                "cost": 100000,
-                "yearly range": 102000
-            },
-            "LNG_S1_2024": {
-                "cost": 103000,
-                "yearly range": 102000
-            },
-            "LNG_S1_2025": {
-                "cost": 106090,
-                "yearly range": 102000
-            },
-            "BEV_S2_2023": {
-                "cost": 272000,
-                "yearly range": 106000
-            },
-            "BEV_S2_2024": {
-                "cost": 258400,
-                "yearly range": 106000
-            },
-            "BEV_S2_2025": {
-                "cost": 245480,
-                "yearly range": 106000
-            },
-            "Diesel_S2_2023": {
-                "cost": 104000,
-                "yearly range": 106000
-            },
-            "Diesel_S2_2024": {
-                "cost": 107120,
-                "yearly range": 106000
-            },
-            "Diesel_S2_2025": {
-                "cost": 110333,
-                "yearly range": 106000
-            },
-            "LNG_S2_2023": {
-                "cost": 133000,
-                "yearly range": 106000
-            },
-            "LNG_S2_2024": {
-                "cost": 136990,
-                "yearly range": 106000
-            },
-            "LNG_S2_2025": {
-                "cost": 141099,
-                "yearly range": 106000
-            },
-            "BEV_S3_2023": {
-                "cost": 309090,
-                "yearly range": 73000
-            },
-            "BEV_S3_2024": {
-                "cost": 293636,
-                "yearly range": 73000
-            },
-            "BEV_S3_2025": {
-                "cost": 278954,
-                "yearly range": 73000
-            },
-            "Diesel_S3_2023": {
-                "cost": 118181,
-                "yearly range": 73000
-            },
-            "Diesel_S3_2024": {
-                "cost": 121727,
-                "yearly range": 73000
-            },
-            "Diesel_S3_2025": {
-                "cost": 125379,
-                "yearly range": 73000
-            },
-            "LNG_S3_2023": {
-                "cost": 151136,
-                "yearly range": 73000
-            },
-            "LNG_S3_2024": {
-                "cost": 155670,
-                "yearly range": 73000
-            },
-            "LNG_S3_2025": {
-                "cost": 160340,
-                "yearly range": 73000
-            },
-            "BEV_S4_2023": {
-                "cost": 395636,
-                "yearly range": 118000
-            },
-            "BEV_S4_2024": {
-                "cost": 375854,
-                "yearly range": 118000
-            },
-            "BEV_S4_2025": {
-                "cost": 357061,
-                "yearly range": 118000
-            },
-            "Diesel_S4_2023": {
-                "cost": 151272,
-                "yearly range": 118000
-            },
-            "Diesel_S4_2024": {
-                "cost": 155810,
-                "yearly range": 118000
-            },
-            "Diesel_S4_2025": {
-                "cost": 160485,
-                "yearly range": 118000
-            },
-            "LNG_S4_2023": {
-                "cost": 193454,
-                "yearly range": 118000
-            },
-            "LNG_S4_2024": {
-                "cost": 199258,
-                "yearly range": 118000
-            },
-            "LNG_S4_2025": {
-                "cost": 205235,
-                "yearly range": 118000
-            }
+        "LNG_S1_2023": {
+            "cost": 100000,
+            "size": "S1",
+            "distance": "D4",
+            "yearly range": 102000
         },
-        "2026": {
-            "BEV_S1_2023": {
-                "cost": 187000,
-                "yearly range": 102000
-            },
-            "BEV_S1_2024": {
-                "cost": 177650,
-                "yearly range": 102000
-            },
-            "BEV_S1_2025": {
-                "cost": 168767,
-                "yearly range": 102000
-            },
-            "BEV_S1_2026": {
-                "cost": 160329,
-                "yearly range": 102000
-            },
-            "Diesel_S1_2023": {
-                "cost": 85000,
-                "yearly range": 102000
-            },
-            "Diesel_S1_2024": {
-                "cost": 87550,
-                "yearly range": 102000
-            },
-            "Diesel_S1_2025": {
-                "cost": 90176,
-                "yearly range": 102000
-            },
-            "Diesel_S1_2026": {
-                "cost": 92881,
-                "yearly range": 102000
-            },
-            "LNG_S1_2023": {
-                "cost": 100000,
-                "yearly range": 102000
-            },
-            "LNG_S1_2024": {
-                "cost": 103000,
-                "yearly range": 102000
-            },
-            "LNG_S1_2025": {
-                "cost": 106090,
-                "yearly range": 102000
-            },
-            "LNG_S1_2026": {
-                "cost": 109272,
-                "yearly range": 102000
-            },
-            "BEV_S2_2023": {
-                "cost": 272000,
-                "yearly range": 106000
-            },
-            "BEV_S2_2024": {
-                "cost": 258400,
-                "yearly range": 106000
-            },
-            "BEV_S2_2025": {
-                "cost": 245480,
-                "yearly range": 106000
-            },
-            "BEV_S2_2026": {
-                "cost": 233206,
-                "yearly range": 106000
-            },
-            "Diesel_S2_2023": {
-                "cost": 104000,
-                "yearly range": 106000
-            },
-            "Diesel_S2_2024": {
-                "cost": 107120,
-                "yearly range": 106000
-            },
-            "Diesel_S2_2025": {
-                "cost": 110333,
-                "yearly range": 106000
-            },
-            "Diesel_S2_2026": {
-                "cost": 113643,
-                "yearly range": 106000
-            },
-            "LNG_S2_2023": {
-                "cost": 133000,
-                "yearly range": 106000
-            },
-            "LNG_S2_2024": {
-                "cost": 136990,
-                "yearly range": 106000
-            },
-            "LNG_S2_2025": {
-                "cost": 141099,
-                "yearly range": 106000
-            },
-            "LNG_S2_2026": {
-                "cost": 145332,
-                "yearly range": 106000
-            },
-            "BEV_S3_2023": {
-                "cost": 309090,
-                "yearly range": 73000
-            },
-            "BEV_S3_2024": {
-                "cost": 293636,
-                "yearly range": 73000
-            },
-            "BEV_S3_2025": {
-                "cost": 278954,
-                "yearly range": 73000
-            },
-            "BEV_S3_2026": {
-                "cost": 265006,
-                "yearly range": 73000
-            },
-            "Diesel_S3_2023": {
-                "cost": 118181,
-                "yearly range": 73000
-            },
-            "Diesel_S3_2024": {
-                "cost": 121727,
-                "yearly range": 73000
-            },
-            "Diesel_S3_2025": {
-                "cost": 125379,
-                "yearly range": 73000
-            },
-            "Diesel_S3_2026": {
-                "cost": 129140,
-                "yearly range": 73000
-            },
-            "LNG_S3_2023": {
-                "cost": 151136,
-                "yearly range": 73000
-            },
-            "LNG_S3_2024": {
-                "cost": 155670,
-                "yearly range": 73000
-            },
-            "LNG_S3_2025": {
-                "cost": 160340,
-                "yearly range": 73000
-            },
-            "LNG_S3_2026": {
-                "cost": 165150,
-                "yearly range": 73000
-            },
-            "BEV_S4_2023": {
-                "cost": 395636,
-                "yearly range": 118000
-            },
-            "BEV_S4_2024": {
-                "cost": 375854,
-                "yearly range": 118000
-            },
-            "BEV_S4_2025": {
-                "cost": 357061,
-                "yearly range": 118000
-            },
-            "BEV_S4_2026": {
-                "cost": 339208,
-                "yearly range": 118000
-            },
-            "Diesel_S4_2023": {
-                "cost": 151272,
-                "yearly range": 118000
-            },
-            "Diesel_S4_2024": {
-                "cost": 155810,
-                "yearly range": 118000
-            },
-            "Diesel_S4_2025": {
-                "cost": 160485,
-                "yearly range": 118000
-            },
-            "Diesel_S4_2026": {
-                "cost": 165299,
-                "yearly range": 118000
-            },
-            "LNG_S4_2023": {
-                "cost": 193454,
-                "yearly range": 118000
-            },
-            "LNG_S4_2024": {
-                "cost": 199258,
-                "yearly range": 118000
-            },
-            "LNG_S4_2025": {
-                "cost": 205235,
-                "yearly range": 118000
-            },
-            "LNG_S4_2026": {
-                "cost": 211393,
-                "yearly range": 118000
-            }
+        "BEV_S2_2023": {
+            "cost": 272000,
+            "size": "S2",
+            "distance": "D1",
+            "yearly range": 106000
         },
-        "2027": {
-            "BEV_S1_2023": {
-                "cost": 187000,
-                "yearly range": 102000
-            },
-            "BEV_S1_2024": {
-                "cost": 177650,
-                "yearly range": 102000
-            },
-            "BEV_S1_2025": {
-                "cost": 168767,
-                "yearly range": 102000
-            },
-            "BEV_S1_2026": {
-                "cost": 160329,
-                "yearly range": 102000
-            },
-            "BEV_S1_2027": {
-                "cost": 152312,
-                "yearly range": 102000
-            },
-            "Diesel_S1_2023": {
-                "cost": 85000,
-                "yearly range": 102000
-            },
-            "Diesel_S1_2024": {
-                "cost": 87550,
-                "yearly range": 102000
-            },
-            "Diesel_S1_2025": {
-                "cost": 90176,
-                "yearly range": 102000
-            },
-            "Diesel_S1_2026": {
-                "cost": 92881,
-                "yearly range": 102000
-            },
-            "Diesel_S1_2027": {
-                "cost": 95668,
-                "yearly range": 102000
-            },
-            "LNG_S1_2023": {
-                "cost": 100000,
-                "yearly range": 102000
-            },
-            "LNG_S1_2024": {
-                "cost": 103000,
-                "yearly range": 102000
-            },
-            "LNG_S1_2025": {
-                "cost": 106090,
-                "yearly range": 102000
-            },
-            "LNG_S1_2026": {
-                "cost": 109272,
-                "yearly range": 102000
-            },
-            "LNG_S1_2027": {
-                "cost": 112550,
-                "yearly range": 102000
-            },
-            "BEV_S2_2023": {
-                "cost": 272000,
-                "yearly range": 106000
-            },
-            "BEV_S2_2024": {
-                "cost": 258400,
-                "yearly range": 106000
-            },
-            "BEV_S2_2025": {
-                "cost": 245480,
-                "yearly range": 106000
-            },
-            "BEV_S2_2026": {
-                "cost": 233206,
-                "yearly range": 106000
-            },
-            "BEV_S2_2027": {
-                "cost": 221545,
-                "yearly range": 106000
-            },
-            "Diesel_S2_2023": {
-                "cost": 104000,
-                "yearly range": 106000
-            },
-            "Diesel_S2_2024": {
-                "cost": 107120,
-                "yearly range": 106000
-            },
-            "Diesel_S2_2025": {
-                "cost": 110333,
-                "yearly range": 106000
-            },
-            "Diesel_S2_2026": {
-                "cost": 113643,
-                "yearly range": 106000
-            },
-            "Diesel_S2_2027": {
-                "cost": 117052,
-                "yearly range": 106000
-            },
-            "LNG_S2_2023": {
-                "cost": 133000,
-                "yearly range": 106000
-            },
-            "LNG_S2_2024": {
-                "cost": 136990,
-                "yearly range": 106000
-            },
-            "LNG_S2_2025": {
-                "cost": 141099,
-                "yearly range": 106000
-            },
-            "LNG_S2_2026": {
-                "cost": 145332,
-                "yearly range": 106000
-            },
-            "LNG_S2_2027": {
-                "cost": 149692,
-                "yearly range": 106000
-            },
-            "BEV_S3_2023": {
-                "cost": 309090,
-                "yearly range": 73000
-            },
-            "BEV_S3_2024": {
-                "cost": 293636,
-                "yearly range": 73000
-            },
-            "BEV_S3_2025": {
-                "cost": 278954,
-                "yearly range": 73000
-            },
-            "BEV_S3_2026": {
-                "cost": 265006,
-                "yearly range": 73000
-            },
-            "BEV_S3_2027": {
-                "cost": 251756,
-                "yearly range": 73000
-            },
-            "Diesel_S3_2023": {
-                "cost": 118181,
-                "yearly range": 73000
-            },
-            "Diesel_S3_2024": {
-                "cost": 121727,
-                "yearly range": 73000
-            },
-            "Diesel_S3_2025": {
-                "cost": 125379,
-                "yearly range": 73000
-            },
-            "Diesel_S3_2026": {
-                "cost": 129140,
-                "yearly range": 73000
-            },
-            "Diesel_S3_2027": {
-                "cost": 133014,
-                "yearly range": 73000
-            },
-            "LNG_S3_2023": {
-                "cost": 151136,
-                "yearly range": 73000
-            },
-            "LNG_S3_2024": {
-                "cost": 155670,
-                "yearly range": 73000
-            },
-            "LNG_S3_2025": {
-                "cost": 160340,
-                "yearly range": 73000
-            },
-            "LNG_S3_2026": {
-                "cost": 165150,
-                "yearly range": 73000
-            },
-            "LNG_S3_2027": {
-                "cost": 170105,
-                "yearly range": 73000
-            },
-            "BEV_S4_2023": {
-                "cost": 395636,
-                "yearly range": 118000
-            },
-            "BEV_S4_2024": {
-                "cost": 375854,
-                "yearly range": 118000
-            },
-            "BEV_S4_2025": {
-                "cost": 357061,
-                "yearly range": 118000
-            },
-            "BEV_S4_2026": {
-                "cost": 339208,
-                "yearly range": 118000
-            },
-            "BEV_S4_2027": {
-                "cost": 322248,
-                "yearly range": 118000
-            },
-            "Diesel_S4_2023": {
-                "cost": 151272,
-                "yearly range": 118000
-            },
-            "Diesel_S4_2024": {
-                "cost": 155810,
-                "yearly range": 118000
-            },
-            "Diesel_S4_2025": {
-                "cost": 160485,
-                "yearly range": 118000
-            },
-            "Diesel_S4_2026": {
-                "cost": 165299,
-                "yearly range": 118000
-            },
-            "Diesel_S4_2027": {
-                "cost": 170258,
-                "yearly range": 118000
-            },
-            "LNG_S4_2023": {
-                "cost": 193454,
-                "yearly range": 118000
-            },
-            "LNG_S4_2024": {
-                "cost": 199258,
-                "yearly range": 118000
-            },
-            "LNG_S4_2025": {
-                "cost": 205235,
-                "yearly range": 118000
-            },
-            "LNG_S4_2026": {
-                "cost": 211393,
-                "yearly range": 118000
-            },
-            "LNG_S4_2027": {
-                "cost": 217734,
-                "yearly range": 118000
-            }
+        "Diesel_S2_2023": {
+            "cost": 104000,
+            "size": "S2",
+            "distance": "D4",
+            "yearly range": 106000
         },
-        "2028": {
-            "BEV_S1_2023": {
-                "cost": 187000,
-                "yearly range": 102000
-            },
-            "BEV_S1_2024": {
-                "cost": 177650,
-                "yearly range": 102000
-            },
-            "BEV_S1_2025": {
-                "cost": 168767,
-                "yearly range": 102000
-            },
-            "BEV_S1_2026": {
-                "cost": 160329,
-                "yearly range": 102000
-            },
-            "BEV_S1_2027": {
-                "cost": 152312,
-                "yearly range": 102000
-            },
-            "BEV_S1_2028": {
-                "cost": 144697,
-                "yearly range": 102000
-            },
-            "Diesel_S1_2023": {
-                "cost": 85000,
-                "yearly range": 102000
-            },
-            "Diesel_S1_2024": {
-                "cost": 87550,
-                "yearly range": 102000
-            },
-            "Diesel_S1_2025": {
-                "cost": 90176,
-                "yearly range": 102000
-            },
-            "Diesel_S1_2026": {
-                "cost": 92881,
-                "yearly range": 102000
-            },
-            "Diesel_S1_2027": {
-                "cost": 95668,
-                "yearly range": 102000
-            },
-            "Diesel_S1_2028": {
-                "cost": 98538,
-                "yearly range": 102000
-            },
-            "LNG_S1_2023": {
-                "cost": 100000,
-                "yearly range": 102000
-            },
-            "LNG_S1_2024": {
-                "cost": 103000,
-                "yearly range": 102000
-            },
-            "LNG_S1_2025": {
-                "cost": 106090,
-                "yearly range": 102000
-            },
-            "LNG_S1_2026": {
-                "cost": 109272,
-                "yearly range": 102000
-            },
-            "LNG_S1_2027": {
-                "cost": 112550,
-                "yearly range": 102000
-            },
-            "LNG_S1_2028": {
-                "cost": 115927,
-                "yearly range": 102000
-            },
-            "BEV_S2_2023": {
-                "cost": 272000,
-                "yearly range": 106000
-            },
-            "BEV_S2_2024": {
-                "cost": 258400,
-                "yearly range": 106000
-            },
-            "BEV_S2_2025": {
-                "cost": 245480,
-                "yearly range": 106000
-            },
-            "BEV_S2_2026": {
-                "cost": 233206,
-                "yearly range": 106000
-            },
-            "BEV_S2_2027": {
-                "cost": 221545,
-                "yearly range": 106000
-            },
-            "BEV_S2_2028": {
-                "cost": 210468,
-                "yearly range": 106000
-            },
-            "Diesel_S2_2023": {
-                "cost": 104000,
-                "yearly range": 106000
-            },
-            "Diesel_S2_2024": {
-                "cost": 107120,
-                "yearly range": 106000
-            },
-            "Diesel_S2_2025": {
-                "cost": 110333,
-                "yearly range": 106000
-            },
-            "Diesel_S2_2026": {
-                "cost": 113643,
-                "yearly range": 106000
-            },
-            "Diesel_S2_2027": {
-                "cost": 117052,
-                "yearly range": 106000
-            },
-            "Diesel_S2_2028": {
-                "cost": 120564,
-                "yearly range": 106000
-            },
-            "LNG_S2_2023": {
-                "cost": 133000,
-                "yearly range": 106000
-            },
-            "LNG_S2_2024": {
-                "cost": 136990,
-                "yearly range": 106000
-            },
-            "LNG_S2_2025": {
-                "cost": 141099,
-                "yearly range": 106000
-            },
-            "LNG_S2_2026": {
-                "cost": 145332,
-                "yearly range": 106000
-            },
-            "LNG_S2_2027": {
-                "cost": 149692,
-                "yearly range": 106000
-            },
-            "LNG_S2_2028": {
-                "cost": 154183,
-                "yearly range": 106000
-            },
-            "BEV_S3_2023": {
-                "cost": 309090,
-                "yearly range": 73000
-            },
-            "BEV_S3_2024": {
-                "cost": 293636,
-                "yearly range": 73000
-            },
-            "BEV_S3_2025": {
-                "cost": 278954,
-                "yearly range": 73000
-            },
-            "BEV_S3_2026": {
-                "cost": 265006,
-                "yearly range": 73000
-            },
-            "BEV_S3_2027": {
-                "cost": 251756,
-                "yearly range": 73000
-            },
-            "BEV_S3_2028": {
-                "cost": 239168,
-                "yearly range": 73000
-            },
-            "Diesel_S3_2023": {
-                "cost": 118181,
-                "yearly range": 73000
-            },
-            "Diesel_S3_2024": {
-                "cost": 121727,
-                "yearly range": 73000
-            },
-            "Diesel_S3_2025": {
-                "cost": 125379,
-                "yearly range": 73000
-            },
-            "Diesel_S3_2026": {
-                "cost": 129140,
-                "yearly range": 73000
-            },
-            "Diesel_S3_2027": {
-                "cost": 133014,
-                "yearly range": 73000
-            },
-            "Diesel_S3_2028": {
-                "cost": 137005,
-                "yearly range": 73000
-            },
-            "LNG_S3_2023": {
-                "cost": 151136,
-                "yearly range": 73000
-            },
-            "LNG_S3_2024": {
-                "cost": 155670,
-                "yearly range": 73000
-            },
-            "LNG_S3_2025": {
-                "cost": 160340,
-                "yearly range": 73000
-            },
-            "LNG_S3_2026": {
-                "cost": 165150,
-                "yearly range": 73000
-            },
-            "LNG_S3_2027": {
-                "cost": 170105,
-                "yearly range": 73000
-            },
-            "LNG_S3_2028": {
-                "cost": 175208,
-                "yearly range": 73000
-            },
-            "BEV_S4_2023": {
-                "cost": 395636,
-                "yearly range": 118000
-            },
-            "BEV_S4_2024": {
-                "cost": 375854,
-                "yearly range": 118000
-            },
-            "BEV_S4_2025": {
-                "cost": 357061,
-                "yearly range": 118000
-            },
-            "BEV_S4_2026": {
-                "cost": 339208,
-                "yearly range": 118000
-            },
-            "BEV_S4_2027": {
-                "cost": 322248,
-                "yearly range": 118000
-            },
-            "BEV_S4_2028": {
-                "cost": 306135,
-                "yearly range": 118000
-            },
-            "Diesel_S4_2023": {
-                "cost": 151272,
-                "yearly range": 118000
-            },
-            "Diesel_S4_2024": {
-                "cost": 155810,
-                "yearly range": 118000
-            },
-            "Diesel_S4_2025": {
-                "cost": 160485,
-                "yearly range": 118000
-            },
-            "Diesel_S4_2026": {
-                "cost": 165299,
-                "yearly range": 118000
-            },
-            "Diesel_S4_2027": {
-                "cost": 170258,
-                "yearly range": 118000
-            },
-            "Diesel_S4_2028": {
-                "cost": 175366,
-                "yearly range": 118000
-            },
-            "LNG_S4_2023": {
-                "cost": 193454,
-                "yearly range": 118000
-            },
-            "LNG_S4_2024": {
-                "cost": 199258,
-                "yearly range": 118000
-            },
-            "LNG_S4_2025": {
-                "cost": 205235,
-                "yearly range": 118000
-            },
-            "LNG_S4_2026": {
-                "cost": 211393,
-                "yearly range": 118000
-            },
-            "LNG_S4_2027": {
-                "cost": 217734,
-                "yearly range": 118000
-            },
-            "LNG_S4_2028": {
-                "cost": 224266,
-                "yearly range": 118000
-            }
+        "LNG_S2_2023": {
+            "cost": 133000,
+            "size": "S2",
+            "distance": "D4",
+            "yearly range": 106000
         },
-        "2029": {
-            "BEV_S1_2023": {
-                "cost": 187000,
-                "yearly range": 102000
-            },
-            "BEV_S1_2024": {
-                "cost": 177650,
-                "yearly range": 102000
-            },
-            "BEV_S1_2025": {
-                "cost": 168767,
-                "yearly range": 102000
-            },
-            "BEV_S1_2026": {
-                "cost": 160329,
-                "yearly range": 102000
-            },
-            "BEV_S1_2027": {
-                "cost": 152312,
-                "yearly range": 102000
-            },
-            "BEV_S1_2028": {
-                "cost": 144697,
-                "yearly range": 102000
-            },
-            "BEV_S1_2029": {
-                "cost": 137462,
-                "yearly range": 102000
-            },
-            "Diesel_S1_2023": {
-                "cost": 85000,
-                "yearly range": 102000
-            },
-            "Diesel_S1_2024": {
-                "cost": 87550,
-                "yearly range": 102000
-            },
-            "Diesel_S1_2025": {
-                "cost": 90176,
-                "yearly range": 102000
-            },
-            "Diesel_S1_2026": {
-                "cost": 92881,
-                "yearly range": 102000
-            },
-            "Diesel_S1_2027": {
-                "cost": 95668,
-                "yearly range": 102000
-            },
-            "Diesel_S1_2028": {
-                "cost": 98538,
-                "yearly range": 102000
-            },
-            "Diesel_S1_2029": {
-                "cost": 101494,
-                "yearly range": 102000
-            },
-            "LNG_S1_2023": {
-                "cost": 100000,
-                "yearly range": 102000
-            },
-            "LNG_S1_2024": {
-                "cost": 103000,
-                "yearly range": 102000
-            },
-            "LNG_S1_2025": {
-                "cost": 106090,
-                "yearly range": 102000
-            },
-            "LNG_S1_2026": {
-                "cost": 109272,
-                "yearly range": 102000
-            },
-            "LNG_S1_2027": {
-                "cost": 112550,
-                "yearly range": 102000
-            },
-            "LNG_S1_2028": {
-                "cost": 115927,
-                "yearly range": 102000
-            },
-            "LNG_S1_2029": {
-                "cost": 119405,
-                "yearly range": 102000
-            },
-            "BEV_S2_2023": {
-                "cost": 272000,
-                "yearly range": 106000
-            },
-            "BEV_S2_2024": {
-                "cost": 258400,
-                "yearly range": 106000
-            },
-            "BEV_S2_2025": {
-                "cost": 245480,
-                "yearly range": 106000
-            },
-            "BEV_S2_2026": {
-                "cost": 233206,
-                "yearly range": 106000
-            },
-            "BEV_S2_2027": {
-                "cost": 221545,
-                "yearly range": 106000
-            },
-            "BEV_S2_2028": {
-                "cost": 210468,
-                "yearly range": 106000
-            },
-            "BEV_S2_2029": {
-                "cost": 199944,
-                "yearly range": 106000
-            },
-            "Diesel_S2_2023": {
-                "cost": 104000,
-                "yearly range": 106000
-            },
-            "Diesel_S2_2024": {
-                "cost": 107120,
-                "yearly range": 106000
-            },
-            "Diesel_S2_2025": {
-                "cost": 110333,
-                "yearly range": 106000
-            },
-            "Diesel_S2_2026": {
-                "cost": 113643,
-                "yearly range": 106000
-            },
-            "Diesel_S2_2027": {
-                "cost": 117052,
-                "yearly range": 106000
-            },
-            "Diesel_S2_2028": {
-                "cost": 120564,
-                "yearly range": 106000
-            },
-            "Diesel_S2_2029": {
-                "cost": 124181,
-                "yearly range": 106000
-            },
-            "LNG_S2_2023": {
-                "cost": 133000,
-                "yearly range": 106000
-            },
-            "LNG_S2_2024": {
-                "cost": 136990,
-                "yearly range": 106000
-            },
-            "LNG_S2_2025": {
-                "cost": 141099,
-                "yearly range": 106000
-            },
-            "LNG_S2_2026": {
-                "cost": 145332,
-                "yearly range": 106000
-            },
-            "LNG_S2_2027": {
-                "cost": 149692,
-                "yearly range": 106000
-            },
-            "LNG_S2_2028": {
-                "cost": 154183,
-                "yearly range": 106000
-            },
-            "LNG_S2_2029": {
-                "cost": 158808,
-                "yearly range": 106000
-            },
-            "BEV_S3_2023": {
-                "cost": 309090,
-                "yearly range": 73000
-            },
-            "BEV_S3_2024": {
-                "cost": 293636,
-                "yearly range": 73000
-            },
-            "BEV_S3_2025": {
-                "cost": 278954,
-                "yearly range": 73000
-            },
-            "BEV_S3_2026": {
-                "cost": 265006,
-                "yearly range": 73000
-            },
-            "BEV_S3_2027": {
-                "cost": 251756,
-                "yearly range": 73000
-            },
-            "BEV_S3_2028": {
-                "cost": 239168,
-                "yearly range": 73000
-            },
-            "BEV_S3_2029": {
-                "cost": 227210,
-                "yearly range": 73000
-            },
-            "Diesel_S3_2023": {
-                "cost": 118181,
-                "yearly range": 73000
-            },
-            "Diesel_S3_2024": {
-                "cost": 121727,
-                "yearly range": 73000
-            },
-            "Diesel_S3_2025": {
-                "cost": 125379,
-                "yearly range": 73000
-            },
-            "Diesel_S3_2026": {
-                "cost": 129140,
-                "yearly range": 73000
-            },
-            "Diesel_S3_2027": {
-                "cost": 133014,
-                "yearly range": 73000
-            },
-            "Diesel_S3_2028": {
-                "cost": 137005,
-                "yearly range": 73000
-            },
-            "Diesel_S3_2029": {
-                "cost": 141115,
-                "yearly range": 73000
-            },
-            "LNG_S3_2023": {
-                "cost": 151136,
-                "yearly range": 73000
-            },
-            "LNG_S3_2024": {
-                "cost": 155670,
-                "yearly range": 73000
-            },
-            "LNG_S3_2025": {
-                "cost": 160340,
-                "yearly range": 73000
-            },
-            "LNG_S3_2026": {
-                "cost": 165150,
-                "yearly range": 73000
-            },
-            "LNG_S3_2027": {
-                "cost": 170105,
-                "yearly range": 73000
-            },
-            "LNG_S3_2028": {
-                "cost": 175208,
-                "yearly range": 73000
-            },
-            "LNG_S3_2029": {
-                "cost": 180464,
-                "yearly range": 73000
-            },
-            "BEV_S4_2023": {
-                "cost": 395636,
-                "yearly range": 118000
-            },
-            "BEV_S4_2024": {
-                "cost": 375854,
-                "yearly range": 118000
-            },
-            "BEV_S4_2025": {
-                "cost": 357061,
-                "yearly range": 118000
-            },
-            "BEV_S4_2026": {
-                "cost": 339208,
-                "yearly range": 118000
-            },
-            "BEV_S4_2027": {
-                "cost": 322248,
-                "yearly range": 118000
-            },
-            "BEV_S4_2028": {
-                "cost": 306135,
-                "yearly range": 118000
-            },
-            "BEV_S4_2029": {
-                "cost": 290829,
-                "yearly range": 118000
-            },
-            "Diesel_S4_2023": {
-                "cost": 151272,
-                "yearly range": 118000
-            },
-            "Diesel_S4_2024": {
-                "cost": 155810,
-                "yearly range": 118000
-            },
-            "Diesel_S4_2025": {
-                "cost": 160485,
-                "yearly range": 118000
-            },
-            "Diesel_S4_2026": {
-                "cost": 165299,
-                "yearly range": 118000
-            },
-            "Diesel_S4_2027": {
-                "cost": 170258,
-                "yearly range": 118000
-            },
-            "Diesel_S4_2028": {
-                "cost": 175366,
-                "yearly range": 118000
-            },
-            "Diesel_S4_2029": {
-                "cost": 180627,
-                "yearly range": 118000
-            },
-            "LNG_S4_2023": {
-                "cost": 193454,
-                "yearly range": 118000
-            },
-            "LNG_S4_2024": {
-                "cost": 199258,
-                "yearly range": 118000
-            },
-            "LNG_S4_2025": {
-                "cost": 205235,
-                "yearly range": 118000
-            },
-            "LNG_S4_2026": {
-                "cost": 211393,
-                "yearly range": 118000
-            },
-            "LNG_S4_2027": {
-                "cost": 217734,
-                "yearly range": 118000
-            },
-            "LNG_S4_2028": {
-                "cost": 224266,
-                "yearly range": 118000
-            },
-            "LNG_S4_2029": {
-                "cost": 230994,
-                "yearly range": 118000
-            }
+        "BEV_S3_2023": {
+            "cost": 309090,
+            "size": "S3",
+            "distance": "D1",
+            "yearly range": 73000
         },
-        "2030": {
-            "BEV_S1_2023": {
-                "cost": 187000,
-                "yearly range": 102000
-            },
-            "BEV_S1_2024": {
-                "cost": 177650,
-                "yearly range": 102000
-            },
-            "BEV_S1_2025": {
-                "cost": 168767,
-                "yearly range": 102000
-            },
-            "BEV_S1_2026": {
-                "cost": 160329,
-                "yearly range": 102000
-            },
-            "BEV_S1_2027": {
-                "cost": 152312,
-                "yearly range": 102000
-            },
-            "BEV_S1_2028": {
-                "cost": 144697,
-                "yearly range": 102000
-            },
-            "BEV_S1_2029": {
-                "cost": 137462,
-                "yearly range": 102000
-            },
-            "BEV_S1_2030": {
-                "cost": 130589,
-                "yearly range": 102000
-            },
-            "Diesel_S1_2023": {
-                "cost": 85000,
-                "yearly range": 102000
-            },
-            "Diesel_S1_2024": {
-                "cost": 87550,
-                "yearly range": 102000
-            },
-            "Diesel_S1_2025": {
-                "cost": 90176,
-                "yearly range": 102000
-            },
-            "Diesel_S1_2026": {
-                "cost": 92881,
-                "yearly range": 102000
-            },
-            "Diesel_S1_2027": {
-                "cost": 95668,
-                "yearly range": 102000
-            },
-            "Diesel_S1_2028": {
-                "cost": 98538,
-                "yearly range": 102000
-            },
-            "Diesel_S1_2029": {
-                "cost": 101494,
-                "yearly range": 102000
-            },
-            "Diesel_S1_2030": {
-                "cost": 104539,
-                "yearly range": 102000
-            },
-            "LNG_S1_2023": {
-                "cost": 100000,
-                "yearly range": 102000
-            },
-            "LNG_S1_2024": {
-                "cost": 103000,
-                "yearly range": 102000
-            },
-            "LNG_S1_2025": {
-                "cost": 106090,
-                "yearly range": 102000
-            },
-            "LNG_S1_2026": {
-                "cost": 109272,
-                "yearly range": 102000
-            },
-            "LNG_S1_2027": {
-                "cost": 112550,
-                "yearly range": 102000
-            },
-            "LNG_S1_2028": {
-                "cost": 115927,
-                "yearly range": 102000
-            },
-            "LNG_S1_2029": {
-                "cost": 119405,
-                "yearly range": 102000
-            },
-            "LNG_S1_2030": {
-                "cost": 122987,
-                "yearly range": 102000
-            },
-            "BEV_S2_2023": {
-                "cost": 272000,
-                "yearly range": 106000
-            },
-            "BEV_S2_2024": {
-                "cost": 258400,
-                "yearly range": 106000
-            },
-            "BEV_S2_2025": {
-                "cost": 245480,
-                "yearly range": 106000
-            },
-            "BEV_S2_2026": {
-                "cost": 233206,
-                "yearly range": 106000
-            },
-            "BEV_S2_2027": {
-                "cost": 221545,
-                "yearly range": 106000
-            },
-            "BEV_S2_2028": {
-                "cost": 210468,
-                "yearly range": 106000
-            },
-            "BEV_S2_2029": {
-                "cost": 199944,
-                "yearly range": 106000
-            },
-            "BEV_S2_2030": {
-                "cost": 189947,
-                "yearly range": 106000
-            },
-            "Diesel_S2_2023": {
-                "cost": 104000,
-                "yearly range": 106000
-            },
-            "Diesel_S2_2024": {
-                "cost": 107120,
-                "yearly range": 106000
-            },
-            "Diesel_S2_2025": {
-                "cost": 110333,
-                "yearly range": 106000
-            },
-            "Diesel_S2_2026": {
-                "cost": 113643,
-                "yearly range": 106000
-            },
-            "Diesel_S2_2027": {
-                "cost": 117052,
-                "yearly range": 106000
-            },
-            "Diesel_S2_2028": {
-                "cost": 120564,
-                "yearly range": 106000
-            },
-            "Diesel_S2_2029": {
-                "cost": 124181,
-                "yearly range": 106000
-            },
-            "Diesel_S2_2030": {
-                "cost": 127906,
-                "yearly range": 106000
-            },
-            "LNG_S2_2023": {
-                "cost": 133000,
-                "yearly range": 106000
-            },
-            "LNG_S2_2024": {
-                "cost": 136990,
-                "yearly range": 106000
-            },
-            "LNG_S2_2025": {
-                "cost": 141099,
-                "yearly range": 106000
-            },
-            "LNG_S2_2026": {
-                "cost": 145332,
-                "yearly range": 106000
-            },
-            "LNG_S2_2027": {
-                "cost": 149692,
-                "yearly range": 106000
-            },
-            "LNG_S2_2028": {
-                "cost": 154183,
-                "yearly range": 106000
-            },
-            "LNG_S2_2029": {
-                "cost": 158808,
-                "yearly range": 106000
-            },
-            "LNG_S2_2030": {
-                "cost": 163573,
-                "yearly range": 106000
-            },
-            "BEV_S3_2023": {
-                "cost": 309090,
-                "yearly range": 73000
-            },
-            "BEV_S3_2024": {
-                "cost": 293636,
-                "yearly range": 73000
-            },
-            "BEV_S3_2025": {
-                "cost": 278954,
-                "yearly range": 73000
-            },
-            "BEV_S3_2026": {
-                "cost": 265006,
-                "yearly range": 73000
-            },
-            "BEV_S3_2027": {
-                "cost": 251756,
-                "yearly range": 73000
-            },
-            "BEV_S3_2028": {
-                "cost": 239168,
-                "yearly range": 73000
-            },
-            "BEV_S3_2029": {
-                "cost": 227210,
-                "yearly range": 73000
-            },
-            "BEV_S3_2030": {
-                "cost": 215849,
-                "yearly range": 73000
-            },
-            "Diesel_S3_2023": {
-                "cost": 118181,
-                "yearly range": 73000
-            },
-            "Diesel_S3_2024": {
-                "cost": 121727,
-                "yearly range": 73000
-            },
-            "Diesel_S3_2025": {
-                "cost": 125379,
-                "yearly range": 73000
-            },
-            "Diesel_S3_2026": {
-                "cost": 129140,
-                "yearly range": 73000
-            },
-            "Diesel_S3_2027": {
-                "cost": 133014,
-                "yearly range": 73000
-            },
-            "Diesel_S3_2028": {
-                "cost": 137005,
-                "yearly range": 73000
-            },
-            "Diesel_S3_2029": {
-                "cost": 141115,
-                "yearly range": 73000
-            },
-            "Diesel_S3_2030": {
-                "cost": 145348,
-                "yearly range": 73000
-            },
-            "LNG_S3_2023": {
-                "cost": 151136,
-                "yearly range": 73000
-            },
-            "LNG_S3_2024": {
-                "cost": 155670,
-                "yearly range": 73000
-            },
-            "LNG_S3_2025": {
-                "cost": 160340,
-                "yearly range": 73000
-            },
-            "LNG_S3_2026": {
-                "cost": 165150,
-                "yearly range": 73000
-            },
-            "LNG_S3_2027": {
-                "cost": 170105,
-                "yearly range": 73000
-            },
-            "LNG_S3_2028": {
-                "cost": 175208,
-                "yearly range": 73000
-            },
-            "LNG_S3_2029": {
-                "cost": 180464,
-                "yearly range": 73000
-            },
-            "LNG_S3_2030": {
-                "cost": 185878,
-                "yearly range": 73000
-            },
-            "BEV_S4_2023": {
-                "cost": 395636,
-                "yearly range": 118000
-            },
-            "BEV_S4_2024": {
-                "cost": 375854,
-                "yearly range": 118000
-            },
-            "BEV_S4_2025": {
-                "cost": 357061,
-                "yearly range": 118000
-            },
-            "BEV_S4_2026": {
-                "cost": 339208,
-                "yearly range": 118000
-            },
-            "BEV_S4_2027": {
-                "cost": 322248,
-                "yearly range": 118000
-            },
-            "BEV_S4_2028": {
-                "cost": 306135,
-                "yearly range": 118000
-            },
-            "BEV_S4_2029": {
-                "cost": 290829,
-                "yearly range": 118000
-            },
-            "BEV_S4_2030": {
-                "cost": 276287,
-                "yearly range": 118000
-            },
-            "Diesel_S4_2023": {
-                "cost": 151272,
-                "yearly range": 118000
-            },
-            "Diesel_S4_2024": {
-                "cost": 155810,
-                "yearly range": 118000
-            },
-            "Diesel_S4_2025": {
-                "cost": 160485,
-                "yearly range": 118000
-            },
-            "Diesel_S4_2026": {
-                "cost": 165299,
-                "yearly range": 118000
-            },
-            "Diesel_S4_2027": {
-                "cost": 170258,
-                "yearly range": 118000
-            },
-            "Diesel_S4_2028": {
-                "cost": 175366,
-                "yearly range": 118000
-            },
-            "Diesel_S4_2029": {
-                "cost": 180627,
-                "yearly range": 118000
-            },
-            "Diesel_S4_2030": {
-                "cost": 186046,
-                "yearly range": 118000
-            },
-            "LNG_S4_2023": {
-                "cost": 193454,
-                "yearly range": 118000
-            },
-            "LNG_S4_2024": {
-                "cost": 199258,
-                "yearly range": 118000
-            },
-            "LNG_S4_2025": {
-                "cost": 205235,
-                "yearly range": 118000
-            },
-            "LNG_S4_2026": {
-                "cost": 211393,
-                "yearly range": 118000
-            },
-            "LNG_S4_2027": {
-                "cost": 217734,
-                "yearly range": 118000
-            },
-            "LNG_S4_2028": {
-                "cost": 224266,
-                "yearly range": 118000
-            },
-            "LNG_S4_2029": {
-                "cost": 230994,
-                "yearly range": 118000
-            },
-            "LNG_S4_2030": {
-                "cost": 237924,
-                "yearly range": 118000
-            }
+        "Diesel_S3_2023": {
+            "cost": 118181,
+            "size": "S3",
+            "distance": "D4",
+            "yearly range": 73000
         },
-        "2031": {
-            "BEV_S1_2023": {
-                "cost": 187000,
-                "yearly range": 102000
-            },
-            "BEV_S1_2024": {
-                "cost": 177650,
-                "yearly range": 102000
-            },
-            "BEV_S1_2025": {
-                "cost": 168767,
-                "yearly range": 102000
-            },
-            "BEV_S1_2026": {
-                "cost": 160329,
-                "yearly range": 102000
-            },
-            "BEV_S1_2027": {
-                "cost": 152312,
-                "yearly range": 102000
-            },
-            "BEV_S1_2028": {
-                "cost": 144697,
-                "yearly range": 102000
-            },
-            "BEV_S1_2029": {
-                "cost": 137462,
-                "yearly range": 102000
-            },
-            "BEV_S1_2030": {
-                "cost": 130589,
-                "yearly range": 102000
-            },
-            "BEV_S1_2031": {
-                "cost": 130589,
-                "yearly range": 102000
-            },
-            "Diesel_S1_2023": {
-                "cost": 85000,
-                "yearly range": 102000
-            },
-            "Diesel_S1_2024": {
-                "cost": 87550,
-                "yearly range": 102000
-            },
-            "Diesel_S1_2025": {
-                "cost": 90176,
-                "yearly range": 102000
-            },
-            "Diesel_S1_2026": {
-                "cost": 92881,
-                "yearly range": 102000
-            },
-            "Diesel_S1_2027": {
-                "cost": 95668,
-                "yearly range": 102000
-            },
-            "Diesel_S1_2028": {
-                "cost": 98538,
-                "yearly range": 102000
-            },
-            "Diesel_S1_2029": {
-                "cost": 101494,
-                "yearly range": 102000
-            },
-            "Diesel_S1_2030": {
-                "cost": 104539,
-                "yearly range": 102000
-            },
-            "Diesel_S1_2031": {
-                "cost": 107675,
-                "yearly range": 102000
-            },
-            "LNG_S1_2023": {
-                "cost": 100000,
-                "yearly range": 102000
-            },
-            "LNG_S1_2024": {
-                "cost": 103000,
-                "yearly range": 102000
-            },
-            "LNG_S1_2025": {
-                "cost": 106090,
-                "yearly range": 102000
-            },
-            "LNG_S1_2026": {
-                "cost": 109272,
-                "yearly range": 102000
-            },
-            "LNG_S1_2027": {
-                "cost": 112550,
-                "yearly range": 102000
-            },
-            "LNG_S1_2028": {
-                "cost": 115927,
-                "yearly range": 102000
-            },
-            "LNG_S1_2029": {
-                "cost": 119405,
-                "yearly range": 102000
-            },
-            "LNG_S1_2030": {
-                "cost": 122987,
-                "yearly range": 102000
-            },
-            "LNG_S1_2031": {
-                "cost": 126677,
-                "yearly range": 102000
-            },
-            "BEV_S2_2023": {
-                "cost": 272000,
-                "yearly range": 106000
-            },
-            "BEV_S2_2024": {
-                "cost": 258400,
-                "yearly range": 106000
-            },
-            "BEV_S2_2025": {
-                "cost": 245480,
-                "yearly range": 106000
-            },
-            "BEV_S2_2026": {
-                "cost": 233206,
-                "yearly range": 106000
-            },
-            "BEV_S2_2027": {
-                "cost": 221545,
-                "yearly range": 106000
-            },
-            "BEV_S2_2028": {
-                "cost": 210468,
-                "yearly range": 106000
-            },
-            "BEV_S2_2029": {
-                "cost": 199944,
-                "yearly range": 106000
-            },
-            "BEV_S2_2030": {
-                "cost": 189947,
-                "yearly range": 106000
-            },
-            "BEV_S2_2031": {
-                "cost": 189947,
-                "yearly range": 106000
-            },
-            "Diesel_S2_2023": {
-                "cost": 104000,
-                "yearly range": 106000
-            },
-            "Diesel_S2_2024": {
-                "cost": 107120,
-                "yearly range": 106000
-            },
-            "Diesel_S2_2025": {
-                "cost": 110333,
-                "yearly range": 106000
-            },
-            "Diesel_S2_2026": {
-                "cost": 113643,
-                "yearly range": 106000
-            },
-            "Diesel_S2_2027": {
-                "cost": 117052,
-                "yearly range": 106000
-            },
-            "Diesel_S2_2028": {
-                "cost": 120564,
-                "yearly range": 106000
-            },
-            "Diesel_S2_2029": {
-                "cost": 124181,
-                "yearly range": 106000
-            },
-            "Diesel_S2_2030": {
-                "cost": 127906,
-                "yearly range": 106000
-            },
-            "Diesel_S2_2031": {
-                "cost": 131744,
-                "yearly range": 106000
-            },
-            "LNG_S2_2023": {
-                "cost": 133000,
-                "yearly range": 106000
-            },
-            "LNG_S2_2024": {
-                "cost": 136990,
-                "yearly range": 106000
-            },
-            "LNG_S2_2025": {
-                "cost": 141099,
-                "yearly range": 106000
-            },
-            "LNG_S2_2026": {
-                "cost": 145332,
-                "yearly range": 106000
-            },
-            "LNG_S2_2027": {
-                "cost": 149692,
-                "yearly range": 106000
-            },
-            "LNG_S2_2028": {
-                "cost": 154183,
-                "yearly range": 106000
-            },
-            "LNG_S2_2029": {
-                "cost": 158808,
-                "yearly range": 106000
-            },
-            "LNG_S2_2030": {
-                "cost": 163573,
-                "yearly range": 106000
-            },
-            "LNG_S2_2031": {
-                "cost": 168480,
-                "yearly range": 106000
-            },
-            "BEV_S3_2023": {
-                "cost": 309090,
-                "yearly range": 73000
-            },
-            "BEV_S3_2024": {
-                "cost": 293636,
-                "yearly range": 73000
-            },
-            "BEV_S3_2025": {
-                "cost": 278954,
-                "yearly range": 73000
-            },
-            "BEV_S3_2026": {
-                "cost": 265006,
-                "yearly range": 73000
-            },
-            "BEV_S3_2027": {
-                "cost": 251756,
-                "yearly range": 73000
-            },
-            "BEV_S3_2028": {
-                "cost": 239168,
-                "yearly range": 73000
-            },
-            "BEV_S3_2029": {
-                "cost": 227210,
-                "yearly range": 73000
-            },
-            "BEV_S3_2030": {
-                "cost": 215849,
-                "yearly range": 73000
-            },
-            "BEV_S3_2031": {
-                "cost": 215849,
-                "yearly range": 73000
-            },
-            "Diesel_S3_2023": {
-                "cost": 118181,
-                "yearly range": 73000
-            },
-            "Diesel_S3_2024": {
-                "cost": 121727,
-                "yearly range": 73000
-            },
-            "Diesel_S3_2025": {
-                "cost": 125379,
-                "yearly range": 73000
-            },
-            "Diesel_S3_2026": {
-                "cost": 129140,
-                "yearly range": 73000
-            },
-            "Diesel_S3_2027": {
-                "cost": 133014,
-                "yearly range": 73000
-            },
-            "Diesel_S3_2028": {
-                "cost": 137005,
-                "yearly range": 73000
-            },
-            "Diesel_S3_2029": {
-                "cost": 141115,
-                "yearly range": 73000
-            },
-            "Diesel_S3_2030": {
-                "cost": 145348,
-                "yearly range": 73000
-            },
-            "Diesel_S3_2031": {
-                "cost": 149709,
-                "yearly range": 73000
-            },
-            "LNG_S3_2023": {
-                "cost": 151136,
-                "yearly range": 73000
-            },
-            "LNG_S3_2024": {
-                "cost": 155670,
-                "yearly range": 73000
-            },
-            "LNG_S3_2025": {
-                "cost": 160340,
-                "yearly range": 73000
-            },
-            "LNG_S3_2026": {
-                "cost": 165150,
-                "yearly range": 73000
-            },
-            "LNG_S3_2027": {
-                "cost": 170105,
-                "yearly range": 73000
-            },
-            "LNG_S3_2028": {
-                "cost": 175208,
-                "yearly range": 73000
-            },
-            "LNG_S3_2029": {
-                "cost": 180464,
-                "yearly range": 73000
-            },
-            "LNG_S3_2030": {
-                "cost": 185878,
-                "yearly range": 73000
-            },
-            "LNG_S3_2031": {
-                "cost": 191455,
-                "yearly range": 73000
-            },
-            "BEV_S4_2023": {
-                "cost": 395636,
-                "yearly range": 118000
-            },
-            "BEV_S4_2024": {
-                "cost": 375854,
-                "yearly range": 118000
-            },
-            "BEV_S4_2025": {
-                "cost": 357061,
-                "yearly range": 118000
-            },
-            "BEV_S4_2026": {
-                "cost": 339208,
-                "yearly range": 118000
-            },
-            "BEV_S4_2027": {
-                "cost": 322248,
-                "yearly range": 118000
-            },
-            "BEV_S4_2028": {
-                "cost": 306135,
-                "yearly range": 118000
-            },
-            "BEV_S4_2029": {
-                "cost": 290829,
-                "yearly range": 118000
-            },
-            "BEV_S4_2030": {
-                "cost": 276287,
-                "yearly range": 118000
-            },
-            "BEV_S4_2031": {
-                "cost": 276287,
-                "yearly range": 118000
-            },
-            "Diesel_S4_2023": {
-                "cost": 151272,
-                "yearly range": 118000
-            },
-            "Diesel_S4_2024": {
-                "cost": 155810,
-                "yearly range": 118000
-            },
-            "Diesel_S4_2025": {
-                "cost": 160485,
-                "yearly range": 118000
-            },
-            "Diesel_S4_2026": {
-                "cost": 165299,
-                "yearly range": 118000
-            },
-            "Diesel_S4_2027": {
-                "cost": 170258,
-                "yearly range": 118000
-            },
-            "Diesel_S4_2028": {
-                "cost": 175366,
-                "yearly range": 118000
-            },
-            "Diesel_S4_2029": {
-                "cost": 180627,
-                "yearly range": 118000
-            },
-            "Diesel_S4_2030": {
-                "cost": 186046,
-                "yearly range": 118000
-            },
-            "Diesel_S4_2031": {
-                "cost": 191627,
-                "yearly range": 118000
-            },
-            "LNG_S4_2023": {
-                "cost": 193454,
-                "yearly range": 118000
-            },
-            "LNG_S4_2024": {
-                "cost": 199258,
-                "yearly range": 118000
-            },
-            "LNG_S4_2025": {
-                "cost": 205235,
-                "yearly range": 118000
-            },
-            "LNG_S4_2026": {
-                "cost": 211393,
-                "yearly range": 118000
-            },
-            "LNG_S4_2027": {
-                "cost": 217734,
-                "yearly range": 118000
-            },
-            "LNG_S4_2028": {
-                "cost": 224266,
-                "yearly range": 118000
-            },
-            "LNG_S4_2029": {
-                "cost": 230994,
-                "yearly range": 118000
-            },
-            "LNG_S4_2030": {
-                "cost": 237924,
-                "yearly range": 118000
-            },
-            "LNG_S4_2031": {
-                "cost": 245062,
-                "yearly range": 118000
-            }
+        "LNG_S3_2023": {
+            "cost": 151136,
+            "size": "S3",
+            "distance": "D4",
+            "yearly range": 73000
         },
-        "2032": {
-            "BEV_S1_2023": {
-                "cost": 187000,
-                "yearly range": 102000
-            },
-            "BEV_S1_2024": {
-                "cost": 177650,
-                "yearly range": 102000
-            },
-            "BEV_S1_2025": {
-                "cost": 168767,
-                "yearly range": 102000
-            },
-            "BEV_S1_2026": {
-                "cost": 160329,
-                "yearly range": 102000
-            },
-            "BEV_S1_2027": {
-                "cost": 152312,
-                "yearly range": 102000
-            },
-            "BEV_S1_2028": {
-                "cost": 144697,
-                "yearly range": 102000
-            },
-            "BEV_S1_2029": {
-                "cost": 137462,
-                "yearly range": 102000
-            },
-            "BEV_S1_2030": {
-                "cost": 130589,
-                "yearly range": 102000
-            },
-            "BEV_S1_2031": {
-                "cost": 130589,
-                "yearly range": 102000
-            },
-            "BEV_S1_2032": {
-                "cost": 130589,
-                "yearly range": 102000
-            },
-            "Diesel_S1_2023": {
-                "cost": 85000,
-                "yearly range": 102000
-            },
-            "Diesel_S1_2024": {
-                "cost": 87550,
-                "yearly range": 102000
-            },
-            "Diesel_S1_2025": {
-                "cost": 90176,
-                "yearly range": 102000
-            },
-            "Diesel_S1_2026": {
-                "cost": 92881,
-                "yearly range": 102000
-            },
-            "Diesel_S1_2027": {
-                "cost": 95668,
-                "yearly range": 102000
-            },
-            "Diesel_S1_2028": {
-                "cost": 98538,
-                "yearly range": 102000
-            },
-            "Diesel_S1_2029": {
-                "cost": 101494,
-                "yearly range": 102000
-            },
-            "Diesel_S1_2030": {
-                "cost": 104539,
-                "yearly range": 102000
-            },
-            "Diesel_S1_2031": {
-                "cost": 107675,
-                "yearly range": 102000
-            },
-            "Diesel_S1_2032": {
-                "cost": 110905,
-                "yearly range": 102000
-            },
-            "LNG_S1_2023": {
-                "cost": 100000,
-                "yearly range": 102000
-            },
-            "LNG_S1_2024": {
-                "cost": 103000,
-                "yearly range": 102000
-            },
-            "LNG_S1_2025": {
-                "cost": 106090,
-                "yearly range": 102000
-            },
-            "LNG_S1_2026": {
-                "cost": 109272,
-                "yearly range": 102000
-            },
-            "LNG_S1_2027": {
-                "cost": 112550,
-                "yearly range": 102000
-            },
-            "LNG_S1_2028": {
-                "cost": 115927,
-                "yearly range": 102000
-            },
-            "LNG_S1_2029": {
-                "cost": 119405,
-                "yearly range": 102000
-            },
-            "LNG_S1_2030": {
-                "cost": 122987,
-                "yearly range": 102000
-            },
-            "LNG_S1_2031": {
-                "cost": 126677,
-                "yearly range": 102000
-            },
-            "LNG_S1_2032": {
-                "cost": 130477,
-                "yearly range": 102000
-            },
-            "BEV_S2_2023": {
-                "cost": 272000,
-                "yearly range": 106000
-            },
-            "BEV_S2_2024": {
-                "cost": 258400,
-                "yearly range": 106000
-            },
-            "BEV_S2_2025": {
-                "cost": 245480,
-                "yearly range": 106000
-            },
-            "BEV_S2_2026": {
-                "cost": 233206,
-                "yearly range": 106000
-            },
-            "BEV_S2_2027": {
-                "cost": 221545,
-                "yearly range": 106000
-            },
-            "BEV_S2_2028": {
-                "cost": 210468,
-                "yearly range": 106000
-            },
-            "BEV_S2_2029": {
-                "cost": 199944,
-                "yearly range": 106000
-            },
-            "BEV_S2_2030": {
-                "cost": 189947,
-                "yearly range": 106000
-            },
-            "BEV_S2_2031": {
-                "cost": 189947,
-                "yearly range": 106000
-            },
-            "BEV_S2_2032": {
-                "cost": 189947,
-                "yearly range": 106000
-            },
-            "Diesel_S2_2023": {
-                "cost": 104000,
-                "yearly range": 106000
-            },
-            "Diesel_S2_2024": {
-                "cost": 107120,
-                "yearly range": 106000
-            },
-            "Diesel_S2_2025": {
-                "cost": 110333,
-                "yearly range": 106000
-            },
-            "Diesel_S2_2026": {
-                "cost": 113643,
-                "yearly range": 106000
-            },
-            "Diesel_S2_2027": {
-                "cost": 117052,
-                "yearly range": 106000
-            },
-            "Diesel_S2_2028": {
-                "cost": 120564,
-                "yearly range": 106000
-            },
-            "Diesel_S2_2029": {
-                "cost": 124181,
-                "yearly range": 106000
-            },
-            "Diesel_S2_2030": {
-                "cost": 127906,
-                "yearly range": 106000
-            },
-            "Diesel_S2_2031": {
-                "cost": 131744,
-                "yearly range": 106000
-            },
-            "Diesel_S2_2032": {
-                "cost": 135696,
-                "yearly range": 106000
-            },
-            "LNG_S2_2023": {
-                "cost": 133000,
-                "yearly range": 106000
-            },
-            "LNG_S2_2024": {
-                "cost": 136990,
-                "yearly range": 106000
-            },
-            "LNG_S2_2025": {
-                "cost": 141099,
-                "yearly range": 106000
-            },
-            "LNG_S2_2026": {
-                "cost": 145332,
-                "yearly range": 106000
-            },
-            "LNG_S2_2027": {
-                "cost": 149692,
-                "yearly range": 106000
-            },
-            "LNG_S2_2028": {
-                "cost": 154183,
-                "yearly range": 106000
-            },
-            "LNG_S2_2029": {
-                "cost": 158808,
-                "yearly range": 106000
-            },
-            "LNG_S2_2030": {
-                "cost": 163573,
-                "yearly range": 106000
-            },
-            "LNG_S2_2031": {
-                "cost": 168480,
-                "yearly range": 106000
-            },
-            "LNG_S2_2032": {
-                "cost": 173534,
-                "yearly range": 106000
-            },
-            "BEV_S3_2023": {
-                "cost": 309090,
-                "yearly range": 73000
-            },
-            "BEV_S3_2024": {
-                "cost": 293636,
-                "yearly range": 73000
-            },
-            "BEV_S3_2025": {
-                "cost": 278954,
-                "yearly range": 73000
-            },
-            "BEV_S3_2026": {
-                "cost": 265006,
-                "yearly range": 73000
-            },
-            "BEV_S3_2027": {
-                "cost": 251756,
-                "yearly range": 73000
-            },
-            "BEV_S3_2028": {
-                "cost": 239168,
-                "yearly range": 73000
-            },
-            "BEV_S3_2029": {
-                "cost": 227210,
-                "yearly range": 73000
-            },
-            "BEV_S3_2030": {
-                "cost": 215849,
-                "yearly range": 73000
-            },
-            "BEV_S3_2031": {
-                "cost": 215849,
-                "yearly range": 73000
-            },
-            "BEV_S3_2032": {
-                "cost": 215849,
-                "yearly range": 73000
-            },
-            "Diesel_S3_2023": {
-                "cost": 118181,
-                "yearly range": 73000
-            },
-            "Diesel_S3_2024": {
-                "cost": 121727,
-                "yearly range": 73000
-            },
-            "Diesel_S3_2025": {
-                "cost": 125379,
-                "yearly range": 73000
-            },
-            "Diesel_S3_2026": {
-                "cost": 129140,
-                "yearly range": 73000
-            },
-            "Diesel_S3_2027": {
-                "cost": 133014,
-                "yearly range": 73000
-            },
-            "Diesel_S3_2028": {
-                "cost": 137005,
-                "yearly range": 73000
-            },
-            "Diesel_S3_2029": {
-                "cost": 141115,
-                "yearly range": 73000
-            },
-            "Diesel_S3_2030": {
-                "cost": 145348,
-                "yearly range": 73000
-            },
-            "Diesel_S3_2031": {
-                "cost": 149709,
-                "yearly range": 73000
-            },
-            "Diesel_S3_2032": {
-                "cost": 154200,
-                "yearly range": 73000
-            },
-            "LNG_S3_2023": {
-                "cost": 151136,
-                "yearly range": 73000
-            },
-            "LNG_S3_2024": {
-                "cost": 155670,
-                "yearly range": 73000
-            },
-            "LNG_S3_2025": {
-                "cost": 160340,
-                "yearly range": 73000
-            },
-            "LNG_S3_2026": {
-                "cost": 165150,
-                "yearly range": 73000
-            },
-            "LNG_S3_2027": {
-                "cost": 170105,
-                "yearly range": 73000
-            },
-            "LNG_S3_2028": {
-                "cost": 175208,
-                "yearly range": 73000
-            },
-            "LNG_S3_2029": {
-                "cost": 180464,
-                "yearly range": 73000
-            },
-            "LNG_S3_2030": {
-                "cost": 185878,
-                "yearly range": 73000
-            },
-            "LNG_S3_2031": {
-                "cost": 191455,
-                "yearly range": 73000
-            },
-            "LNG_S3_2032": {
-                "cost": 197198,
-                "yearly range": 73000
-            },
-            "BEV_S4_2023": {
-                "cost": 395636,
-                "yearly range": 118000
-            },
-            "BEV_S4_2024": {
-                "cost": 375854,
-                "yearly range": 118000
-            },
-            "BEV_S4_2025": {
-                "cost": 357061,
-                "yearly range": 118000
-            },
-            "BEV_S4_2026": {
-                "cost": 339208,
-                "yearly range": 118000
-            },
-            "BEV_S4_2027": {
-                "cost": 322248,
-                "yearly range": 118000
-            },
-            "BEV_S4_2028": {
-                "cost": 306135,
-                "yearly range": 118000
-            },
-            "BEV_S4_2029": {
-                "cost": 290829,
-                "yearly range": 118000
-            },
-            "BEV_S4_2030": {
-                "cost": 276287,
-                "yearly range": 118000
-            },
-            "BEV_S4_2031": {
-                "cost": 276287,
-                "yearly range": 118000
-            },
-            "BEV_S4_2032": {
-                "cost": 276287,
-                "yearly range": 118000
-            },
-            "Diesel_S4_2023": {
-                "cost": 151272,
-                "yearly range": 118000
-            },
-            "Diesel_S4_2024": {
-                "cost": 155810,
-                "yearly range": 118000
-            },
-            "Diesel_S4_2025": {
-                "cost": 160485,
-                "yearly range": 118000
-            },
-            "Diesel_S4_2026": {
-                "cost": 165299,
-                "yearly range": 118000
-            },
-            "Diesel_S4_2027": {
-                "cost": 170258,
-                "yearly range": 118000
-            },
-            "Diesel_S4_2028": {
-                "cost": 175366,
-                "yearly range": 118000
-            },
-            "Diesel_S4_2029": {
-                "cost": 180627,
-                "yearly range": 118000
-            },
-            "Diesel_S4_2030": {
-                "cost": 186046,
-                "yearly range": 118000
-            },
-            "Diesel_S4_2031": {
-                "cost": 191627,
-                "yearly range": 118000
-            },
-            "Diesel_S4_2032": {
-                "cost": 197376,
-                "yearly range": 118000
-            },
-            "LNG_S4_2023": {
-                "cost": 193454,
-                "yearly range": 118000
-            },
-            "LNG_S4_2024": {
-                "cost": 199258,
-                "yearly range": 118000
-            },
-            "LNG_S4_2025": {
-                "cost": 205235,
-                "yearly range": 118000
-            },
-            "LNG_S4_2026": {
-                "cost": 211393,
-                "yearly range": 118000
-            },
-            "LNG_S4_2027": {
-                "cost": 217734,
-                "yearly range": 118000
-            },
-            "LNG_S4_2028": {
-                "cost": 224266,
-                "yearly range": 118000
-            },
-            "LNG_S4_2029": {
-                "cost": 230994,
-                "yearly range": 118000
-            },
-            "LNG_S4_2030": {
-                "cost": 237924,
-                "yearly range": 118000
-            },
-            "LNG_S4_2031": {
-                "cost": 245062,
-                "yearly range": 118000
-            },
-            "LNG_S4_2032": {
-                "cost": 252414,
-                "yearly range": 118000
-            }
+        "BEV_S4_2023": {
+            "cost": 395636,
+            "size": "S4",
+            "distance": "D1",
+            "yearly range": 118000
         },
-        "2033": {
-            "BEV_S1_2024": {
-                "cost": 177650,
-                "yearly range": 102000
-            },
-            "BEV_S1_2025": {
-                "cost": 168767,
-                "yearly range": 102000
-            },
-            "BEV_S1_2026": {
-                "cost": 160329,
-                "yearly range": 102000
-            },
-            "BEV_S1_2027": {
-                "cost": 152312,
-                "yearly range": 102000
-            },
-            "BEV_S1_2028": {
-                "cost": 144697,
-                "yearly range": 102000
-            },
-            "BEV_S1_2029": {
-                "cost": 137462,
-                "yearly range": 102000
-            },
-            "BEV_S1_2030": {
-                "cost": 130589,
-                "yearly range": 102000
-            },
-            "BEV_S1_2031": {
-                "cost": 130589,
-                "yearly range": 102000
-            },
-            "BEV_S1_2032": {
-                "cost": 130589,
-                "yearly range": 102000
-            },
-            "BEV_S1_2033": {
-                "cost": 130589,
-                "yearly range": 102000
-            },
-            "Diesel_S1_2024": {
-                "cost": 87550,
-                "yearly range": 102000
-            },
-            "Diesel_S1_2025": {
-                "cost": 90176,
-                "yearly range": 102000
-            },
-            "Diesel_S1_2026": {
-                "cost": 92881,
-                "yearly range": 102000
-            },
-            "Diesel_S1_2027": {
-                "cost": 95668,
-                "yearly range": 102000
-            },
-            "Diesel_S1_2028": {
-                "cost": 98538,
-                "yearly range": 102000
-            },
-            "Diesel_S1_2029": {
-                "cost": 101494,
-                "yearly range": 102000
-            },
-            "Diesel_S1_2030": {
-                "cost": 104539,
-                "yearly range": 102000
-            },
-            "Diesel_S1_2031": {
-                "cost": 107675,
-                "yearly range": 102000
-            },
-            "Diesel_S1_2032": {
-                "cost": 110905,
-                "yearly range": 102000
-            },
-            "Diesel_S1_2033": {
-                "cost": 114232,
-                "yearly range": 102000
-            },
-            "LNG_S1_2024": {
-                "cost": 103000,
-                "yearly range": 102000
-            },
-            "LNG_S1_2025": {
-                "cost": 106090,
-                "yearly range": 102000
-            },
-            "LNG_S1_2026": {
-                "cost": 109272,
-                "yearly range": 102000
-            },
-            "LNG_S1_2027": {
-                "cost": 112550,
-                "yearly range": 102000
-            },
-            "LNG_S1_2028": {
-                "cost": 115927,
-                "yearly range": 102000
-            },
-            "LNG_S1_2029": {
-                "cost": 119405,
-                "yearly range": 102000
-            },
-            "LNG_S1_2030": {
-                "cost": 122987,
-                "yearly range": 102000
-            },
-            "LNG_S1_2031": {
-                "cost": 126677,
-                "yearly range": 102000
-            },
-            "LNG_S1_2032": {
-                "cost": 130477,
-                "yearly range": 102000
-            },
-            "LNG_S1_2033": {
-                "cost": 134391,
-                "yearly range": 102000
-            },
-            "BEV_S2_2024": {
-                "cost": 258400,
-                "yearly range": 106000
-            },
-            "BEV_S2_2025": {
-                "cost": 245480,
-                "yearly range": 106000
-            },
-            "BEV_S2_2026": {
-                "cost": 233206,
-                "yearly range": 106000
-            },
-            "BEV_S2_2027": {
-                "cost": 221545,
-                "yearly range": 106000
-            },
-            "BEV_S2_2028": {
-                "cost": 210468,
-                "yearly range": 106000
-            },
-            "BEV_S2_2029": {
-                "cost": 199944,
-                "yearly range": 106000
-            },
-            "BEV_S2_2030": {
-                "cost": 189947,
-                "yearly range": 106000
-            },
-            "BEV_S2_2031": {
-                "cost": 189947,
-                "yearly range": 106000
-            },
-            "BEV_S2_2032": {
-                "cost": 189947,
-                "yearly range": 106000
-            },
-            "BEV_S2_2033": {
-                "cost": 189947,
-                "yearly range": 106000
-            },
-            "Diesel_S2_2024": {
-                "cost": 107120,
-                "yearly range": 106000
-            },
-            "Diesel_S2_2025": {
-                "cost": 110333,
-                "yearly range": 106000
-            },
-            "Diesel_S2_2026": {
-                "cost": 113643,
-                "yearly range": 106000
-            },
-            "Diesel_S2_2027": {
-                "cost": 117052,
-                "yearly range": 106000
-            },
-            "Diesel_S2_2028": {
-                "cost": 120564,
-                "yearly range": 106000
-            },
-            "Diesel_S2_2029": {
-                "cost": 124181,
-                "yearly range": 106000
-            },
-            "Diesel_S2_2030": {
-                "cost": 127906,
-                "yearly range": 106000
-            },
-            "Diesel_S2_2031": {
-                "cost": 131744,
-                "yearly range": 106000
-            },
-            "Diesel_S2_2032": {
-                "cost": 135696,
-                "yearly range": 106000
-            },
-            "Diesel_S2_2033": {
-                "cost": 139767,
-                "yearly range": 106000
-            },
-            "LNG_S2_2024": {
-                "cost": 136990,
-                "yearly range": 106000
-            },
-            "LNG_S2_2025": {
-                "cost": 141099,
-                "yearly range": 106000
-            },
-            "LNG_S2_2026": {
-                "cost": 145332,
-                "yearly range": 106000
-            },
-            "LNG_S2_2027": {
-                "cost": 149692,
-                "yearly range": 106000
-            },
-            "LNG_S2_2028": {
-                "cost": 154183,
-                "yearly range": 106000
-            },
-            "LNG_S2_2029": {
-                "cost": 158808,
-                "yearly range": 106000
-            },
-            "LNG_S2_2030": {
-                "cost": 163573,
-                "yearly range": 106000
-            },
-            "LNG_S2_2031": {
-                "cost": 168480,
-                "yearly range": 106000
-            },
-            "LNG_S2_2032": {
-                "cost": 173534,
-                "yearly range": 106000
-            },
-            "LNG_S2_2033": {
-                "cost": 178740,
-                "yearly range": 106000
-            },
-            "BEV_S3_2024": {
-                "cost": 293636,
-                "yearly range": 73000
-            },
-            "BEV_S3_2025": {
-                "cost": 278954,
-                "yearly range": 73000
-            },
-            "BEV_S3_2026": {
-                "cost": 265006,
-                "yearly range": 73000
-            },
-            "BEV_S3_2027": {
-                "cost": 251756,
-                "yearly range": 73000
-            },
-            "BEV_S3_2028": {
-                "cost": 239168,
-                "yearly range": 73000
-            },
-            "BEV_S3_2029": {
-                "cost": 227210,
-                "yearly range": 73000
-            },
-            "BEV_S3_2030": {
-                "cost": 215849,
-                "yearly range": 73000
-            },
-            "BEV_S3_2031": {
-                "cost": 215849,
-                "yearly range": 73000
-            },
-            "BEV_S3_2032": {
-                "cost": 215849,
-                "yearly range": 73000
-            },
-            "BEV_S3_2033": {
-                "cost": 215849,
-                "yearly range": 73000
-            },
-            "Diesel_S3_2024": {
-                "cost": 121727,
-                "yearly range": 73000
-            },
-            "Diesel_S3_2025": {
-                "cost": 125379,
-                "yearly range": 73000
-            },
-            "Diesel_S3_2026": {
-                "cost": 129140,
-                "yearly range": 73000
-            },
-            "Diesel_S3_2027": {
-                "cost": 133014,
-                "yearly range": 73000
-            },
-            "Diesel_S3_2028": {
-                "cost": 137005,
-                "yearly range": 73000
-            },
-            "Diesel_S3_2029": {
-                "cost": 141115,
-                "yearly range": 73000
-            },
-            "Diesel_S3_2030": {
-                "cost": 145348,
-                "yearly range": 73000
-            },
-            "Diesel_S3_2031": {
-                "cost": 149709,
-                "yearly range": 73000
-            },
-            "Diesel_S3_2032": {
-                "cost": 154200,
-                "yearly range": 73000
-            },
-            "Diesel_S3_2033": {
-                "cost": 158826,
-                "yearly range": 73000
-            },
-            "LNG_S3_2024": {
-                "cost": 155670,
-                "yearly range": 73000
-            },
-            "LNG_S3_2025": {
-                "cost": 160340,
-                "yearly range": 73000
-            },
-            "LNG_S3_2026": {
-                "cost": 165150,
-                "yearly range": 73000
-            },
-            "LNG_S3_2027": {
-                "cost": 170105,
-                "yearly range": 73000
-            },
-            "LNG_S3_2028": {
-                "cost": 175208,
-                "yearly range": 73000
-            },
-            "LNG_S3_2029": {
-                "cost": 180464,
-                "yearly range": 73000
-            },
-            "LNG_S3_2030": {
-                "cost": 185878,
-                "yearly range": 73000
-            },
-            "LNG_S3_2031": {
-                "cost": 191455,
-                "yearly range": 73000
-            },
-            "LNG_S3_2032": {
-                "cost": 197198,
-                "yearly range": 73000
-            },
-            "LNG_S3_2033": {
-                "cost": 203114,
-                "yearly range": 73000
-            },
-            "BEV_S4_2024": {
-                "cost": 375854,
-                "yearly range": 118000
-            },
-            "BEV_S4_2025": {
-                "cost": 357061,
-                "yearly range": 118000
-            },
-            "BEV_S4_2026": {
-                "cost": 339208,
-                "yearly range": 118000
-            },
-            "BEV_S4_2027": {
-                "cost": 322248,
-                "yearly range": 118000
-            },
-            "BEV_S4_2028": {
-                "cost": 306135,
-                "yearly range": 118000
-            },
-            "BEV_S4_2029": {
-                "cost": 290829,
-                "yearly range": 118000
-            },
-            "BEV_S4_2030": {
-                "cost": 276287,
-                "yearly range": 118000
-            },
-            "BEV_S4_2031": {
-                "cost": 276287,
-                "yearly range": 118000
-            },
-            "BEV_S4_2032": {
-                "cost": 276287,
-                "yearly range": 118000
-            },
-            "BEV_S4_2033": {
-                "cost": 276287,
-                "yearly range": 118000
-            },
-            "Diesel_S4_2024": {
-                "cost": 155810,
-                "yearly range": 118000
-            },
-            "Diesel_S4_2025": {
-                "cost": 160485,
-                "yearly range": 118000
-            },
-            "Diesel_S4_2026": {
-                "cost": 165299,
-                "yearly range": 118000
-            },
-            "Diesel_S4_2027": {
-                "cost": 170258,
-                "yearly range": 118000
-            },
-            "Diesel_S4_2028": {
-                "cost": 175366,
-                "yearly range": 118000
-            },
-            "Diesel_S4_2029": {
-                "cost": 180627,
-                "yearly range": 118000
-            },
-            "Diesel_S4_2030": {
-                "cost": 186046,
-                "yearly range": 118000
-            },
-            "Diesel_S4_2031": {
-                "cost": 191627,
-                "yearly range": 118000
-            },
-            "Diesel_S4_2032": {
-                "cost": 197376,
-                "yearly range": 118000
-            },
-            "Diesel_S4_2033": {
-                "cost": 203297,
-                "yearly range": 118000
-            },
-            "LNG_S4_2024": {
-                "cost": 199258,
-                "yearly range": 118000
-            },
-            "LNG_S4_2025": {
-                "cost": 205235,
-                "yearly range": 118000
-            },
-            "LNG_S4_2026": {
-                "cost": 211393,
-                "yearly range": 118000
-            },
-            "LNG_S4_2027": {
-                "cost": 217734,
-                "yearly range": 118000
-            },
-            "LNG_S4_2028": {
-                "cost": 224266,
-                "yearly range": 118000
-            },
-            "LNG_S4_2029": {
-                "cost": 230994,
-                "yearly range": 118000
-            },
-            "LNG_S4_2030": {
-                "cost": 237924,
-                "yearly range": 118000
-            },
-            "LNG_S4_2031": {
-                "cost": 245062,
-                "yearly range": 118000
-            },
-            "LNG_S4_2032": {
-                "cost": 252414,
-                "yearly range": 118000
-            },
-            "LNG_S4_2033": {
-                "cost": 259986,
-                "yearly range": 118000
-            }
+        "Diesel_S4_2023": {
+            "cost": 151272,
+            "size": "S4",
+            "distance": "D4",
+            "yearly range": 118000
         },
-        "2034": {
-            "BEV_S1_2025": {
-                "cost": 168767,
-                "yearly range": 102000
-            },
-            "BEV_S1_2026": {
-                "cost": 160329,
-                "yearly range": 102000
-            },
-            "BEV_S1_2027": {
-                "cost": 152312,
-                "yearly range": 102000
-            },
-            "BEV_S1_2028": {
-                "cost": 144697,
-                "yearly range": 102000
-            },
-            "BEV_S1_2029": {
-                "cost": 137462,
-                "yearly range": 102000
-            },
-            "BEV_S1_2030": {
-                "cost": 130589,
-                "yearly range": 102000
-            },
-            "BEV_S1_2031": {
-                "cost": 130589,
-                "yearly range": 102000
-            },
-            "BEV_S1_2032": {
-                "cost": 130589,
-                "yearly range": 102000
-            },
-            "BEV_S1_2033": {
-                "cost": 130589,
-                "yearly range": 102000
-            },
-            "BEV_S1_2034": {
-                "cost": 130589,
-                "yearly range": 102000
-            },
-            "Diesel_S1_2025": {
-                "cost": 90176,
-                "yearly range": 102000
-            },
-            "Diesel_S1_2026": {
-                "cost": 92881,
-                "yearly range": 102000
-            },
-            "Diesel_S1_2027": {
-                "cost": 95668,
-                "yearly range": 102000
-            },
-            "Diesel_S1_2028": {
-                "cost": 98538,
-                "yearly range": 102000
-            },
-            "Diesel_S1_2029": {
-                "cost": 101494,
-                "yearly range": 102000
-            },
-            "Diesel_S1_2030": {
-                "cost": 104539,
-                "yearly range": 102000
-            },
-            "Diesel_S1_2031": {
-                "cost": 107675,
-                "yearly range": 102000
-            },
-            "Diesel_S1_2032": {
-                "cost": 110905,
-                "yearly range": 102000
-            },
-            "Diesel_S1_2033": {
-                "cost": 114232,
-                "yearly range": 102000
-            },
-            "Diesel_S1_2034": {
-                "cost": 117659,
-                "yearly range": 102000
-            },
-            "LNG_S1_2025": {
-                "cost": 106090,
-                "yearly range": 102000
-            },
-            "LNG_S1_2026": {
-                "cost": 109272,
-                "yearly range": 102000
-            },
-            "LNG_S1_2027": {
-                "cost": 112550,
-                "yearly range": 102000
-            },
-            "LNG_S1_2028": {
-                "cost": 115927,
-                "yearly range": 102000
-            },
-            "LNG_S1_2029": {
-                "cost": 119405,
-                "yearly range": 102000
-            },
-            "LNG_S1_2030": {
-                "cost": 122987,
-                "yearly range": 102000
-            },
-            "LNG_S1_2031": {
-                "cost": 126677,
-                "yearly range": 102000
-            },
-            "LNG_S1_2032": {
-                "cost": 130477,
-                "yearly range": 102000
-            },
-            "LNG_S1_2033": {
-                "cost": 134391,
-                "yearly range": 102000
-            },
-            "LNG_S1_2034": {
-                "cost": 138423,
-                "yearly range": 102000
-            },
-            "BEV_S2_2025": {
-                "cost": 245480,
-                "yearly range": 106000
-            },
-            "BEV_S2_2026": {
-                "cost": 233206,
-                "yearly range": 106000
-            },
-            "BEV_S2_2027": {
-                "cost": 221545,
-                "yearly range": 106000
-            },
-            "BEV_S2_2028": {
-                "cost": 210468,
-                "yearly range": 106000
-            },
-            "BEV_S2_2029": {
-                "cost": 199944,
-                "yearly range": 106000
-            },
-            "BEV_S2_2030": {
-                "cost": 189947,
-                "yearly range": 106000
-            },
-            "BEV_S2_2031": {
-                "cost": 189947,
-                "yearly range": 106000
-            },
-            "BEV_S2_2032": {
-                "cost": 189947,
-                "yearly range": 106000
-            },
-            "BEV_S2_2033": {
-                "cost": 189947,
-                "yearly range": 106000
-            },
-            "BEV_S2_2034": {
-                "cost": 189947,
-                "yearly range": 106000
-            },
-            "Diesel_S2_2025": {
-                "cost": 110333,
-                "yearly range": 106000
-            },
-            "Diesel_S2_2026": {
-                "cost": 113643,
-                "yearly range": 106000
-            },
-            "Diesel_S2_2027": {
-                "cost": 117052,
-                "yearly range": 106000
-            },
-            "Diesel_S2_2028": {
-                "cost": 120564,
-                "yearly range": 106000
-            },
-            "Diesel_S2_2029": {
-                "cost": 124181,
-                "yearly range": 106000
-            },
-            "Diesel_S2_2030": {
-                "cost": 127906,
-                "yearly range": 106000
-            },
-            "Diesel_S2_2031": {
-                "cost": 131744,
-                "yearly range": 106000
-            },
-            "Diesel_S2_2032": {
-                "cost": 135696,
-                "yearly range": 106000
-            },
-            "Diesel_S2_2033": {
-                "cost": 139767,
-                "yearly range": 106000
-            },
-            "Diesel_S2_2034": {
-                "cost": 143960,
-                "yearly range": 106000
-            },
-            "LNG_S2_2025": {
-                "cost": 141099,
-                "yearly range": 106000
-            },
-            "LNG_S2_2026": {
-                "cost": 145332,
-                "yearly range": 106000
-            },
-            "LNG_S2_2027": {
-                "cost": 149692,
-                "yearly range": 106000
-            },
-            "LNG_S2_2028": {
-                "cost": 154183,
-                "yearly range": 106000
-            },
-            "LNG_S2_2029": {
-                "cost": 158808,
-                "yearly range": 106000
-            },
-            "LNG_S2_2030": {
-                "cost": 163573,
-                "yearly range": 106000
-            },
-            "LNG_S2_2031": {
-                "cost": 168480,
-                "yearly range": 106000
-            },
-            "LNG_S2_2032": {
-                "cost": 173534,
-                "yearly range": 106000
-            },
-            "LNG_S2_2033": {
-                "cost": 178740,
-                "yearly range": 106000
-            },
-            "LNG_S2_2034": {
-                "cost": 184103,
-                "yearly range": 106000
-            },
-            "BEV_S3_2025": {
-                "cost": 278954,
-                "yearly range": 73000
-            },
-            "BEV_S3_2026": {
-                "cost": 265006,
-                "yearly range": 73000
-            },
-            "BEV_S3_2027": {
-                "cost": 251756,
-                "yearly range": 73000
-            },
-            "BEV_S3_2028": {
-                "cost": 239168,
-                "yearly range": 73000
-            },
-            "BEV_S3_2029": {
-                "cost": 227210,
-                "yearly range": 73000
-            },
-            "BEV_S3_2030": {
-                "cost": 215849,
-                "yearly range": 73000
-            },
-            "BEV_S3_2031": {
-                "cost": 215849,
-                "yearly range": 73000
-            },
-            "BEV_S3_2032": {
-                "cost": 215849,
-                "yearly range": 73000
-            },
-            "BEV_S3_2033": {
-                "cost": 215849,
-                "yearly range": 73000
-            },
-            "BEV_S3_2034": {
-                "cost": 215849,
-                "yearly range": 73000
-            },
-            "Diesel_S3_2025": {
-                "cost": 125379,
-                "yearly range": 73000
-            },
-            "Diesel_S3_2026": {
-                "cost": 129140,
-                "yearly range": 73000
-            },
-            "Diesel_S3_2027": {
-                "cost": 133014,
-                "yearly range": 73000
-            },
-            "Diesel_S3_2028": {
-                "cost": 137005,
-                "yearly range": 73000
-            },
-            "Diesel_S3_2029": {
-                "cost": 141115,
-                "yearly range": 73000
-            },
-            "Diesel_S3_2030": {
-                "cost": 145348,
-                "yearly range": 73000
-            },
-            "Diesel_S3_2031": {
-                "cost": 149709,
-                "yearly range": 73000
-            },
-            "Diesel_S3_2032": {
-                "cost": 154200,
-                "yearly range": 73000
-            },
-            "Diesel_S3_2033": {
-                "cost": 158826,
-                "yearly range": 73000
-            },
-            "Diesel_S3_2034": {
-                "cost": 163591,
-                "yearly range": 73000
-            },
-            "LNG_S3_2025": {
-                "cost": 160340,
-                "yearly range": 73000
-            },
-            "LNG_S3_2026": {
-                "cost": 165150,
-                "yearly range": 73000
-            },
-            "LNG_S3_2027": {
-                "cost": 170105,
-                "yearly range": 73000
-            },
-            "LNG_S3_2028": {
-                "cost": 175208,
-                "yearly range": 73000
-            },
-            "LNG_S3_2029": {
-                "cost": 180464,
-                "yearly range": 73000
-            },
-            "LNG_S3_2030": {
-                "cost": 185878,
-                "yearly range": 73000
-            },
-            "LNG_S3_2031": {
-                "cost": 191455,
-                "yearly range": 73000
-            },
-            "LNG_S3_2032": {
-                "cost": 197198,
-                "yearly range": 73000
-            },
-            "LNG_S3_2033": {
-                "cost": 203114,
-                "yearly range": 73000
-            },
-            "LNG_S3_2034": {
-                "cost": 209208,
-                "yearly range": 73000
-            },
-            "BEV_S4_2025": {
-                "cost": 357061,
-                "yearly range": 118000
-            },
-            "BEV_S4_2026": {
-                "cost": 339208,
-                "yearly range": 118000
-            },
-            "BEV_S4_2027": {
-                "cost": 322248,
-                "yearly range": 118000
-            },
-            "BEV_S4_2028": {
-                "cost": 306135,
-                "yearly range": 118000
-            },
-            "BEV_S4_2029": {
-                "cost": 290829,
-                "yearly range": 118000
-            },
-            "BEV_S4_2030": {
-                "cost": 276287,
-                "yearly range": 118000
-            },
-            "BEV_S4_2031": {
-                "cost": 276287,
-                "yearly range": 118000
-            },
-            "BEV_S4_2032": {
-                "cost": 276287,
-                "yearly range": 118000
-            },
-            "BEV_S4_2033": {
-                "cost": 276287,
-                "yearly range": 118000
-            },
-            "BEV_S4_2034": {
-                "cost": 276287,
-                "yearly range": 118000
-            },
-            "Diesel_S4_2025": {
-                "cost": 160485,
-                "yearly range": 118000
-            },
-            "Diesel_S4_2026": {
-                "cost": 165299,
-                "yearly range": 118000
-            },
-            "Diesel_S4_2027": {
-                "cost": 170258,
-                "yearly range": 118000
-            },
-            "Diesel_S4_2028": {
-                "cost": 175366,
-                "yearly range": 118000
-            },
-            "Diesel_S4_2029": {
-                "cost": 180627,
-                "yearly range": 118000
-            },
-            "Diesel_S4_2030": {
-                "cost": 186046,
-                "yearly range": 118000
-            },
-            "Diesel_S4_2031": {
-                "cost": 191627,
-                "yearly range": 118000
-            },
-            "Diesel_S4_2032": {
-                "cost": 197376,
-                "yearly range": 118000
-            },
-            "Diesel_S4_2033": {
-                "cost": 203297,
-                "yearly range": 118000
-            },
-            "Diesel_S4_2034": {
-                "cost": 209396,
-                "yearly range": 118000
-            },
-            "LNG_S4_2025": {
-                "cost": 205235,
-                "yearly range": 118000
-            },
-            "LNG_S4_2026": {
-                "cost": 211393,
-                "yearly range": 118000
-            },
-            "LNG_S4_2027": {
-                "cost": 217734,
-                "yearly range": 118000
-            },
-            "LNG_S4_2028": {
-                "cost": 224266,
-                "yearly range": 118000
-            },
-            "LNG_S4_2029": {
-                "cost": 230994,
-                "yearly range": 118000
-            },
-            "LNG_S4_2030": {
-                "cost": 237924,
-                "yearly range": 118000
-            },
-            "LNG_S4_2031": {
-                "cost": 245062,
-                "yearly range": 118000
-            },
-            "LNG_S4_2032": {
-                "cost": 252414,
-                "yearly range": 118000
-            },
-            "LNG_S4_2033": {
-                "cost": 259986,
-                "yearly range": 118000
-            },
-            "LNG_S4_2034": {
-                "cost": 267786,
-                "yearly range": 118000
-            }
+        "LNG_S4_2023": {
+            "cost": 193454,
+            "size": "S4",
+            "distance": "D4",
+            "yearly range": 118000
         },
-        "2035": {
-            "BEV_S1_2026": {
-                "cost": 160329,
-                "yearly range": 102000
-            },
-            "BEV_S1_2027": {
-                "cost": 152312,
-                "yearly range": 102000
-            },
-            "BEV_S1_2028": {
-                "cost": 144697,
-                "yearly range": 102000
-            },
-            "BEV_S1_2029": {
-                "cost": 137462,
-                "yearly range": 102000
-            },
-            "BEV_S1_2030": {
-                "cost": 130589,
-                "yearly range": 102000
-            },
-            "BEV_S1_2031": {
-                "cost": 130589,
-                "yearly range": 102000
-            },
-            "BEV_S1_2032": {
-                "cost": 130589,
-                "yearly range": 102000
-            },
-            "BEV_S1_2033": {
-                "cost": 130589,
-                "yearly range": 102000
-            },
-            "BEV_S1_2034": {
-                "cost": 130589,
-                "yearly range": 102000
-            },
-            "BEV_S1_2035": {
-                "cost": 130589,
-                "yearly range": 102000
-            },
-            "Diesel_S1_2026": {
-                "cost": 92881,
-                "yearly range": 102000
-            },
-            "Diesel_S1_2027": {
-                "cost": 95668,
-                "yearly range": 102000
-            },
-            "Diesel_S1_2028": {
-                "cost": 98538,
-                "yearly range": 102000
-            },
-            "Diesel_S1_2029": {
-                "cost": 101494,
-                "yearly range": 102000
-            },
-            "Diesel_S1_2030": {
-                "cost": 104539,
-                "yearly range": 102000
-            },
-            "Diesel_S1_2031": {
-                "cost": 107675,
-                "yearly range": 102000
-            },
-            "Diesel_S1_2032": {
-                "cost": 110905,
-                "yearly range": 102000
-            },
-            "Diesel_S1_2033": {
-                "cost": 114232,
-                "yearly range": 102000
-            },
-            "Diesel_S1_2034": {
-                "cost": 117659,
-                "yearly range": 102000
-            },
-            "Diesel_S1_2035": {
-                "cost": 121189,
-                "yearly range": 102000
-            },
-            "LNG_S1_2026": {
-                "cost": 109272,
-                "yearly range": 102000
-            },
-            "LNG_S1_2027": {
-                "cost": 112550,
-                "yearly range": 102000
-            },
-            "LNG_S1_2028": {
-                "cost": 115927,
-                "yearly range": 102000
-            },
-            "LNG_S1_2029": {
-                "cost": 119405,
-                "yearly range": 102000
-            },
-            "LNG_S1_2030": {
-                "cost": 122987,
-                "yearly range": 102000
-            },
-            "LNG_S1_2031": {
-                "cost": 126677,
-                "yearly range": 102000
-            },
-            "LNG_S1_2032": {
-                "cost": 130477,
-                "yearly range": 102000
-            },
-            "LNG_S1_2033": {
-                "cost": 134391,
-                "yearly range": 102000
-            },
-            "LNG_S1_2034": {
-                "cost": 138423,
-                "yearly range": 102000
-            },
-            "LNG_S1_2035": {
-                "cost": 142576,
-                "yearly range": 102000
-            },
-            "BEV_S2_2026": {
-                "cost": 233206,
-                "yearly range": 106000
-            },
-            "BEV_S2_2027": {
-                "cost": 221545,
-                "yearly range": 106000
-            },
-            "BEV_S2_2028": {
-                "cost": 210468,
-                "yearly range": 106000
-            },
-            "BEV_S2_2029": {
-                "cost": 199944,
-                "yearly range": 106000
-            },
-            "BEV_S2_2030": {
-                "cost": 189947,
-                "yearly range": 106000
-            },
-            "BEV_S2_2031": {
-                "cost": 189947,
-                "yearly range": 106000
-            },
-            "BEV_S2_2032": {
-                "cost": 189947,
-                "yearly range": 106000
-            },
-            "BEV_S2_2033": {
-                "cost": 189947,
-                "yearly range": 106000
-            },
-            "BEV_S2_2034": {
-                "cost": 189947,
-                "yearly range": 106000
-            },
-            "BEV_S2_2035": {
-                "cost": 189947,
-                "yearly range": 106000
-            },
-            "Diesel_S2_2026": {
-                "cost": 113643,
-                "yearly range": 106000
-            },
-            "Diesel_S2_2027": {
-                "cost": 117052,
-                "yearly range": 106000
-            },
-            "Diesel_S2_2028": {
-                "cost": 120564,
-                "yearly range": 106000
-            },
-            "Diesel_S2_2029": {
-                "cost": 124181,
-                "yearly range": 106000
-            },
-            "Diesel_S2_2030": {
-                "cost": 127906,
-                "yearly range": 106000
-            },
-            "Diesel_S2_2031": {
-                "cost": 131744,
-                "yearly range": 106000
-            },
-            "Diesel_S2_2032": {
-                "cost": 135696,
-                "yearly range": 106000
-            },
-            "Diesel_S2_2033": {
-                "cost": 139767,
-                "yearly range": 106000
-            },
-            "Diesel_S2_2034": {
-                "cost": 143960,
-                "yearly range": 106000
-            },
-            "Diesel_S2_2035": {
-                "cost": 148279,
-                "yearly range": 106000
-            },
-            "LNG_S2_2026": {
-                "cost": 145332,
-                "yearly range": 106000
-            },
-            "LNG_S2_2027": {
-                "cost": 149692,
-                "yearly range": 106000
-            },
-            "LNG_S2_2028": {
-                "cost": 154183,
-                "yearly range": 106000
-            },
-            "LNG_S2_2029": {
-                "cost": 158808,
-                "yearly range": 106000
-            },
-            "LNG_S2_2030": {
-                "cost": 163573,
-                "yearly range": 106000
-            },
-            "LNG_S2_2031": {
-                "cost": 168480,
-                "yearly range": 106000
-            },
-            "LNG_S2_2032": {
-                "cost": 173534,
-                "yearly range": 106000
-            },
-            "LNG_S2_2033": {
-                "cost": 178740,
-                "yearly range": 106000
-            },
-            "LNG_S2_2034": {
-                "cost": 184103,
-                "yearly range": 106000
-            },
-            "LNG_S2_2035": {
-                "cost": 189626,
-                "yearly range": 106000
-            },
-            "BEV_S3_2026": {
-                "cost": 265006,
-                "yearly range": 73000
-            },
-            "BEV_S3_2027": {
-                "cost": 251756,
-                "yearly range": 73000
-            },
-            "BEV_S3_2028": {
-                "cost": 239168,
-                "yearly range": 73000
-            },
-            "BEV_S3_2029": {
-                "cost": 227210,
-                "yearly range": 73000
-            },
-            "BEV_S3_2030": {
-                "cost": 215849,
-                "yearly range": 73000
-            },
-            "BEV_S3_2031": {
-                "cost": 215849,
-                "yearly range": 73000
-            },
-            "BEV_S3_2032": {
-                "cost": 215849,
-                "yearly range": 73000
-            },
-            "BEV_S3_2033": {
-                "cost": 215849,
-                "yearly range": 73000
-            },
-            "BEV_S3_2034": {
-                "cost": 215849,
-                "yearly range": 73000
-            },
-            "BEV_S3_2035": {
-                "cost": 215849,
-                "yearly range": 73000
-            },
-            "Diesel_S3_2026": {
-                "cost": 129140,
-                "yearly range": 73000
-            },
-            "Diesel_S3_2027": {
-                "cost": 133014,
-                "yearly range": 73000
-            },
-            "Diesel_S3_2028": {
-                "cost": 137005,
-                "yearly range": 73000
-            },
-            "Diesel_S3_2029": {
-                "cost": 141115,
-                "yearly range": 73000
-            },
-            "Diesel_S3_2030": {
-                "cost": 145348,
-                "yearly range": 73000
-            },
-            "Diesel_S3_2031": {
-                "cost": 149709,
-                "yearly range": 73000
-            },
-            "Diesel_S3_2032": {
-                "cost": 154200,
-                "yearly range": 73000
-            },
-            "Diesel_S3_2033": {
-                "cost": 158826,
-                "yearly range": 73000
-            },
-            "Diesel_S3_2034": {
-                "cost": 163591,
-                "yearly range": 73000
-            },
-            "Diesel_S3_2035": {
-                "cost": 168499,
-                "yearly range": 73000
-            },
-            "LNG_S3_2026": {
-                "cost": 165150,
-                "yearly range": 73000
-            },
-            "LNG_S3_2027": {
-                "cost": 170105,
-                "yearly range": 73000
-            },
-            "LNG_S3_2028": {
-                "cost": 175208,
-                "yearly range": 73000
-            },
-            "LNG_S3_2029": {
-                "cost": 180464,
-                "yearly range": 73000
-            },
-            "LNG_S3_2030": {
-                "cost": 185878,
-                "yearly range": 73000
-            },
-            "LNG_S3_2031": {
-                "cost": 191455,
-                "yearly range": 73000
-            },
-            "LNG_S3_2032": {
-                "cost": 197198,
-                "yearly range": 73000
-            },
-            "LNG_S3_2033": {
-                "cost": 203114,
-                "yearly range": 73000
-            },
-            "LNG_S3_2034": {
-                "cost": 209208,
-                "yearly range": 73000
-            },
-            "LNG_S3_2035": {
-                "cost": 215484,
-                "yearly range": 73000
-            },
-            "BEV_S4_2026": {
-                "cost": 339208,
-                "yearly range": 118000
-            },
-            "BEV_S4_2027": {
-                "cost": 322248,
-                "yearly range": 118000
-            },
-            "BEV_S4_2028": {
-                "cost": 306135,
-                "yearly range": 118000
-            },
-            "BEV_S4_2029": {
-                "cost": 290829,
-                "yearly range": 118000
-            },
-            "BEV_S4_2030": {
-                "cost": 276287,
-                "yearly range": 118000
-            },
-            "BEV_S4_2031": {
-                "cost": 276287,
-                "yearly range": 118000
-            },
-            "BEV_S4_2032": {
-                "cost": 276287,
-                "yearly range": 118000
-            },
-            "BEV_S4_2033": {
-                "cost": 276287,
-                "yearly range": 118000
-            },
-            "BEV_S4_2034": {
-                "cost": 276287,
-                "yearly range": 118000
-            },
-            "BEV_S4_2035": {
-                "cost": 276287,
-                "yearly range": 118000
-            },
-            "Diesel_S4_2026": {
-                "cost": 165299,
-                "yearly range": 118000
-            },
-            "Diesel_S4_2027": {
-                "cost": 170258,
-                "yearly range": 118000
-            },
-            "Diesel_S4_2028": {
-                "cost": 175366,
-                "yearly range": 118000
-            },
-            "Diesel_S4_2029": {
-                "cost": 180627,
-                "yearly range": 118000
-            },
-            "Diesel_S4_2030": {
-                "cost": 186046,
-                "yearly range": 118000
-            },
-            "Diesel_S4_2031": {
-                "cost": 191627,
-                "yearly range": 118000
-            },
-            "Diesel_S4_2032": {
-                "cost": 197376,
-                "yearly range": 118000
-            },
-            "Diesel_S4_2033": {
-                "cost": 203297,
-                "yearly range": 118000
-            },
-            "Diesel_S4_2034": {
-                "cost": 209396,
-                "yearly range": 118000
-            },
-            "Diesel_S4_2035": {
-                "cost": 215678,
-                "yearly range": 118000
-            },
-            "LNG_S4_2026": {
-                "cost": 211393,
-                "yearly range": 118000
-            },
-            "LNG_S4_2027": {
-                "cost": 217734,
-                "yearly range": 118000
-            },
-            "LNG_S4_2028": {
-                "cost": 224266,
-                "yearly range": 118000
-            },
-            "LNG_S4_2029": {
-                "cost": 230994,
-                "yearly range": 118000
-            },
-            "LNG_S4_2030": {
-                "cost": 237924,
-                "yearly range": 118000
-            },
-            "LNG_S4_2031": {
-                "cost": 245062,
-                "yearly range": 118000
-            },
-            "LNG_S4_2032": {
-                "cost": 252414,
-                "yearly range": 118000
-            },
-            "LNG_S4_2033": {
-                "cost": 259986,
-                "yearly range": 118000
-            },
-            "LNG_S4_2034": {
-                "cost": 267786,
-                "yearly range": 118000
-            },
-            "LNG_S4_2035": {
-                "cost": 275819,
-                "yearly range": 118000
-            }
+        "BEV_S1_2024": {
+            "cost": 177650,
+            "size": "S1",
+            "distance": "D1",
+            "yearly range": 102000
         },
-        "2036": {
-            "BEV_S1_2027": {
-                "cost": 152312,
-                "yearly range": 102000
-            },
-            "BEV_S1_2028": {
-                "cost": 144697,
-                "yearly range": 102000
-            },
-            "BEV_S1_2029": {
-                "cost": 137462,
-                "yearly range": 102000
-            },
-            "BEV_S1_2030": {
-                "cost": 130589,
-                "yearly range": 102000
-            },
-            "BEV_S1_2031": {
-                "cost": 130589,
-                "yearly range": 102000
-            },
-            "BEV_S1_2032": {
-                "cost": 130589,
-                "yearly range": 102000
-            },
-            "BEV_S1_2033": {
-                "cost": 130589,
-                "yearly range": 102000
-            },
-            "BEV_S1_2034": {
-                "cost": 130589,
-                "yearly range": 102000
-            },
-            "BEV_S1_2035": {
-                "cost": 130589,
-                "yearly range": 102000
-            },
-            "BEV_S1_2036": {
-                "cost": 130589,
-                "yearly range": 102000
-            },
-            "Diesel_S1_2027": {
-                "cost": 95668,
-                "yearly range": 102000
-            },
-            "Diesel_S1_2028": {
-                "cost": 98538,
-                "yearly range": 102000
-            },
-            "Diesel_S1_2029": {
-                "cost": 101494,
-                "yearly range": 102000
-            },
-            "Diesel_S1_2030": {
-                "cost": 104539,
-                "yearly range": 102000
-            },
-            "Diesel_S1_2031": {
-                "cost": 107675,
-                "yearly range": 102000
-            },
-            "Diesel_S1_2032": {
-                "cost": 110905,
-                "yearly range": 102000
-            },
-            "Diesel_S1_2033": {
-                "cost": 114232,
-                "yearly range": 102000
-            },
-            "Diesel_S1_2034": {
-                "cost": 117659,
-                "yearly range": 102000
-            },
-            "Diesel_S1_2035": {
-                "cost": 121189,
-                "yearly range": 102000
-            },
-            "Diesel_S1_2036": {
-                "cost": 124825,
-                "yearly range": 102000
-            },
-            "LNG_S1_2027": {
-                "cost": 112550,
-                "yearly range": 102000
-            },
-            "LNG_S1_2028": {
-                "cost": 115927,
-                "yearly range": 102000
-            },
-            "LNG_S1_2029": {
-                "cost": 119405,
-                "yearly range": 102000
-            },
-            "LNG_S1_2030": {
-                "cost": 122987,
-                "yearly range": 102000
-            },
-            "LNG_S1_2031": {
-                "cost": 126677,
-                "yearly range": 102000
-            },
-            "LNG_S1_2032": {
-                "cost": 130477,
-                "yearly range": 102000
-            },
-            "LNG_S1_2033": {
-                "cost": 134391,
-                "yearly range": 102000
-            },
-            "LNG_S1_2034": {
-                "cost": 138423,
-                "yearly range": 102000
-            },
-            "LNG_S1_2035": {
-                "cost": 142576,
-                "yearly range": 102000
-            },
-            "LNG_S1_2036": {
-                "cost": 146853,
-                "yearly range": 102000
-            },
-            "BEV_S2_2027": {
-                "cost": 221545,
-                "yearly range": 106000
-            },
-            "BEV_S2_2028": {
-                "cost": 210468,
-                "yearly range": 106000
-            },
-            "BEV_S2_2029": {
-                "cost": 199944,
-                "yearly range": 106000
-            },
-            "BEV_S2_2030": {
-                "cost": 189947,
-                "yearly range": 106000
-            },
-            "BEV_S2_2031": {
-                "cost": 189947,
-                "yearly range": 106000
-            },
-            "BEV_S2_2032": {
-                "cost": 189947,
-                "yearly range": 106000
-            },
-            "BEV_S2_2033": {
-                "cost": 189947,
-                "yearly range": 106000
-            },
-            "BEV_S2_2034": {
-                "cost": 189947,
-                "yearly range": 106000
-            },
-            "BEV_S2_2035": {
-                "cost": 189947,
-                "yearly range": 106000
-            },
-            "BEV_S2_2036": {
-                "cost": 189947,
-                "yearly range": 106000
-            },
-            "Diesel_S2_2027": {
-                "cost": 117052,
-                "yearly range": 106000
-            },
-            "Diesel_S2_2028": {
-                "cost": 120564,
-                "yearly range": 106000
-            },
-            "Diesel_S2_2029": {
-                "cost": 124181,
-                "yearly range": 106000
-            },
-            "Diesel_S2_2030": {
-                "cost": 127906,
-                "yearly range": 106000
-            },
-            "Diesel_S2_2031": {
-                "cost": 131744,
-                "yearly range": 106000
-            },
-            "Diesel_S2_2032": {
-                "cost": 135696,
-                "yearly range": 106000
-            },
-            "Diesel_S2_2033": {
-                "cost": 139767,
-                "yearly range": 106000
-            },
-            "Diesel_S2_2034": {
-                "cost": 143960,
-                "yearly range": 106000
-            },
-            "Diesel_S2_2035": {
-                "cost": 148279,
-                "yearly range": 106000
-            },
-            "Diesel_S2_2036": {
-                "cost": 152727,
-                "yearly range": 106000
-            },
-            "LNG_S2_2027": {
-                "cost": 149692,
-                "yearly range": 106000
-            },
-            "LNG_S2_2028": {
-                "cost": 154183,
-                "yearly range": 106000
-            },
-            "LNG_S2_2029": {
-                "cost": 158808,
-                "yearly range": 106000
-            },
-            "LNG_S2_2030": {
-                "cost": 163573,
-                "yearly range": 106000
-            },
-            "LNG_S2_2031": {
-                "cost": 168480,
-                "yearly range": 106000
-            },
-            "LNG_S2_2032": {
-                "cost": 173534,
-                "yearly range": 106000
-            },
-            "LNG_S2_2033": {
-                "cost": 178740,
-                "yearly range": 106000
-            },
-            "LNG_S2_2034": {
-                "cost": 184103,
-                "yearly range": 106000
-            },
-            "LNG_S2_2035": {
-                "cost": 189626,
-                "yearly range": 106000
-            },
-            "LNG_S2_2036": {
-                "cost": 195314,
-                "yearly range": 106000
-            },
-            "BEV_S3_2027": {
-                "cost": 251756,
-                "yearly range": 73000
-            },
-            "BEV_S3_2028": {
-                "cost": 239168,
-                "yearly range": 73000
-            },
-            "BEV_S3_2029": {
-                "cost": 227210,
-                "yearly range": 73000
-            },
-            "BEV_S3_2030": {
-                "cost": 215849,
-                "yearly range": 73000
-            },
-            "BEV_S3_2031": {
-                "cost": 215849,
-                "yearly range": 73000
-            },
-            "BEV_S3_2032": {
-                "cost": 215849,
-                "yearly range": 73000
-            },
-            "BEV_S3_2033": {
-                "cost": 215849,
-                "yearly range": 73000
-            },
-            "BEV_S3_2034": {
-                "cost": 215849,
-                "yearly range": 73000
-            },
-            "BEV_S3_2035": {
-                "cost": 215849,
-                "yearly range": 73000
-            },
-            "BEV_S3_2036": {
-                "cost": 215849,
-                "yearly range": 73000
-            },
-            "Diesel_S3_2027": {
-                "cost": 133014,
-                "yearly range": 73000
-            },
-            "Diesel_S3_2028": {
-                "cost": 137005,
-                "yearly range": 73000
-            },
-            "Diesel_S3_2029": {
-                "cost": 141115,
-                "yearly range": 73000
-            },
-            "Diesel_S3_2030": {
-                "cost": 145348,
-                "yearly range": 73000
-            },
-            "Diesel_S3_2031": {
-                "cost": 149709,
-                "yearly range": 73000
-            },
-            "Diesel_S3_2032": {
-                "cost": 154200,
-                "yearly range": 73000
-            },
-            "Diesel_S3_2033": {
-                "cost": 158826,
-                "yearly range": 73000
-            },
-            "Diesel_S3_2034": {
-                "cost": 163591,
-                "yearly range": 73000
-            },
-            "Diesel_S3_2035": {
-                "cost": 168499,
-                "yearly range": 73000
-            },
-            "Diesel_S3_2036": {
-                "cost": 173553,
-                "yearly range": 73000
-            },
-            "LNG_S3_2027": {
-                "cost": 170105,
-                "yearly range": 73000
-            },
-            "LNG_S3_2028": {
-                "cost": 175208,
-                "yearly range": 73000
-            },
-            "LNG_S3_2029": {
-                "cost": 180464,
-                "yearly range": 73000
-            },
-            "LNG_S3_2030": {
-                "cost": 185878,
-                "yearly range": 73000
-            },
-            "LNG_S3_2031": {
-                "cost": 191455,
-                "yearly range": 73000
-            },
-            "LNG_S3_2032": {
-                "cost": 197198,
-                "yearly range": 73000
-            },
-            "LNG_S3_2033": {
-                "cost": 203114,
-                "yearly range": 73000
-            },
-            "LNG_S3_2034": {
-                "cost": 209208,
-                "yearly range": 73000
-            },
-            "LNG_S3_2035": {
-                "cost": 215484,
-                "yearly range": 73000
-            },
-            "LNG_S3_2036": {
-                "cost": 221948,
-                "yearly range": 73000
-            },
-            "BEV_S4_2027": {
-                "cost": 322248,
-                "yearly range": 118000
-            },
-            "BEV_S4_2028": {
-                "cost": 306135,
-                "yearly range": 118000
-            },
-            "BEV_S4_2029": {
-                "cost": 290829,
-                "yearly range": 118000
-            },
-            "BEV_S4_2030": {
-                "cost": 276287,
-                "yearly range": 118000
-            },
-            "BEV_S4_2031": {
-                "cost": 276287,
-                "yearly range": 118000
-            },
-            "BEV_S4_2032": {
-                "cost": 276287,
-                "yearly range": 118000
-            },
-            "BEV_S4_2033": {
-                "cost": 276287,
-                "yearly range": 118000
-            },
-            "BEV_S4_2034": {
-                "cost": 276287,
-                "yearly range": 118000
-            },
-            "BEV_S4_2035": {
-                "cost": 276287,
-                "yearly range": 118000
-            },
-            "BEV_S4_2036": {
-                "cost": 276287,
-                "yearly range": 118000
-            },
-            "Diesel_S4_2027": {
-                "cost": 170258,
-                "yearly range": 118000
-            },
-            "Diesel_S4_2028": {
-                "cost": 175366,
-                "yearly range": 118000
-            },
-            "Diesel_S4_2029": {
-                "cost": 180627,
-                "yearly range": 118000
-            },
-            "Diesel_S4_2030": {
-                "cost": 186046,
-                "yearly range": 118000
-            },
-            "Diesel_S4_2031": {
-                "cost": 191627,
-                "yearly range": 118000
-            },
-            "Diesel_S4_2032": {
-                "cost": 197376,
-                "yearly range": 118000
-            },
-            "Diesel_S4_2033": {
-                "cost": 203297,
-                "yearly range": 118000
-            },
-            "Diesel_S4_2034": {
-                "cost": 209396,
-                "yearly range": 118000
-            },
-            "Diesel_S4_2035": {
-                "cost": 215678,
-                "yearly range": 118000
-            },
-            "Diesel_S4_2036": {
-                "cost": 222149,
-                "yearly range": 118000
-            },
-            "LNG_S4_2027": {
-                "cost": 217734,
-                "yearly range": 118000
-            },
-            "LNG_S4_2028": {
-                "cost": 224266,
-                "yearly range": 118000
-            },
-            "LNG_S4_2029": {
-                "cost": 230994,
-                "yearly range": 118000
-            },
-            "LNG_S4_2030": {
-                "cost": 237924,
-                "yearly range": 118000
-            },
-            "LNG_S4_2031": {
-                "cost": 245062,
-                "yearly range": 118000
-            },
-            "LNG_S4_2032": {
-                "cost": 252414,
-                "yearly range": 118000
-            },
-            "LNG_S4_2033": {
-                "cost": 259986,
-                "yearly range": 118000
-            },
-            "LNG_S4_2034": {
-                "cost": 267786,
-                "yearly range": 118000
-            },
-            "LNG_S4_2035": {
-                "cost": 275819,
-                "yearly range": 118000
-            },
-            "LNG_S4_2036": {
-                "cost": 284094,
-                "yearly range": 118000
-            }
+        "Diesel_S1_2024": {
+            "cost": 87550,
+            "size": "S1",
+            "distance": "D4",
+            "yearly range": 102000
         },
-        "2037": {
-            "BEV_S1_2028": {
-                "cost": 144697,
-                "yearly range": 102000
-            },
-            "BEV_S1_2029": {
-                "cost": 137462,
-                "yearly range": 102000
-            },
-            "BEV_S1_2030": {
-                "cost": 130589,
-                "yearly range": 102000
-            },
-            "BEV_S1_2031": {
-                "cost": 130589,
-                "yearly range": 102000
-            },
-            "BEV_S1_2032": {
-                "cost": 130589,
-                "yearly range": 102000
-            },
-            "BEV_S1_2033": {
-                "cost": 130589,
-                "yearly range": 102000
-            },
-            "BEV_S1_2034": {
-                "cost": 130589,
-                "yearly range": 102000
-            },
-            "BEV_S1_2035": {
-                "cost": 130589,
-                "yearly range": 102000
-            },
-            "BEV_S1_2036": {
-                "cost": 130589,
-                "yearly range": 102000
-            },
-            "BEV_S1_2037": {
-                "cost": 130589,
-                "yearly range": 102000
-            },
-            "Diesel_S1_2028": {
-                "cost": 98538,
-                "yearly range": 102000
-            },
-            "Diesel_S1_2029": {
-                "cost": 101494,
-                "yearly range": 102000
-            },
-            "Diesel_S1_2030": {
-                "cost": 104539,
-                "yearly range": 102000
-            },
-            "Diesel_S1_2031": {
-                "cost": 107675,
-                "yearly range": 102000
-            },
-            "Diesel_S1_2032": {
-                "cost": 110905,
-                "yearly range": 102000
-            },
-            "Diesel_S1_2033": {
-                "cost": 114232,
-                "yearly range": 102000
-            },
-            "Diesel_S1_2034": {
-                "cost": 117659,
-                "yearly range": 102000
-            },
-            "Diesel_S1_2035": {
-                "cost": 121189,
-                "yearly range": 102000
-            },
-            "Diesel_S1_2036": {
-                "cost": 124825,
-                "yearly range": 102000
-            },
-            "Diesel_S1_2037": {
-                "cost": 128570,
-                "yearly range": 102000
-            },
-            "LNG_S1_2028": {
-                "cost": 115927,
-                "yearly range": 102000
-            },
-            "LNG_S1_2029": {
-                "cost": 119405,
-                "yearly range": 102000
-            },
-            "LNG_S1_2030": {
-                "cost": 122987,
-                "yearly range": 102000
-            },
-            "LNG_S1_2031": {
-                "cost": 126677,
-                "yearly range": 102000
-            },
-            "LNG_S1_2032": {
-                "cost": 130477,
-                "yearly range": 102000
-            },
-            "LNG_S1_2033": {
-                "cost": 134391,
-                "yearly range": 102000
-            },
-            "LNG_S1_2034": {
-                "cost": 138423,
-                "yearly range": 102000
-            },
-            "LNG_S1_2035": {
-                "cost": 142576,
-                "yearly range": 102000
-            },
-            "LNG_S1_2036": {
-                "cost": 146853,
-                "yearly range": 102000
-            },
-            "LNG_S1_2037": {
-                "cost": 151258,
-                "yearly range": 102000
-            },
-            "BEV_S2_2028": {
-                "cost": 210468,
-                "yearly range": 106000
-            },
-            "BEV_S2_2029": {
-                "cost": 199944,
-                "yearly range": 106000
-            },
-            "BEV_S2_2030": {
-                "cost": 189947,
-                "yearly range": 106000
-            },
-            "BEV_S2_2031": {
-                "cost": 189947,
-                "yearly range": 106000
-            },
-            "BEV_S2_2032": {
-                "cost": 189947,
-                "yearly range": 106000
-            },
-            "BEV_S2_2033": {
-                "cost": 189947,
-                "yearly range": 106000
-            },
-            "BEV_S2_2034": {
-                "cost": 189947,
-                "yearly range": 106000
-            },
-            "BEV_S2_2035": {
-                "cost": 189947,
-                "yearly range": 106000
-            },
-            "BEV_S2_2036": {
-                "cost": 189947,
-                "yearly range": 106000
-            },
-            "BEV_S2_2037": {
-                "cost": 189947,
-                "yearly range": 106000
-            },
-            "Diesel_S2_2028": {
-                "cost": 120564,
-                "yearly range": 106000
-            },
-            "Diesel_S2_2029": {
-                "cost": 124181,
-                "yearly range": 106000
-            },
-            "Diesel_S2_2030": {
-                "cost": 127906,
-                "yearly range": 106000
-            },
-            "Diesel_S2_2031": {
-                "cost": 131744,
-                "yearly range": 106000
-            },
-            "Diesel_S2_2032": {
-                "cost": 135696,
-                "yearly range": 106000
-            },
-            "Diesel_S2_2033": {
-                "cost": 139767,
-                "yearly range": 106000
-            },
-            "Diesel_S2_2034": {
-                "cost": 143960,
-                "yearly range": 106000
-            },
-            "Diesel_S2_2035": {
-                "cost": 148279,
-                "yearly range": 106000
-            },
-            "Diesel_S2_2036": {
-                "cost": 152727,
-                "yearly range": 106000
-            },
-            "Diesel_S2_2037": {
-                "cost": 157309,
-                "yearly range": 106000
-            },
-            "LNG_S2_2028": {
-                "cost": 154183,
-                "yearly range": 106000
-            },
-            "LNG_S2_2029": {
-                "cost": 158808,
-                "yearly range": 106000
-            },
-            "LNG_S2_2030": {
-                "cost": 163573,
-                "yearly range": 106000
-            },
-            "LNG_S2_2031": {
-                "cost": 168480,
-                "yearly range": 106000
-            },
-            "LNG_S2_2032": {
-                "cost": 173534,
-                "yearly range": 106000
-            },
-            "LNG_S2_2033": {
-                "cost": 178740,
-                "yearly range": 106000
-            },
-            "LNG_S2_2034": {
-                "cost": 184103,
-                "yearly range": 106000
-            },
-            "LNG_S2_2035": {
-                "cost": 189626,
-                "yearly range": 106000
-            },
-            "LNG_S2_2036": {
-                "cost": 195314,
-                "yearly range": 106000
-            },
-            "LNG_S2_2037": {
-                "cost": 201174,
-                "yearly range": 106000
-            },
-            "BEV_S3_2028": {
-                "cost": 239168,
-                "yearly range": 73000
-            },
-            "BEV_S3_2029": {
-                "cost": 227210,
-                "yearly range": 73000
-            },
-            "BEV_S3_2030": {
-                "cost": 215849,
-                "yearly range": 73000
-            },
-            "BEV_S3_2031": {
-                "cost": 215849,
-                "yearly range": 73000
-            },
-            "BEV_S3_2032": {
-                "cost": 215849,
-                "yearly range": 73000
-            },
-            "BEV_S3_2033": {
-                "cost": 215849,
-                "yearly range": 73000
-            },
-            "BEV_S3_2034": {
-                "cost": 215849,
-                "yearly range": 73000
-            },
-            "BEV_S3_2035": {
-                "cost": 215849,
-                "yearly range": 73000
-            },
-            "BEV_S3_2036": {
-                "cost": 215849,
-                "yearly range": 73000
-            },
-            "BEV_S3_2037": {
-                "cost": 215849,
-                "yearly range": 73000
-            },
-            "Diesel_S3_2028": {
-                "cost": 137005,
-                "yearly range": 73000
-            },
-            "Diesel_S3_2029": {
-                "cost": 141115,
-                "yearly range": 73000
-            },
-            "Diesel_S3_2030": {
-                "cost": 145348,
-                "yearly range": 73000
-            },
-            "Diesel_S3_2031": {
-                "cost": 149709,
-                "yearly range": 73000
-            },
-            "Diesel_S3_2032": {
-                "cost": 154200,
-                "yearly range": 73000
-            },
-            "Diesel_S3_2033": {
-                "cost": 158826,
-                "yearly range": 73000
-            },
-            "Diesel_S3_2034": {
-                "cost": 163591,
-                "yearly range": 73000
-            },
-            "Diesel_S3_2035": {
-                "cost": 168499,
-                "yearly range": 73000
-            },
-            "Diesel_S3_2036": {
-                "cost": 173553,
-                "yearly range": 73000
-            },
-            "Diesel_S3_2037": {
-                "cost": 178760,
-                "yearly range": 73000
-            },
-            "LNG_S3_2028": {
-                "cost": 175208,
-                "yearly range": 73000
-            },
-            "LNG_S3_2029": {
-                "cost": 180464,
-                "yearly range": 73000
-            },
-            "LNG_S3_2030": {
-                "cost": 185878,
-                "yearly range": 73000
-            },
-            "LNG_S3_2031": {
-                "cost": 191455,
-                "yearly range": 73000
-            },
-            "LNG_S3_2032": {
-                "cost": 197198,
-                "yearly range": 73000
-            },
-            "LNG_S3_2033": {
-                "cost": 203114,
-                "yearly range": 73000
-            },
-            "LNG_S3_2034": {
-                "cost": 209208,
-                "yearly range": 73000
-            },
-            "LNG_S3_2035": {
-                "cost": 215484,
-                "yearly range": 73000
-            },
-            "LNG_S3_2036": {
-                "cost": 221948,
-                "yearly range": 73000
-            },
-            "LNG_S3_2037": {
-                "cost": 228607,
-                "yearly range": 73000
-            },
-            "BEV_S4_2028": {
-                "cost": 306135,
-                "yearly range": 118000
-            },
-            "BEV_S4_2029": {
-                "cost": 290829,
-                "yearly range": 118000
-            },
-            "BEV_S4_2030": {
-                "cost": 276287,
-                "yearly range": 118000
-            },
-            "BEV_S4_2031": {
-                "cost": 276287,
-                "yearly range": 118000
-            },
-            "BEV_S4_2032": {
-                "cost": 276287,
-                "yearly range": 118000
-            },
-            "BEV_S4_2033": {
-                "cost": 276287,
-                "yearly range": 118000
-            },
-            "BEV_S4_2034": {
-                "cost": 276287,
-                "yearly range": 118000
-            },
-            "BEV_S4_2035": {
-                "cost": 276287,
-                "yearly range": 118000
-            },
-            "BEV_S4_2036": {
-                "cost": 276287,
-                "yearly range": 118000
-            },
-            "BEV_S4_2037": {
-                "cost": 276287,
-                "yearly range": 118000
-            },
-            "Diesel_S4_2028": {
-                "cost": 175366,
-                "yearly range": 118000
-            },
-            "Diesel_S4_2029": {
-                "cost": 180627,
-                "yearly range": 118000
-            },
-            "Diesel_S4_2030": {
-                "cost": 186046,
-                "yearly range": 118000
-            },
-            "Diesel_S4_2031": {
-                "cost": 191627,
-                "yearly range": 118000
-            },
-            "Diesel_S4_2032": {
-                "cost": 197376,
-                "yearly range": 118000
-            },
-            "Diesel_S4_2033": {
-                "cost": 203297,
-                "yearly range": 118000
-            },
-            "Diesel_S4_2034": {
-                "cost": 209396,
-                "yearly range": 118000
-            },
-            "Diesel_S4_2035": {
-                "cost": 215678,
-                "yearly range": 118000
-            },
-            "Diesel_S4_2036": {
-                "cost": 222149,
-                "yearly range": 118000
-            },
-            "Diesel_S4_2037": {
-                "cost": 228813,
-                "yearly range": 118000
-            },
-            "LNG_S4_2028": {
-                "cost": 224266,
-                "yearly range": 118000
-            },
-            "LNG_S4_2029": {
-                "cost": 230994,
-                "yearly range": 118000
-            },
-            "LNG_S4_2030": {
-                "cost": 237924,
-                "yearly range": 118000
-            },
-            "LNG_S4_2031": {
-                "cost": 245062,
-                "yearly range": 118000
-            },
-            "LNG_S4_2032": {
-                "cost": 252414,
-                "yearly range": 118000
-            },
-            "LNG_S4_2033": {
-                "cost": 259986,
-                "yearly range": 118000
-            },
-            "LNG_S4_2034": {
-                "cost": 267786,
-                "yearly range": 118000
-            },
-            "LNG_S4_2035": {
-                "cost": 275819,
-                "yearly range": 118000
-            },
-            "LNG_S4_2036": {
-                "cost": 284094,
-                "yearly range": 118000
-            },
-            "LNG_S4_2037": {
-                "cost": 292617,
-                "yearly range": 118000
-            }
+        "LNG_S1_2024": {
+            "cost": 103000,
+            "size": "S1",
+            "distance": "D4",
+            "yearly range": 102000
         },
-        "2038": {
-            "BEV_S1_2029": {
-                "cost": 137462,
-                "yearly range": 102000
-            },
-            "BEV_S1_2030": {
-                "cost": 130589,
-                "yearly range": 102000
-            },
-            "BEV_S1_2031": {
-                "cost": 130589,
-                "yearly range": 102000
-            },
-            "BEV_S1_2032": {
-                "cost": 130589,
-                "yearly range": 102000
-            },
-            "BEV_S1_2033": {
-                "cost": 130589,
-                "yearly range": 102000
-            },
-            "BEV_S1_2034": {
-                "cost": 130589,
-                "yearly range": 102000
-            },
-            "BEV_S1_2035": {
-                "cost": 130589,
-                "yearly range": 102000
-            },
-            "BEV_S1_2036": {
-                "cost": 130589,
-                "yearly range": 102000
-            },
-            "BEV_S1_2037": {
-                "cost": 130589,
-                "yearly range": 102000
-            },
-            "BEV_S1_2038": {
-                "cost": 130589,
-                "yearly range": 102000
-            },
-            "Diesel_S1_2029": {
-                "cost": 101494,
-                "yearly range": 102000
-            },
-            "Diesel_S1_2030": {
-                "cost": 104539,
-                "yearly range": 102000
-            },
-            "Diesel_S1_2031": {
-                "cost": 107675,
-                "yearly range": 102000
-            },
-            "Diesel_S1_2032": {
-                "cost": 110905,
-                "yearly range": 102000
-            },
-            "Diesel_S1_2033": {
-                "cost": 114232,
-                "yearly range": 102000
-            },
-            "Diesel_S1_2034": {
-                "cost": 117659,
-                "yearly range": 102000
-            },
-            "Diesel_S1_2035": {
-                "cost": 121189,
-                "yearly range": 102000
-            },
-            "Diesel_S1_2036": {
-                "cost": 124825,
-                "yearly range": 102000
-            },
-            "Diesel_S1_2037": {
-                "cost": 128570,
-                "yearly range": 102000
-            },
-            "Diesel_S1_2038": {
-                "cost": 132427,
-                "yearly range": 102000
-            },
-            "LNG_S1_2029": {
-                "cost": 119405,
-                "yearly range": 102000
-            },
-            "LNG_S1_2030": {
-                "cost": 122987,
-                "yearly range": 102000
-            },
-            "LNG_S1_2031": {
-                "cost": 126677,
-                "yearly range": 102000
-            },
-            "LNG_S1_2032": {
-                "cost": 130477,
-                "yearly range": 102000
-            },
-            "LNG_S1_2033": {
-                "cost": 134391,
-                "yearly range": 102000
-            },
-            "LNG_S1_2034": {
-                "cost": 138423,
-                "yearly range": 102000
-            },
-            "LNG_S1_2035": {
-                "cost": 142576,
-                "yearly range": 102000
-            },
-            "LNG_S1_2036": {
-                "cost": 146853,
-                "yearly range": 102000
-            },
-            "LNG_S1_2037": {
-                "cost": 151258,
-                "yearly range": 102000
-            },
-            "LNG_S1_2038": {
-                "cost": 155796,
-                "yearly range": 102000
-            },
-            "BEV_S2_2029": {
-                "cost": 199944,
-                "yearly range": 106000
-            },
-            "BEV_S2_2030": {
-                "cost": 189947,
-                "yearly range": 106000
-            },
-            "BEV_S2_2031": {
-                "cost": 189947,
-                "yearly range": 106000
-            },
-            "BEV_S2_2032": {
-                "cost": 189947,
-                "yearly range": 106000
-            },
-            "BEV_S2_2033": {
-                "cost": 189947,
-                "yearly range": 106000
-            },
-            "BEV_S2_2034": {
-                "cost": 189947,
-                "yearly range": 106000
-            },
-            "BEV_S2_2035": {
-                "cost": 189947,
-                "yearly range": 106000
-            },
-            "BEV_S2_2036": {
-                "cost": 189947,
-                "yearly range": 106000
-            },
-            "BEV_S2_2037": {
-                "cost": 189947,
-                "yearly range": 106000
-            },
-            "BEV_S2_2038": {
-                "cost": 189947,
-                "yearly range": 106000
-            },
-            "Diesel_S2_2029": {
-                "cost": 124181,
-                "yearly range": 106000
-            },
-            "Diesel_S2_2030": {
-                "cost": 127906,
-                "yearly range": 106000
-            },
-            "Diesel_S2_2031": {
-                "cost": 131744,
-                "yearly range": 106000
-            },
-            "Diesel_S2_2032": {
-                "cost": 135696,
-                "yearly range": 106000
-            },
-            "Diesel_S2_2033": {
-                "cost": 139767,
-                "yearly range": 106000
-            },
-            "Diesel_S2_2034": {
-                "cost": 143960,
-                "yearly range": 106000
-            },
-            "Diesel_S2_2035": {
-                "cost": 148279,
-                "yearly range": 106000
-            },
-            "Diesel_S2_2036": {
-                "cost": 152727,
-                "yearly range": 106000
-            },
-            "Diesel_S2_2037": {
-                "cost": 157309,
-                "yearly range": 106000
-            },
-            "Diesel_S2_2038": {
-                "cost": 162028,
-                "yearly range": 106000
-            },
-            "LNG_S2_2029": {
-                "cost": 158808,
-                "yearly range": 106000
-            },
-            "LNG_S2_2030": {
-                "cost": 163573,
-                "yearly range": 106000
-            },
-            "LNG_S2_2031": {
-                "cost": 168480,
-                "yearly range": 106000
-            },
-            "LNG_S2_2032": {
-                "cost": 173534,
-                "yearly range": 106000
-            },
-            "LNG_S2_2033": {
-                "cost": 178740,
-                "yearly range": 106000
-            },
-            "LNG_S2_2034": {
-                "cost": 184103,
-                "yearly range": 106000
-            },
-            "LNG_S2_2035": {
-                "cost": 189626,
-                "yearly range": 106000
-            },
-            "LNG_S2_2036": {
-                "cost": 195314,
-                "yearly range": 106000
-            },
-            "LNG_S2_2037": {
-                "cost": 201174,
-                "yearly range": 106000
-            },
-            "LNG_S2_2038": {
-                "cost": 207209,
-                "yearly range": 106000
-            },
-            "BEV_S3_2029": {
-                "cost": 227210,
-                "yearly range": 73000
-            },
-            "BEV_S3_2030": {
-                "cost": 215849,
-                "yearly range": 73000
-            },
-            "BEV_S3_2031": {
-                "cost": 215849,
-                "yearly range": 73000
-            },
-            "BEV_S3_2032": {
-                "cost": 215849,
-                "yearly range": 73000
-            },
-            "BEV_S3_2033": {
-                "cost": 215849,
-                "yearly range": 73000
-            },
-            "BEV_S3_2034": {
-                "cost": 215849,
-                "yearly range": 73000
-            },
-            "BEV_S3_2035": {
-                "cost": 215849,
-                "yearly range": 73000
-            },
-            "BEV_S3_2036": {
-                "cost": 215849,
-                "yearly range": 73000
-            },
-            "BEV_S3_2037": {
-                "cost": 215849,
-                "yearly range": 73000
-            },
-            "BEV_S3_2038": {
-                "cost": 215849,
-                "yearly range": 73000
-            },
-            "Diesel_S3_2029": {
-                "cost": 141115,
-                "yearly range": 73000
-            },
-            "Diesel_S3_2030": {
-                "cost": 145348,
-                "yearly range": 73000
-            },
-            "Diesel_S3_2031": {
-                "cost": 149709,
-                "yearly range": 73000
-            },
-            "Diesel_S3_2032": {
-                "cost": 154200,
-                "yearly range": 73000
-            },
-            "Diesel_S3_2033": {
-                "cost": 158826,
-                "yearly range": 73000
-            },
-            "Diesel_S3_2034": {
-                "cost": 163591,
-                "yearly range": 73000
-            },
-            "Diesel_S3_2035": {
-                "cost": 168499,
-                "yearly range": 73000
-            },
-            "Diesel_S3_2036": {
-                "cost": 173553,
-                "yearly range": 73000
-            },
-            "Diesel_S3_2037": {
-                "cost": 178760,
-                "yearly range": 73000
-            },
-            "Diesel_S3_2038": {
-                "cost": 184123,
-                "yearly range": 73000
-            },
-            "LNG_S3_2029": {
-                "cost": 180464,
-                "yearly range": 73000
-            },
-            "LNG_S3_2030": {
-                "cost": 185878,
-                "yearly range": 73000
-            },
-            "LNG_S3_2031": {
-                "cost": 191455,
-                "yearly range": 73000
-            },
-            "LNG_S3_2032": {
-                "cost": 197198,
-                "yearly range": 73000
-            },
-            "LNG_S3_2033": {
-                "cost": 203114,
-                "yearly range": 73000
-            },
-            "LNG_S3_2034": {
-                "cost": 209208,
-                "yearly range": 73000
-            },
-            "LNG_S3_2035": {
-                "cost": 215484,
-                "yearly range": 73000
-            },
-            "LNG_S3_2036": {
-                "cost": 221948,
-                "yearly range": 73000
-            },
-            "LNG_S3_2037": {
-                "cost": 228607,
-                "yearly range": 73000
-            },
-            "LNG_S3_2038": {
-                "cost": 235465,
-                "yearly range": 73000
-            },
-            "BEV_S4_2029": {
-                "cost": 290829,
-                "yearly range": 118000
-            },
-            "BEV_S4_2030": {
-                "cost": 276287,
-                "yearly range": 118000
-            },
-            "BEV_S4_2031": {
-                "cost": 276287,
-                "yearly range": 118000
-            },
-            "BEV_S4_2032": {
-                "cost": 276287,
-                "yearly range": 118000
-            },
-            "BEV_S4_2033": {
-                "cost": 276287,
-                "yearly range": 118000
-            },
-            "BEV_S4_2034": {
-                "cost": 276287,
-                "yearly range": 118000
-            },
-            "BEV_S4_2035": {
-                "cost": 276287,
-                "yearly range": 118000
-            },
-            "BEV_S4_2036": {
-                "cost": 276287,
-                "yearly range": 118000
-            },
-            "BEV_S4_2037": {
-                "cost": 276287,
-                "yearly range": 118000
-            },
-            "BEV_S4_2038": {
-                "cost": 276287,
-                "yearly range": 118000
-            },
-            "Diesel_S4_2029": {
-                "cost": 180627,
-                "yearly range": 118000
-            },
-            "Diesel_S4_2030": {
-                "cost": 186046,
-                "yearly range": 118000
-            },
-            "Diesel_S4_2031": {
-                "cost": 191627,
-                "yearly range": 118000
-            },
-            "Diesel_S4_2032": {
-                "cost": 197376,
-                "yearly range": 118000
-            },
-            "Diesel_S4_2033": {
-                "cost": 203297,
-                "yearly range": 118000
-            },
-            "Diesel_S4_2034": {
-                "cost": 209396,
-                "yearly range": 118000
-            },
-            "Diesel_S4_2035": {
-                "cost": 215678,
-                "yearly range": 118000
-            },
-            "Diesel_S4_2036": {
-                "cost": 222149,
-                "yearly range": 118000
-            },
-            "Diesel_S4_2037": {
-                "cost": 228813,
-                "yearly range": 118000
-            },
-            "Diesel_S4_2038": {
-                "cost": 235677,
-                "yearly range": 118000
-            },
-            "LNG_S4_2029": {
-                "cost": 230994,
-                "yearly range": 118000
-            },
-            "LNG_S4_2030": {
-                "cost": 237924,
-                "yearly range": 118000
-            },
-            "LNG_S4_2031": {
-                "cost": 245062,
-                "yearly range": 118000
-            },
-            "LNG_S4_2032": {
-                "cost": 252414,
-                "yearly range": 118000
-            },
-            "LNG_S4_2033": {
-                "cost": 259986,
-                "yearly range": 118000
-            },
-            "LNG_S4_2034": {
-                "cost": 267786,
-                "yearly range": 118000
-            },
-            "LNG_S4_2035": {
-                "cost": 275819,
-                "yearly range": 118000
-            },
-            "LNG_S4_2036": {
-                "cost": 284094,
-                "yearly range": 118000
-            },
-            "LNG_S4_2037": {
-                "cost": 292617,
-                "yearly range": 118000
-            },
-            "LNG_S4_2038": {
-                "cost": 301395,
-                "yearly range": 118000
-            }
+        "BEV_S2_2024": {
+            "cost": 258400,
+            "size": "S2",
+            "distance": "D1",
+            "yearly range": 106000
+        },
+        "Diesel_S2_2024": {
+            "cost": 107120,
+            "size": "S2",
+            "distance": "D4",
+            "yearly range": 106000
+        },
+        "LNG_S2_2024": {
+            "cost": 136990,
+            "size": "S2",
+            "distance": "D4",
+            "yearly range": 106000
+        },
+        "BEV_S3_2024": {
+            "cost": 293636,
+            "size": "S3",
+            "distance": "D1",
+            "yearly range": 73000
+        },
+        "Diesel_S3_2024": {
+            "cost": 121727,
+            "size": "S3",
+            "distance": "D4",
+            "yearly range": 73000
+        },
+        "LNG_S3_2024": {
+            "cost": 155670,
+            "size": "S3",
+            "distance": "D4",
+            "yearly range": 73000
+        },
+        "BEV_S4_2024": {
+            "cost": 375854,
+            "size": "S4",
+            "distance": "D1",
+            "yearly range": 118000
+        },
+        "Diesel_S4_2024": {
+            "cost": 155810,
+            "size": "S4",
+            "distance": "D4",
+            "yearly range": 118000
+        },
+        "LNG_S4_2024": {
+            "cost": 199258,
+            "size": "S4",
+            "distance": "D4",
+            "yearly range": 118000
+        },
+        "BEV_S1_2025": {
+            "cost": 168767,
+            "size": "S1",
+            "distance": "D1",
+            "yearly range": 102000
+        },
+        "Diesel_S1_2025": {
+            "cost": 90176,
+            "size": "S1",
+            "distance": "D4",
+            "yearly range": 102000
+        },
+        "LNG_S1_2025": {
+            "cost": 106090,
+            "size": "S1",
+            "distance": "D4",
+            "yearly range": 102000
+        },
+        "BEV_S2_2025": {
+            "cost": 245480,
+            "size": "S2",
+            "distance": "D1",
+            "yearly range": 106000
+        },
+        "Diesel_S2_2025": {
+            "cost": 110333,
+            "size": "S2",
+            "distance": "D4",
+            "yearly range": 106000
+        },
+        "LNG_S2_2025": {
+            "cost": 141099,
+            "size": "S2",
+            "distance": "D4",
+            "yearly range": 106000
+        },
+        "BEV_S3_2025": {
+            "cost": 278954,
+            "size": "S3",
+            "distance": "D1",
+            "yearly range": 73000
+        },
+        "Diesel_S3_2025": {
+            "cost": 125379,
+            "size": "S3",
+            "distance": "D4",
+            "yearly range": 73000
+        },
+        "LNG_S3_2025": {
+            "cost": 160340,
+            "size": "S3",
+            "distance": "D4",
+            "yearly range": 73000
+        },
+        "BEV_S4_2025": {
+            "cost": 357061,
+            "size": "S4",
+            "distance": "D1",
+            "yearly range": 118000
+        },
+        "Diesel_S4_2025": {
+            "cost": 160485,
+            "size": "S4",
+            "distance": "D4",
+            "yearly range": 118000
+        },
+        "LNG_S4_2025": {
+            "cost": 205235,
+            "size": "S4",
+            "distance": "D4",
+            "yearly range": 118000
+        },
+        "BEV_S1_2026": {
+            "cost": 160329,
+            "size": "S1",
+            "distance": "D2",
+            "yearly range": 102000
+        },
+        "Diesel_S1_2026": {
+            "cost": 92881,
+            "size": "S1",
+            "distance": "D4",
+            "yearly range": 102000
+        },
+        "LNG_S1_2026": {
+            "cost": 109272,
+            "size": "S1",
+            "distance": "D4",
+            "yearly range": 102000
+        },
+        "BEV_S2_2026": {
+            "cost": 233206,
+            "size": "S2",
+            "distance": "D2",
+            "yearly range": 106000
+        },
+        "Diesel_S2_2026": {
+            "cost": 113643,
+            "size": "S2",
+            "distance": "D4",
+            "yearly range": 106000
+        },
+        "LNG_S2_2026": {
+            "cost": 145332,
+            "size": "S2",
+            "distance": "D4",
+            "yearly range": 106000
+        },
+        "BEV_S3_2026": {
+            "cost": 265006,
+            "size": "S3",
+            "distance": "D2",
+            "yearly range": 73000
+        },
+        "Diesel_S3_2026": {
+            "cost": 129140,
+            "size": "S3",
+            "distance": "D4",
+            "yearly range": 73000
+        },
+        "LNG_S3_2026": {
+            "cost": 165150,
+            "size": "S3",
+            "distance": "D4",
+            "yearly range": 73000
+        },
+        "BEV_S4_2026": {
+            "cost": 339208,
+            "size": "S4",
+            "distance": "D2",
+            "yearly range": 118000
+        },
+        "Diesel_S4_2026": {
+            "cost": 165299,
+            "size": "S4",
+            "distance": "D4",
+            "yearly range": 118000
+        },
+        "LNG_S4_2026": {
+            "cost": 211393,
+            "size": "S4",
+            "distance": "D4",
+            "yearly range": 118000
+        },
+        "BEV_S1_2027": {
+            "cost": 152312,
+            "size": "S1",
+            "distance": "D2",
+            "yearly range": 102000
+        },
+        "Diesel_S1_2027": {
+            "cost": 95668,
+            "size": "S1",
+            "distance": "D4",
+            "yearly range": 102000
+        },
+        "LNG_S1_2027": {
+            "cost": 112550,
+            "size": "S1",
+            "distance": "D4",
+            "yearly range": 102000
+        },
+        "BEV_S2_2027": {
+            "cost": 221545,
+            "size": "S2",
+            "distance": "D2",
+            "yearly range": 106000
+        },
+        "Diesel_S2_2027": {
+            "cost": 117052,
+            "size": "S2",
+            "distance": "D4",
+            "yearly range": 106000
+        },
+        "LNG_S2_2027": {
+            "cost": 149692,
+            "size": "S2",
+            "distance": "D4",
+            "yearly range": 106000
+        },
+        "BEV_S3_2027": {
+            "cost": 251756,
+            "size": "S3",
+            "distance": "D2",
+            "yearly range": 73000
+        },
+        "Diesel_S3_2027": {
+            "cost": 133014,
+            "size": "S3",
+            "distance": "D4",
+            "yearly range": 73000
+        },
+        "LNG_S3_2027": {
+            "cost": 170105,
+            "size": "S3",
+            "distance": "D4",
+            "yearly range": 73000
+        },
+        "BEV_S4_2027": {
+            "cost": 322248,
+            "size": "S4",
+            "distance": "D2",
+            "yearly range": 118000
+        },
+        "Diesel_S4_2027": {
+            "cost": 170258,
+            "size": "S4",
+            "distance": "D4",
+            "yearly range": 118000
+        },
+        "LNG_S4_2027": {
+            "cost": 217734,
+            "size": "S4",
+            "distance": "D4",
+            "yearly range": 118000
+        },
+        "BEV_S1_2028": {
+            "cost": 144697,
+            "size": "S1",
+            "distance": "D2",
+            "yearly range": 102000
+        },
+        "Diesel_S1_2028": {
+            "cost": 98538,
+            "size": "S1",
+            "distance": "D4",
+            "yearly range": 102000
+        },
+        "LNG_S1_2028": {
+            "cost": 115927,
+            "size": "S1",
+            "distance": "D4",
+            "yearly range": 102000
+        },
+        "BEV_S2_2028": {
+            "cost": 210468,
+            "size": "S2",
+            "distance": "D2",
+            "yearly range": 106000
+        },
+        "Diesel_S2_2028": {
+            "cost": 120564,
+            "size": "S2",
+            "distance": "D4",
+            "yearly range": 106000
+        },
+        "LNG_S2_2028": {
+            "cost": 154183,
+            "size": "S2",
+            "distance": "D4",
+            "yearly range": 106000
+        },
+        "BEV_S3_2028": {
+            "cost": 239168,
+            "size": "S3",
+            "distance": "D2",
+            "yearly range": 73000
+        },
+        "Diesel_S3_2028": {
+            "cost": 137005,
+            "size": "S3",
+            "distance": "D4",
+            "yearly range": 73000
+        },
+        "LNG_S3_2028": {
+            "cost": 175208,
+            "size": "S3",
+            "distance": "D4",
+            "yearly range": 73000
+        },
+        "BEV_S4_2028": {
+            "cost": 306135,
+            "size": "S4",
+            "distance": "D2",
+            "yearly range": 118000
+        },
+        "Diesel_S4_2028": {
+            "cost": 175366,
+            "size": "S4",
+            "distance": "D4",
+            "yearly range": 118000
+        },
+        "LNG_S4_2028": {
+            "cost": 224266,
+            "size": "S4",
+            "distance": "D4",
+            "yearly range": 118000
+        },
+        "BEV_S1_2029": {
+            "cost": 137462,
+            "size": "S1",
+            "distance": "D3",
+            "yearly range": 102000
+        },
+        "Diesel_S1_2029": {
+            "cost": 101494,
+            "size": "S1",
+            "distance": "D4",
+            "yearly range": 102000
+        },
+        "LNG_S1_2029": {
+            "cost": 119405,
+            "size": "S1",
+            "distance": "D4",
+            "yearly range": 102000
+        },
+        "BEV_S2_2029": {
+            "cost": 199944,
+            "size": "S2",
+            "distance": "D3",
+            "yearly range": 106000
+        },
+        "Diesel_S2_2029": {
+            "cost": 124181,
+            "size": "S2",
+            "distance": "D4",
+            "yearly range": 106000
+        },
+        "LNG_S2_2029": {
+            "cost": 158808,
+            "size": "S2",
+            "distance": "D4",
+            "yearly range": 106000
+        },
+        "BEV_S3_2029": {
+            "cost": 227210,
+            "size": "S3",
+            "distance": "D3",
+            "yearly range": 73000
+        },
+        "Diesel_S3_2029": {
+            "cost": 141115,
+            "size": "S3",
+            "distance": "D4",
+            "yearly range": 73000
+        },
+        "LNG_S3_2029": {
+            "cost": 180464,
+            "size": "S3",
+            "distance": "D4",
+            "yearly range": 73000
+        },
+        "BEV_S4_2029": {
+            "cost": 290829,
+            "size": "S4",
+            "distance": "D3",
+            "yearly range": 118000
+        },
+        "Diesel_S4_2029": {
+            "cost": 180627,
+            "size": "S4",
+            "distance": "D4",
+            "yearly range": 118000
+        },
+        "LNG_S4_2029": {
+            "cost": 230994,
+            "size": "S4",
+            "distance": "D4",
+            "yearly range": 118000
+        },
+        "BEV_S1_2030": {
+            "cost": 130589,
+            "size": "S1",
+            "distance": "D3",
+            "yearly range": 102000
+        },
+        "Diesel_S1_2030": {
+            "cost": 104539,
+            "size": "S1",
+            "distance": "D4",
+            "yearly range": 102000
+        },
+        "LNG_S1_2030": {
+            "cost": 122987,
+            "size": "S1",
+            "distance": "D4",
+            "yearly range": 102000
+        },
+        "BEV_S2_2030": {
+            "cost": 189947,
+            "size": "S2",
+            "distance": "D3",
+            "yearly range": 106000
+        },
+        "Diesel_S2_2030": {
+            "cost": 127906,
+            "size": "S2",
+            "distance": "D4",
+            "yearly range": 106000
+        },
+        "LNG_S2_2030": {
+            "cost": 163573,
+            "size": "S2",
+            "distance": "D4",
+            "yearly range": 106000
+        },
+        "BEV_S3_2030": {
+            "cost": 215849,
+            "size": "S3",
+            "distance": "D3",
+            "yearly range": 73000
+        },
+        "Diesel_S3_2030": {
+            "cost": 145348,
+            "size": "S3",
+            "distance": "D4",
+            "yearly range": 73000
+        },
+        "LNG_S3_2030": {
+            "cost": 185878,
+            "size": "S3",
+            "distance": "D4",
+            "yearly range": 73000
+        },
+        "BEV_S4_2030": {
+            "cost": 276287,
+            "size": "S4",
+            "distance": "D3",
+            "yearly range": 118000
+        },
+        "Diesel_S4_2030": {
+            "cost": 186046,
+            "size": "S4",
+            "distance": "D4",
+            "yearly range": 118000
+        },
+        "LNG_S4_2030": {
+            "cost": 237924,
+            "size": "S4",
+            "distance": "D4",
+            "yearly range": 118000
+        },
+        "BEV_S1_2031": {
+            "cost": 130589,
+            "size": "S1",
+            "distance": "D3",
+            "yearly range": 102000
+        },
+        "Diesel_S1_2031": {
+            "cost": 107675,
+            "size": "S1",
+            "distance": "D4",
+            "yearly range": 102000
+        },
+        "LNG_S1_2031": {
+            "cost": 126677,
+            "size": "S1",
+            "distance": "D4",
+            "yearly range": 102000
+        },
+        "BEV_S2_2031": {
+            "cost": 189947,
+            "size": "S2",
+            "distance": "D3",
+            "yearly range": 106000
+        },
+        "Diesel_S2_2031": {
+            "cost": 131744,
+            "size": "S2",
+            "distance": "D4",
+            "yearly range": 106000
+        },
+        "LNG_S2_2031": {
+            "cost": 168480,
+            "size": "S2",
+            "distance": "D4",
+            "yearly range": 106000
+        },
+        "BEV_S3_2031": {
+            "cost": 215849,
+            "size": "S3",
+            "distance": "D3",
+            "yearly range": 73000
+        },
+        "Diesel_S3_2031": {
+            "cost": 149709,
+            "size": "S3",
+            "distance": "D4",
+            "yearly range": 73000
+        },
+        "LNG_S3_2031": {
+            "cost": 191455,
+            "size": "S3",
+            "distance": "D4",
+            "yearly range": 73000
+        },
+        "BEV_S4_2031": {
+            "cost": 276287,
+            "size": "S4",
+            "distance": "D3",
+            "yearly range": 118000
+        },
+        "Diesel_S4_2031": {
+            "cost": 191627,
+            "size": "S4",
+            "distance": "D4",
+            "yearly range": 118000
+        },
+        "LNG_S4_2031": {
+            "cost": 245062,
+            "size": "S4",
+            "distance": "D4",
+            "yearly range": 118000
+        },
+        "BEV_S1_2032": {
+            "cost": 130589,
+            "size": "S1",
+            "distance": "D4",
+            "yearly range": 102000
+        },
+        "Diesel_S1_2032": {
+            "cost": 110905,
+            "size": "S1",
+            "distance": "D4",
+            "yearly range": 102000
+        },
+        "LNG_S1_2032": {
+            "cost": 130477,
+            "size": "S1",
+            "distance": "D4",
+            "yearly range": 102000
+        },
+        "BEV_S2_2032": {
+            "cost": 189947,
+            "size": "S2",
+            "distance": "D4",
+            "yearly range": 106000
+        },
+        "Diesel_S2_2032": {
+            "cost": 135696,
+            "size": "S2",
+            "distance": "D4",
+            "yearly range": 106000
+        },
+        "LNG_S2_2032": {
+            "cost": 173534,
+            "size": "S2",
+            "distance": "D4",
+            "yearly range": 106000
+        },
+        "BEV_S3_2032": {
+            "cost": 215849,
+            "size": "S3",
+            "distance": "D4",
+            "yearly range": 73000
+        },
+        "Diesel_S3_2032": {
+            "cost": 154200,
+            "size": "S3",
+            "distance": "D4",
+            "yearly range": 73000
+        },
+        "LNG_S3_2032": {
+            "cost": 197198,
+            "size": "S3",
+            "distance": "D4",
+            "yearly range": 73000
+        },
+        "BEV_S4_2032": {
+            "cost": 276287,
+            "size": "S4",
+            "distance": "D4",
+            "yearly range": 118000
+        },
+        "Diesel_S4_2032": {
+            "cost": 197376,
+            "size": "S4",
+            "distance": "D4",
+            "yearly range": 118000
+        },
+        "LNG_S4_2032": {
+            "cost": 252414,
+            "size": "S4",
+            "distance": "D4",
+            "yearly range": 118000
+        },
+        "BEV_S1_2033": {
+            "cost": 130589,
+            "size": "S1",
+            "distance": "D4",
+            "yearly range": 102000
+        },
+        "Diesel_S1_2033": {
+            "cost": 114232,
+            "size": "S1",
+            "distance": "D4",
+            "yearly range": 102000
+        },
+        "LNG_S1_2033": {
+            "cost": 134391,
+            "size": "S1",
+            "distance": "D4",
+            "yearly range": 102000
+        },
+        "BEV_S2_2033": {
+            "cost": 189947,
+            "size": "S2",
+            "distance": "D4",
+            "yearly range": 106000
+        },
+        "Diesel_S2_2033": {
+            "cost": 139767,
+            "size": "S2",
+            "distance": "D4",
+            "yearly range": 106000
+        },
+        "LNG_S2_2033": {
+            "cost": 178740,
+            "size": "S2",
+            "distance": "D4",
+            "yearly range": 106000
+        },
+        "BEV_S3_2033": {
+            "cost": 215849,
+            "size": "S3",
+            "distance": "D4",
+            "yearly range": 73000
+        },
+        "Diesel_S3_2033": {
+            "cost": 158826,
+            "size": "S3",
+            "distance": "D4",
+            "yearly range": 73000
+        },
+        "LNG_S3_2033": {
+            "cost": 203114,
+            "size": "S3",
+            "distance": "D4",
+            "yearly range": 73000
+        },
+        "BEV_S4_2033": {
+            "cost": 276287,
+            "size": "S4",
+            "distance": "D4",
+            "yearly range": 118000
+        },
+        "Diesel_S4_2033": {
+            "cost": 203297,
+            "size": "S4",
+            "distance": "D4",
+            "yearly range": 118000
+        },
+        "LNG_S4_2033": {
+            "cost": 259986,
+            "size": "S4",
+            "distance": "D4",
+            "yearly range": 118000
+        },
+        "BEV_S1_2034": {
+            "cost": 130589,
+            "size": "S1",
+            "distance": "D4",
+            "yearly range": 102000
+        },
+        "Diesel_S1_2034": {
+            "cost": 117659,
+            "size": "S1",
+            "distance": "D4",
+            "yearly range": 102000
+        },
+        "LNG_S1_2034": {
+            "cost": 138423,
+            "size": "S1",
+            "distance": "D4",
+            "yearly range": 102000
+        },
+        "BEV_S2_2034": {
+            "cost": 189947,
+            "size": "S2",
+            "distance": "D4",
+            "yearly range": 106000
+        },
+        "Diesel_S2_2034": {
+            "cost": 143960,
+            "size": "S2",
+            "distance": "D4",
+            "yearly range": 106000
+        },
+        "LNG_S2_2034": {
+            "cost": 184103,
+            "size": "S2",
+            "distance": "D4",
+            "yearly range": 106000
+        },
+        "BEV_S3_2034": {
+            "cost": 215849,
+            "size": "S3",
+            "distance": "D4",
+            "yearly range": 73000
+        },
+        "Diesel_S3_2034": {
+            "cost": 163591,
+            "size": "S3",
+            "distance": "D4",
+            "yearly range": 73000
+        },
+        "LNG_S3_2034": {
+            "cost": 209208,
+            "size": "S3",
+            "distance": "D4",
+            "yearly range": 73000
+        },
+        "BEV_S4_2034": {
+            "cost": 276287,
+            "size": "S4",
+            "distance": "D4",
+            "yearly range": 118000
+        },
+        "Diesel_S4_2034": {
+            "cost": 209396,
+            "size": "S4",
+            "distance": "D4",
+            "yearly range": 118000
+        },
+        "LNG_S4_2034": {
+            "cost": 267786,
+            "size": "S4",
+            "distance": "D4",
+            "yearly range": 118000
+        },
+        "BEV_S1_2035": {
+            "cost": 130589,
+            "size": "S1",
+            "distance": "D4",
+            "yearly range": 102000
+        },
+        "Diesel_S1_2035": {
+            "cost": 121189,
+            "size": "S1",
+            "distance": "D4",
+            "yearly range": 102000
+        },
+        "LNG_S1_2035": {
+            "cost": 142576,
+            "size": "S1",
+            "distance": "D4",
+            "yearly range": 102000
+        },
+        "BEV_S2_2035": {
+            "cost": 189947,
+            "size": "S2",
+            "distance": "D4",
+            "yearly range": 106000
+        },
+        "Diesel_S2_2035": {
+            "cost": 148279,
+            "size": "S2",
+            "distance": "D4",
+            "yearly range": 106000
+        },
+        "LNG_S2_2035": {
+            "cost": 189626,
+            "size": "S2",
+            "distance": "D4",
+            "yearly range": 106000
+        },
+        "BEV_S3_2035": {
+            "cost": 215849,
+            "size": "S3",
+            "distance": "D4",
+            "yearly range": 73000
+        },
+        "Diesel_S3_2035": {
+            "cost": 168499,
+            "size": "S3",
+            "distance": "D4",
+            "yearly range": 73000
+        },
+        "LNG_S3_2035": {
+            "cost": 215484,
+            "size": "S3",
+            "distance": "D4",
+            "yearly range": 73000
+        },
+        "BEV_S4_2035": {
+            "cost": 276287,
+            "size": "S4",
+            "distance": "D4",
+            "yearly range": 118000
+        },
+        "Diesel_S4_2035": {
+            "cost": 215678,
+            "size": "S4",
+            "distance": "D4",
+            "yearly range": 118000
+        },
+        "LNG_S4_2035": {
+            "cost": 275819,
+            "size": "S4",
+            "distance": "D4",
+            "yearly range": 118000
+        },
+        "BEV_S1_2036": {
+            "cost": 130589,
+            "size": "S1",
+            "distance": "D4",
+            "yearly range": 102000
+        },
+        "Diesel_S1_2036": {
+            "cost": 124825,
+            "size": "S1",
+            "distance": "D4",
+            "yearly range": 102000
+        },
+        "LNG_S1_2036": {
+            "cost": 146853,
+            "size": "S1",
+            "distance": "D4",
+            "yearly range": 102000
+        },
+        "BEV_S2_2036": {
+            "cost": 189947,
+            "size": "S2",
+            "distance": "D4",
+            "yearly range": 106000
+        },
+        "Diesel_S2_2036": {
+            "cost": 152727,
+            "size": "S2",
+            "distance": "D4",
+            "yearly range": 106000
+        },
+        "LNG_S2_2036": {
+            "cost": 195314,
+            "size": "S2",
+            "distance": "D4",
+            "yearly range": 106000
+        },
+        "BEV_S3_2036": {
+            "cost": 215849,
+            "size": "S3",
+            "distance": "D4",
+            "yearly range": 73000
+        },
+        "Diesel_S3_2036": {
+            "cost": 173553,
+            "size": "S3",
+            "distance": "D4",
+            "yearly range": 73000
+        },
+        "LNG_S3_2036": {
+            "cost": 221948,
+            "size": "S3",
+            "distance": "D4",
+            "yearly range": 73000
+        },
+        "BEV_S4_2036": {
+            "cost": 276287,
+            "size": "S4",
+            "distance": "D4",
+            "yearly range": 118000
+        },
+        "Diesel_S4_2036": {
+            "cost": 222149,
+            "size": "S4",
+            "distance": "D4",
+            "yearly range": 118000
+        },
+        "LNG_S4_2036": {
+            "cost": 284094,
+            "size": "S4",
+            "distance": "D4",
+            "yearly range": 118000
+        },
+        "BEV_S1_2037": {
+            "cost": 130589,
+            "size": "S1",
+            "distance": "D4",
+            "yearly range": 102000
+        },
+        "Diesel_S1_2037": {
+            "cost": 128570,
+            "size": "S1",
+            "distance": "D4",
+            "yearly range": 102000
+        },
+        "LNG_S1_2037": {
+            "cost": 151258,
+            "size": "S1",
+            "distance": "D4",
+            "yearly range": 102000
+        },
+        "BEV_S2_2037": {
+            "cost": 189947,
+            "size": "S2",
+            "distance": "D4",
+            "yearly range": 106000
+        },
+        "Diesel_S2_2037": {
+            "cost": 157309,
+            "size": "S2",
+            "distance": "D4",
+            "yearly range": 106000
+        },
+        "LNG_S2_2037": {
+            "cost": 201174,
+            "size": "S2",
+            "distance": "D4",
+            "yearly range": 106000
+        },
+        "BEV_S3_2037": {
+            "cost": 215849,
+            "size": "S3",
+            "distance": "D4",
+            "yearly range": 73000
+        },
+        "Diesel_S3_2037": {
+            "cost": 178760,
+            "size": "S3",
+            "distance": "D4",
+            "yearly range": 73000
+        },
+        "LNG_S3_2037": {
+            "cost": 228607,
+            "size": "S3",
+            "distance": "D4",
+            "yearly range": 73000
+        },
+        "BEV_S4_2037": {
+            "cost": 276287,
+            "size": "S4",
+            "distance": "D4",
+            "yearly range": 118000
+        },
+        "Diesel_S4_2037": {
+            "cost": 228813,
+            "size": "S4",
+            "distance": "D4",
+            "yearly range": 118000
+        },
+        "LNG_S4_2037": {
+            "cost": 292617,
+            "size": "S4",
+            "distance": "D4",
+            "yearly range": 118000
+        },
+        "BEV_S1_2038": {
+            "cost": 130589,
+            "size": "S1",
+            "distance": "D4",
+            "yearly range": 102000
+        },
+        "Diesel_S1_2038": {
+            "cost": 132427,
+            "size": "S1",
+            "distance": "D4",
+            "yearly range": 102000
+        },
+        "LNG_S1_2038": {
+            "cost": 155796,
+            "size": "S1",
+            "distance": "D4",
+            "yearly range": 102000
+        },
+        "BEV_S2_2038": {
+            "cost": 189947,
+            "size": "S2",
+            "distance": "D4",
+            "yearly range": 106000
+        },
+        "Diesel_S2_2038": {
+            "cost": 162028,
+            "size": "S2",
+            "distance": "D4",
+            "yearly range": 106000
+        },
+        "LNG_S2_2038": {
+            "cost": 207209,
+            "size": "S2",
+            "distance": "D4",
+            "yearly range": 106000
+        },
+        "BEV_S3_2038": {
+            "cost": 215849,
+            "size": "S3",
+            "distance": "D4",
+            "yearly range": 73000
+        },
+        "Diesel_S3_2038": {
+            "cost": 184123,
+            "size": "S3",
+            "distance": "D4",
+            "yearly range": 73000
+        },
+        "LNG_S3_2038": {
+            "cost": 235465,
+            "size": "S3",
+            "distance": "D4",
+            "yearly range": 73000
+        },
+        "BEV_S4_2038": {
+            "cost": 276287,
+            "size": "S4",
+            "distance": "D4",
+            "yearly range": 118000
+        },
+        "Diesel_S4_2038": {
+            "cost": 235677,
+            "size": "S4",
+            "distance": "D4",
+            "yearly range": 118000
+        },
+        "LNG_S4_2038": {
+            "cost": 301395,
+            "size": "S4",
+            "distance": "D4",
+            "yearly range": 118000
         }
     },
     "vehicle_fuel_consumptions": {
