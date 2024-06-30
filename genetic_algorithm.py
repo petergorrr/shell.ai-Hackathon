@@ -1,6 +1,7 @@
 import random
 import copy
 from fleet_decarbonization_model_final import FleetOptimization
+import csv
 
 class GeneticAlgorithm:
     def __init__(self, fleet_optimization, population_size=100, generations=700):
@@ -128,9 +129,28 @@ class GeneticAlgorithm:
         
         return min(self.population, key=self.fitness)
 
+def save_best_solution(best_solution, filename='best_solution.csv'):
+    fieldnames = ['Year', 'Action', 'ID', 'Num_Vehicles', 'Distance_per_vehicle(km)', 'Distance_bucket', 'Fuel']
+    
+    with open(filename, mode='w', newline='') as file:
+        writer = csv.DictWriter(file, fieldnames=fieldnames)
+        writer.writeheader()
+
+        for year, year_data in enumerate(best_solution, start=2023):
+            for action, vehicles in year_data.items():
+                for vehicle in vehicles:
+                    writer.writerow({
+                        'Year': year,
+                        'Action': action,
+                        'ID': vehicle['ID'],
+                        'Num_Vehicles': vehicle['Num_Vehicles'],
+                        'Distance_per_vehicle(km)': vehicle.get('Distance_per_vehicle(km)', ''),
+                        'Distance_bucket': vehicle.get('Distance_bucket', ''),
+                        'Fuel': vehicle.get('Fuel', '')
+                    })
+
 # Usage
-random.seed(33)
 fleet_optimization = FleetOptimization('dataset/mapping_and_cost_data.json')
 ga = GeneticAlgorithm(fleet_optimization)
 best_solution = ga.evolve()
-print(best_solution)
+save_best_solution(best_solution)
