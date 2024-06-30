@@ -51,6 +51,7 @@ def extract_vehicles_for_demand(vehicles, size_buckets, years):
         for year in years
     }
 
+
 # Get Fuel Type with Consumption
 fuel_consumption_dict = vehicles_fuels.groupby('ID').apply(
     lambda x: x.set_index('Fuel')['Consumption (unit_fuel/km)'].to_dict()).to_dict()
@@ -140,7 +141,7 @@ data = {
     },
     "yearly_demand": yearly_demand,
     "vehicle_bucket_coverage": eligible_vehicles,
-    "vehicles_details": vehicles_details,
+    "vehicle_details": vehicles_details,
     "vehicle_fuel_consumptions": fuel_consumption_dict,
     "fuels_data": fuels_reorganized
 }

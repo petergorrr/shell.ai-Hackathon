@@ -6005,7 +6005,7 @@
             }
         }
     },
-    "vehicles_details": {
+    "vehicle_details": {
         "BEV_S1_2023": {
             "cost": 187000,
             "size": "S1",
