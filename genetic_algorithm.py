@@ -5,7 +5,7 @@ import csv
 
 
 class GeneticAlgorithm:
-    def __init__(self, fleet_optimization, population_size=100, generations=600):
+    def __init__(self, fleet_optimization, population_size=100, generations=650):
         # Set the seed for reproducibility
 
         self.fleet_optimization = fleet_optimization
@@ -160,7 +160,7 @@ def save_best_solution(best_solution, filename='best_solution.csv'):
                         'Type': action,
                         'Fuel': vehicle.get('Fuel', ''),
                         'Distance_bucket': vehicle.get('Distance_bucket', ''),
-                        'Distance_per_vehicle(km)': vehicle.get('Distance_per_vehicle(km)', '')
+                        'Distance_per_vehicle(km)': float(vehicle.get('Distance_per_vehicle(km)', ''))
                     })
 
 

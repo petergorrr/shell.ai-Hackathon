@@ -217,7 +217,7 @@ class FleetOptimization:
                 f"Invalid action: {action}. Must be 'buy', 'sell', or 'use'.")
 
         self.existing_fleet = [v for v in self.existing_fleet
-                               if (year - v['Purchase_Year']) <= 10]
+                               if (year - v['Purchase_Year']) < 10]
 
     def check_fleet_meets_demand(self, individual):
         total_distance_demand = self.yearly_demand
