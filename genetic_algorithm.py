@@ -141,12 +141,12 @@ def save_best_solution(best_solution, filename='best_solution.csv'):
                 for vehicle in vehicles:
                     writer.writerow({
                         'Year': year,
-                        'Action': action,
                         'ID': vehicle['ID'],
                         'Num_Vehicles': vehicle['Num_Vehicles'],
-                        'Distance_per_vehicle(km)': vehicle.get('Distance_per_vehicle(km)', ''),
+                        'Type': action,
+                        'Fuel': vehicle.get('Fuel', ''),
                         'Distance_bucket': vehicle.get('Distance_bucket', ''),
-                        'Fuel': vehicle.get('Fuel', '')
+                        'Distance_per_vehicle(km)': vehicle.get('Distance_per_vehicle(km)', '')    
                     })
 
 # Usage
