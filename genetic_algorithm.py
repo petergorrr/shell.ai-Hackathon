@@ -1,6 +1,6 @@
 import random
 import copy
-from fleet_decarbonization_model_final import FleetOptimization
+from fleet_decarbonization_model import FleetOptimization
 import csv
 
 
