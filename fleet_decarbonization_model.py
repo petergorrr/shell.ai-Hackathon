@@ -3,9 +3,10 @@ import re
 
 
 class FleetOptimization:
-    def __init__(self, json_file_path):
-        self.hard_constraint_penalty = 1000
 
+    hard_constraint_penalty = 1000  # class attribute
+
+    def __init__(self, json_file_path):
         # Load the JSON file
         with open(json_file_path, 'r') as file:
             data = json.load(file)
